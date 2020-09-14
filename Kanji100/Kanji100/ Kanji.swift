@@ -10,9 +10,9 @@ import Foundation
 
 struct Kanji: Decodable {
     var kanji: String?
-    var englishMeaning: String?
-    var onyomy: String?
-    var kunyomi: String?
+    var englishMeaning: [String]?
+    var onyomy: [String]?
+    var kunyomi: [String]?
     var category: String?
     var exemples: [Word]?
 }

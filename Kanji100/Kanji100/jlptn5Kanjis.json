@@ -1,0 +1,47 @@
+{
+    "kanjis": [
+        {
+            "kanji": "一",
+            "englishMeanings": [
+                "One"
+            ],
+            "onyomy": [
+                "ichi",
+                "itsu"
+            ],
+            "kunyomi": [
+                "hito(tsu)",
+                "hito"
+            ],
+            "category": "Numbers",
+            "exemples": [{
+                "word": "一人",
+                "englishMeanings": [
+                    "one person",
+                    "alone"
+                ]
+            }]
+        },
+        {
+            "kanji": "二",
+            "englishMeanings": [
+                "Two"
+            ],
+            "onyomy": [
+                "ni"
+            ],
+            "kunyomi": [
+                "futa(tsu)",
+                "futa"
+            ],
+            "category": "Numbers",
+            "exemples": [{
+                "word": "二人",
+                "englishMeanings": [
+                    "two people",
+                    "pair"
+                ]
+            }]
+        }
+    ]
+}
