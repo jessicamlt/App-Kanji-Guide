@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAF93250FDD4E005CF533 /* AppDelegate.swift */; };
-		767EAF96250FDD4E005CF533 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAF95250FDD4E005CF533 /* SceneDelegate.swift */; };
 		767EAF98250FDD4E005CF533 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAF97250FDD4E005CF533 /* ViewController.swift */; };
-		767EAF9B250FDD4E005CF533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767EAF99250FDD4E005CF533 /* Main.storyboard */; };
 		767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767EAF9C250FDD4F005CF533 /* Assets.xcassets */; };
 		767EAFA0250FDD4F005CF533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */; };
 		767EAFA8250FE043005CF533 /*  Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFA7250FE043005CF533 /*  Kanji.swift */; };
 		767EAFAA250FE1FA005CF533 /* jlptn5Kanjis.json in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */; };
+		767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */; };
+		767EAFAF250FEB5F005CF533 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFAD250FEB5F005CF533 /* MainScreenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		767EAF90250FDD4E005CF533 /* Kanji100.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanji100.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767EAF93250FDD4E005CF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		767EAF95250FDD4E005CF533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		767EAF97250FDD4E005CF533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		767EAF9A250FDD4E005CF533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		767EAF9C250FDD4F005CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767EAF9F250FDD4F005CF533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		767EAFA1250FDD4F005CF533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767EAFA7250FE043005CF533 /*  Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Kanji.swift"; sourceTree = "<group>"; };
 		767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jlptn5Kanjis.json; sourceTree = "<group>"; };
+		767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		767EAFAD250FEB5F005CF533 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +60,25 @@
 		767EAF92250FDD4E005CF533 /* Kanji100 */ = {
 			isa = PBXGroup;
 			children = (
+				767EAFAB250FE953005CF533 /* Model */,
 				767EAF93250FDD4E005CF533 /* AppDelegate.swift */,
-				767EAF95250FDD4E005CF533 /* SceneDelegate.swift */,
 				767EAF97250FDD4E005CF533 /* ViewController.swift */,
-				767EAF99250FDD4E005CF533 /* Main.storyboard */,
 				767EAF9C250FDD4F005CF533 /* Assets.xcassets */,
 				767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */,
 				767EAFA1250FDD4F005CF533 /* Info.plist */,
+				767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */,
+				767EAFAD250FEB5F005CF533 /* MainScreenViewController.xib */,
+			);
+			path = Kanji100;
+			sourceTree = "<group>";
+		};
+		767EAFAB250FE953005CF533 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				767EAFA7250FE043005CF533 /*  Kanji.swift */,
 				767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */,
 			);
-			path = Kanji100;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				767EAFA0250FDD4F005CF533 /* LaunchScreen.storyboard in Resources */,
+				767EAFAF250FEB5F005CF533 /* MainScreenViewController.xib in Resources */,
 				767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */,
 				767EAFAA250FE1FA005CF533 /* jlptn5Kanjis.json in Resources */,
-				767EAF9B250FDD4E005CF533 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,23 +154,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				767EAFA8250FE043005CF533 /*  Kanji.swift in Sources */,
+				767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */,
 				767EAF98250FDD4E005CF533 /* ViewController.swift in Sources */,
 				767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */,
-				767EAF96250FDD4E005CF533 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		767EAF99250FDD4E005CF533 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				767EAF9A250FDD4E005CF533 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
