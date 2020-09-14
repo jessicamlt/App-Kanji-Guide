@@ -13,7 +13,7 @@ struct KanjiJson {
 {
     "kanjis": [
         {
-            "kanji": "一",
+            "kanji": "a",
             "englishMeanings": [
                 "One"
             ],
@@ -27,7 +27,7 @@ struct KanjiJson {
             ],
             "category": "Numbers",
             "examples": [{
-                "word": "一人",
+                "word": "teste1",
                 "englishMeanings": [
                     "one person",
                     "alone"
@@ -35,7 +35,7 @@ struct KanjiJson {
             }]
         },
         {
-            "kanji": "二",
+            "kanji": "b",
             "englishMeanings": [
                 "Two"
             ],
@@ -48,7 +48,7 @@ struct KanjiJson {
             ],
             "category": "Numbers",
             "examples": [{
-                "word": "二人",
+                "word": "teste2",
                 "englishMeanings": [
                     "two people",
                     "pair"

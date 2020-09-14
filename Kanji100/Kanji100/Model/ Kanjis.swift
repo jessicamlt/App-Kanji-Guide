@@ -8,16 +8,20 @@
 
 import Foundation
 
+struct Kanjis: Decodable {
+    var kanjis: [Kanji]
+}
+
 struct Kanji: Decodable {
     var kanji: String?
-    var englishMeaning: [String]?
+    var englishMeanings: [String]?
     var onyomy: [String]?
     var kunyomi: [String]?
-    var category: String?
+    var category: String
     var examples: [Word]?
 }
 
 struct Word: Decodable {
     var word: String?
-    var englishMeaning: [String]?
+    var englishMeanings: [String]?
 }
