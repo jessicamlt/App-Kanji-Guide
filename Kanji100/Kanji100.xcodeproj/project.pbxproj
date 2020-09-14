@@ -15,7 +15,20 @@
 		767EAFAA250FE1FA005CF533 /* jlptn5Kanjis.json in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */; };
 		767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */; };
 		767EAFAF250FEB5F005CF533 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFAD250FEB5F005CF533 /* MainScreenViewController.xib */; };
+		767EAFB8250FED83005CF533 /* Kanji100Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFB7250FED83005CF533 /* Kanji100Tests.swift */; };
+		767EAFC1250FEDEA005CF533 /* KanjiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFC0250FEDEA005CF533 /* KanjiTests.swift */; };
+		767EAFC4250FEE46005CF533 /* KanjiJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFC3250FEE46005CF533 /* KanjiJson.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		767EAFBA250FED83005CF533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767EAF88250FDD4E005CF533 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767EAF8F250FDD4E005CF533;
+			remoteInfo = Kanji100;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		767EAF90250FDD4E005CF533 /* Kanji100.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanji100.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +41,22 @@
 		767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jlptn5Kanjis.json; sourceTree = "<group>"; };
 		767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		767EAFAD250FEB5F005CF533 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
+		767EAFB5250FED83005CF533 /* Kanji100Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kanji100Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767EAFB7250FED83005CF533 /* Kanji100Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji100Tests.swift; sourceTree = "<group>"; };
+		767EAFB9250FED83005CF533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767EAFC0250FEDEA005CF533 /* KanjiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiTests.swift; sourceTree = "<group>"; };
+		767EAFC3250FEE46005CF533 /* KanjiJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		767EAF8D250FDD4E005CF533 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767EAFB2250FED83005CF533 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				767EAF92250FDD4E005CF533 /* Kanji100 */,
+				767EAFB6250FED83005CF533 /* Kanji100Tests */,
 				767EAF91250FDD4E005CF533 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				767EAF90250FDD4E005CF533 /* Kanji100.app */,
+				767EAFB5250FED83005CF533 /* Kanji100Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,14 +87,13 @@
 		767EAF92250FDD4E005CF533 /* Kanji100 */ = {
 			isa = PBXGroup;
 			children = (
+				767EAFB0250FECEA005CF533 /* MainScreen */,
 				767EAFAB250FE953005CF533 /* Model */,
 				767EAF93250FDD4E005CF533 /* AppDelegate.swift */,
 				767EAF97250FDD4E005CF533 /* ViewController.swift */,
 				767EAF9C250FDD4F005CF533 /* Assets.xcassets */,
 				767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */,
 				767EAFA1250FDD4F005CF533 /* Info.plist */,
-				767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */,
-				767EAFAD250FEB5F005CF533 /* MainScreenViewController.xib */,
 			);
 			path = Kanji100;
 			sourceTree = "<group>";
@@ -79,6 +105,42 @@
 				767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		767EAFB0250FECEA005CF533 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */,
+				767EAFAD250FEB5F005CF533 /* MainScreenViewController.xib */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		767EAFB6250FED83005CF533 /* Kanji100Tests */ = {
+			isa = PBXGroup;
+			children = (
+				767EAFC2250FEE2E005CF533 /* Helpers */,
+				767EAFBF250FEDAB005CF533 /* Model */,
+				767EAFB7250FED83005CF533 /* Kanji100Tests.swift */,
+				767EAFB9250FED83005CF533 /* Info.plist */,
+			);
+			path = Kanji100Tests;
+			sourceTree = "<group>";
+		};
+		767EAFBF250FEDAB005CF533 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				767EAFC0250FEDEA005CF533 /* KanjiTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		767EAFC2250FEE2E005CF533 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				767EAFC3250FEE46005CF533 /* KanjiJson.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +163,24 @@
 			productReference = 767EAF90250FDD4E005CF533 /* Kanji100.app */;
 			productType = "com.apple.product-type.application";
 		};
+		767EAFB4250FED83005CF533 /* Kanji100Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767EAFBC250FED83005CF533 /* Build configuration list for PBXNativeTarget "Kanji100Tests" */;
+			buildPhases = (
+				767EAFB1250FED83005CF533 /* Sources */,
+				767EAFB2250FED83005CF533 /* Frameworks */,
+				767EAFB3250FED83005CF533 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767EAFBB250FED83005CF533 /* PBXTargetDependency */,
+			);
+			name = Kanji100Tests;
+			productName = Kanji100Tests;
+			productReference = 767EAFB5250FED83005CF533 /* Kanji100Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -113,6 +193,10 @@
 				TargetAttributes = {
 					767EAF8F250FDD4E005CF533 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					767EAFB4250FED83005CF533 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 767EAF8F250FDD4E005CF533;
 					};
 				};
 			};
@@ -130,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				767EAF8F250FDD4E005CF533 /* Kanji100 */,
+				767EAFB4250FED83005CF533 /* Kanji100Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +228,13 @@
 				767EAFAF250FEB5F005CF533 /* MainScreenViewController.xib in Resources */,
 				767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */,
 				767EAFAA250FE1FA005CF533 /* jlptn5Kanjis.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767EAFB3250FED83005CF533 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +252,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		767EAFB1250FED83005CF533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767EAFC4250FEE46005CF533 /* KanjiJson.swift in Sources */,
+				767EAFB8250FED83005CF533 /* Kanji100Tests.swift in Sources */,
+				767EAFC1250FEDEA005CF533 /* KanjiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		767EAFBB250FED83005CF533 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767EAF8F250FDD4E005CF533 /* Kanji100 */;
+			targetProxy = 767EAFBA250FED83005CF533 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */ = {
@@ -324,6 +434,46 @@
 			};
 			name = Release;
 		};
+		767EAFBD250FED83005CF533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L442N5GXM2;
+				INFOPLIST_FILE = Kanji100Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trindade.jessica.Kanji100Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kanji100.app/Kanji100";
+			};
+			name = Debug;
+		};
+		767EAFBE250FED83005CF533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L442N5GXM2;
+				INFOPLIST_FILE = Kanji100Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trindade.jessica.Kanji100Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kanji100.app/Kanji100";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +491,15 @@
 			buildConfigurations = (
 				767EAFA5250FDD4F005CF533 /* Debug */,
 				767EAFA6250FDD4F005CF533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767EAFBC250FED83005CF533 /* Build configuration list for PBXNativeTarget "Kanji100Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767EAFBD250FED83005CF533 /* Debug */,
+				767EAFBE250FED83005CF533 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

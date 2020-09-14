@@ -14,7 +14,7 @@ struct Kanji: Decodable {
     var onyomy: [String]?
     var kunyomi: [String]?
     var category: String?
-    var exemples: [Word]?
+    var examples: [Word]?
 }
 
 struct Word: Decodable {
