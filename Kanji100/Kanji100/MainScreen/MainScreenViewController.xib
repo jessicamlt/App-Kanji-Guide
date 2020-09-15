@@ -19,16 +19,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1wo-MG-gme">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="1wo-MG-gme" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9Al-84-BsR"/>
-                <constraint firstItem="1wo-MG-gme" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="FTE-ly-ta6"/>
-                <constraint firstAttribute="bottom" secondItem="1wo-MG-gme" secondAttribute="bottom" id="S7r-K4-qnL"/>
-                <constraint firstItem="1wo-MG-gme" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qWq-q3-LJn"/>
+                <constraint firstItem="1wo-MG-gme" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ci5-AL-xb4"/>
+                <constraint firstItem="1wo-MG-gme" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EYh-7X-OKZ"/>
+                <constraint firstItem="1wo-MG-gme" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ZIt-XY-La9"/>
+                <constraint firstItem="1wo-MG-gme" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="waA-Te-R6s"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="231.8840579710145" y="209.59821428571428"/>

@@ -42,6 +42,267 @@
                     "pair"
                 ]
             }]
+        },
+        {
+            "kanji": "三",
+            "englishMeanings": [
+                "Three"
+            ],
+            "onyomy": [
+                "san"
+            ],
+            "kunyomi": [
+                "mi(tsu)",
+                "mi"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "三日",
+                "englishMeanings": [
+                    "3rd day of the month"
+                ]
+            }]
+        },
+        {
+            "kanji": "四",
+            "englishMeanings": [
+                "Four"
+            ],
+            "onyomy": [
+                "shi"
+            ],
+            "kunyomi": [
+                "yo(tsu)",
+                "yo",
+                "yon"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "四日",
+                "englishMeanings": [
+                    "4th day of the month"
+                ]
+            }]
+        },
+        {
+            "kanji": "五",
+            "englishMeanings": [
+                "Five"
+            ],
+            "onyomy": [
+                "go"
+            ],
+            "kunyomi": [
+                "itsu(tsu)",
+                "itsu"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "五日",
+                "englishMeanings": [
+                    "5th day of the month"
+                ]
+            }]
+        },
+        {
+            "kanji": "六",
+            "englishMeanings": [
+                "Six"
+            ],
+            "onyomy": [
+                "roku"
+            ],
+            "kunyomi": [
+                "mut(tsu)",
+                "mu"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "六日",
+                "englishMeanings": [
+                    "6th day of the month"
+                ]
+            }]
+        },
+        {
+            "kanji": "七",
+            "englishMeanings": [
+                "Seven"
+            ],
+            "onyomy": [
+                "shichi"
+            ],
+            "kunyomi": [
+                "nana(tsu)",
+                "nana"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "七日",
+                "englishMeanings": [
+                    "7th day of the month"
+                ]
+            }]
+        },
+        {
+            "kanji": "八",
+            "englishMeanings": [
+                "Eight"
+            ],
+            "onyomy": [
+                "hachi"
+            ],
+            "kunyomi": [
+                "yat(tsu)",
+                "ya"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "八日",
+                "englishMeanings": [
+                    "8th day of the month"
+                ]
+            }]
+        },
+        {
+            "kanji": "九",
+            "englishMeanings": [
+                "Nine"
+            ],
+            "onyomy": [
+                "kyuu",
+                "ku"
+            ],
+            "kunyomi": [
+                "kokono(tsu)",
+                "kokono"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "九日",
+                "englishMeanings": [
+                    "9th day of the month"
+                ]
+            }]
+        },
+        {
+            "kanji": "十",
+            "englishMeanings": [
+                "Ten"
+            ],
+            "onyomy": [
+                "juu",
+                "ji"
+            ],
+            "kunyomi": [
+                "tou",
+                "to"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "十日",
+                "englishMeanings": [
+                    "10th day of the month"
+                ]
+            }]
+        },
+        {
+            "kanji": "百",
+            "englishMeanings": [
+                "Hundred"
+            ],
+            "onyomy": [
+                "hyaku"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "百万円",
+                "englishMeanings": [
+                    "1 million Yen"
+                ]
+            }]
+        },
+        {
+            "kanji": "千",
+            "englishMeanings": [
+                "Thousand"
+            ],
+            "onyomy": [
+                "sen"
+            ],
+            "kunyomi": [
+                "chi"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "千万円",
+                "englishMeanings": [
+                    "10 million Yen"
+                ]
+            }]
+        },
+        {
+            "kanji": "千",
+            "englishMeanings": [
+                "Thousand"
+            ],
+            "onyomy": [
+                "sen"
+            ],
+            "kunyomi": [
+                "chi"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "千万円",
+                "englishMeanings": [
+                    "10 million Yen"
+                ]
+            }]
+        },
+        {
+            "kanji": "万",
+            "englishMeanings": [
+                "Ten thousand"
+            ],
+            "onyomy": [
+                "man",
+                "ban"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "万年筆",
+                "englishMeanings": [
+                    "fountain pen"
+                ]
+            }]
+        },
+        {
+            "kanji": "円",
+            "englishMeanings": [
+                "Yen",
+                "circle",
+                "round"
+            ],
+            "onyomy": [
+                "en"
+            ],
+            "kunyomi": [
+                "maru(i)"
+            ],
+            "category": "Numbers",
+            "examples": [{
+                "word": "円い",
+                "englishMeanings": [
+                    "round"
+                ]
+            }]
         }
     ]
 }
