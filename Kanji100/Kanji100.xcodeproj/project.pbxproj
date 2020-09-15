@@ -20,6 +20,7 @@
 		767EAFC4250FEE46005CF533 /* KanjiJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFC3250FEE46005CF533 /* KanjiJson.swift */; };
 		767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFC625100FE0005CF533 /* KanjiTableViewCell.swift */; };
 		767EAFC925100FE0005CF533 /* KanjiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFC725100FE0005CF533 /* KanjiTableViewCell.xib */; };
+		767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		767EAFC3250FEE46005CF533 /* KanjiJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiJson.swift; sourceTree = "<group>"; };
 		767EAFC625100FE0005CF533 /* KanjiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiTableViewCell.swift; sourceTree = "<group>"; };
 		767EAFC725100FE0005CF533 /* KanjiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KanjiTableViewCell.xib; sourceTree = "<group>"; };
+		767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AiharaHudemojiKaisho3.00.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		767EAF92250FDD4E005CF533 /* Kanji100 */ = {
 			isa = PBXGroup;
 			children = (
+				767EAFCA25101F1E005CF533 /* Components */,
 				767EAFB0250FECEA005CF533 /* MainScreen */,
 				767EAFAB250FE953005CF533 /* Model */,
 				767EAF93250FDD4E005CF533 /* AppDelegate.swift */,
@@ -155,6 +158,14 @@
 				767EAFC725100FE0005CF533 /* KanjiTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		767EAFCA25101F1E005CF533 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				767EAFA0250FDD4F005CF533 /* LaunchScreen.storyboard in Resources */,
+				767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */,
 				767EAFAF250FEB5F005CF533 /* MainScreenViewController.xib in Resources */,
 				767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */,
 				767EAFC925100FE0005CF533 /* KanjiTableViewCell.xib in Resources */,
