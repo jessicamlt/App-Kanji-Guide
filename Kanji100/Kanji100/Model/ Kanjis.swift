@@ -24,4 +24,11 @@ struct Kanji: Decodable {
 struct Word: Decodable {
     var word: String?
     var englishMeanings: [String]?
+    
+    var examples: String {
+        let meanings = englishMeanings ?? []
+        return "\(word ?? "") (\(meanings.joined(separator: " / ")))"
+    }
+        
 }
+

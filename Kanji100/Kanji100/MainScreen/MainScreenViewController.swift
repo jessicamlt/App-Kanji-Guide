@@ -47,8 +47,7 @@ extension MainScreenViewController: UITableViewDataSource {
             fatalError("Cell not found")
         }
         
-        cell.kanji = kanjis.kanjiList[indexPath.row]
-        cell.fillCell()
+        cell.fillCell(kanji: kanjis.kanjiList[indexPath.row])
         
         return cell
     }

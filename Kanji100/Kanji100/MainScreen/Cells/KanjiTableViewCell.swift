@@ -16,7 +16,7 @@ class KanjiTableViewCell: UITableViewCell {
     @IBOutlet var kunyomiReadLabel: UILabel!
     @IBOutlet var examplesLabel: UILabel!
     
-    var kanji: Kanji!
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,11 +27,20 @@ class KanjiTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func fillCell() {
+    func fillCell(kanji: Kanji) {
         kanjiLabel.text = kanji.kanji
         englishMeaningLabel.text = kanji.englishMeanings?.joined(separator: ", ")
         onyomyReadLabel.text = kanji.onyomy?.joined(separator: " / ")
         kunyomiReadLabel.text = kanji.kunyomi?.joined(separator: " / ")
+        
+        let examplesCollection = kanji.examples ?? []
+        var examples: [String] = []
+        for word in examplesCollection {
+            examples.append(word.examples)
+        }
+        
+        examplesLabel.text = examples.joined(separator: " ")
+
     }
     
 }
