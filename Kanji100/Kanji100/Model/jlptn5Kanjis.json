@@ -245,25 +245,6 @@
             }]
         },
         {
-            "kanji": "千",
-            "englishMeanings": [
-                "Thousand"
-            ],
-            "onyomy": [
-                "sen"
-            ],
-            "kunyomi": [
-                "chi"
-            ],
-            "category": "Numbers",
-            "examples": [{
-                "word": "千万円",
-                "englishMeanings": [
-                    "10 million Yen"
-                ]
-            }]
-        },
-        {
             "kanji": "万",
             "englishMeanings": [
                 "Ten thousand"
@@ -301,6 +282,166 @@
                 "word": "円い",
                 "englishMeanings": [
                     "round"
+                ]
+            }]
+        },
+        {
+            "kanji": "日",
+            "englishMeanings": [
+                "Day",
+                "sun"
+            ],
+            "onyomy": [
+                "nichi",
+                "jitsu"
+            ],
+            "kunyomi": [
+                "hi",
+                "ka"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "明日",
+                "englishMeanings": [
+                    "tomorrow"
+                ]
+            }]
+        },
+        {
+            "kanji": "週",
+            "englishMeanings": [
+                "Week"
+            ],
+            "onyomy": [
+                "shuu"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "毎週",
+                "englishMeanings": [
+                    "every week"
+                ]
+            }]
+        },
+        {
+            "kanji": "月",
+            "englishMeanings": [
+                "Month",
+                "moon"
+            ],
+            "onyomy": [
+                "getsu",
+                "gatsu"
+            ],
+            "kunyomi": [
+                "tsuki"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "月曜日",
+                "englishMeanings": [
+                    "Monday"
+                ]
+            }]
+        },
+        {
+            "kanji": "年",
+            "englishMeanings": [
+                "Year"
+            ],
+            "onyomy": [
+                "nen"
+            ],
+            "kunyomi": [
+                "toshi"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "今年",
+                "englishMeanings": [
+                    "this year"
+                ]
+            },
+            {
+                "word": "去年 ",
+                "englishMeanings": [
+                    "last year"
+                ]
+            }]
+        },
+        {
+            "kanji": "時",
+            "englishMeanings": [
+                "Time",
+                "hour"
+            ],
+            "onyomy": [
+                "ji"
+            ],
+            "kunyomi": [
+                "toki"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "時計",
+                "englishMeanings": [
+                    "clock",
+                    "watch"
+                ]
+            }]
+        },
+        {
+            "kanji": "間",
+            "englishMeanings": [
+                "Time frame",
+                "span of time"
+            ],
+            "onyomy": [
+                "kan",
+                "ken"
+            ],
+            "kunyomi": [
+                "aida"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "時間",
+                "englishMeanings": [
+                    "time",
+                    "hours"
+                ]
+            }]
+        },
+        {
+            "kanji": "分",
+            "englishMeanings": [
+                "Minute",
+                "part",
+                "to understand",
+                "to divide"
+            ],
+            "onyomy": [
+                "bun",
+                "bu",
+                "fun"
+            ],
+            "kunyomi": [
+                "wa(karu)"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "三十分",
+                "englishMeanings": [
+                    "thirty minutes"
+                ]
+            },
+            {
+                "word": "自分",
+                "englishMeanings": [
+                    "oneself"
                 ]
             }]
         }

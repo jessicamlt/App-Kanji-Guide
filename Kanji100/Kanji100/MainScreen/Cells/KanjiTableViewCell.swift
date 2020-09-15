@@ -39,7 +39,7 @@ class KanjiTableViewCell: UITableViewCell {
             examples.append(word.examples)
         }
         
-        examplesLabel.text = examples.joined(separator: " ")
+        examplesLabel.text = examples.joined(separator: ", ")
 
     }
     
