@@ -89,7 +89,7 @@
                                                     <constraint firstAttribute="width" constant="2" id="Jot-LC-Wq0"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jo2-tb-quz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Examples" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jo2-tb-quz">
                                                 <rect key="frame" x="7" y="0.0" width="173.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -139,6 +139,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="englishMeaningLabel" destination="yxf-O9-Tm2" id="7l6-kV-EB0"/>
+                <outlet property="examplesLabel" destination="Jo2-tb-quz" id="wRa-kB-U9S"/>
+                <outlet property="kanjiLabel" destination="W2O-HC-ThA" id="9ba-ef-tHf"/>
+                <outlet property="kunyomiReadLabel" destination="8ly-jr-BZv" id="BDH-ka-0SG"/>
+                <outlet property="onyomyReadLabel" destination="k6Z-9a-SYX" id="XQG-86-bgO"/>
+            </connections>
             <point key="canvasLocation" x="159.42028985507247" y="261.16071428571428"/>
         </tableViewCell>
     </objects>

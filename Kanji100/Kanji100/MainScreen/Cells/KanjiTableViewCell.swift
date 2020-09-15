@@ -9,6 +9,13 @@
 import UIKit
 
 class KanjiTableViewCell: UITableViewCell {
+    
+    @IBOutlet var kanjiLabel: UILabel!
+    @IBOutlet var englishMeaningLabel: UILabel!
+    @IBOutlet var onyomyReadLabel: UILabel!
+    @IBOutlet var kunyomiReadLabel: UILabel!
+    @IBOutlet var examplesLabel: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
