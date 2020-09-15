@@ -21,6 +21,7 @@
 		767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFC625100FE0005CF533 /* KanjiTableViewCell.swift */; };
 		767EAFC925100FE0005CF533 /* KanjiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFC725100FE0005CF533 /* KanjiTableViewCell.xib */; };
 		767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */; };
+		767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFCD25104326005CF533 /* KanjisRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		767EAFC625100FE0005CF533 /* KanjiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiTableViewCell.swift; sourceTree = "<group>"; };
 		767EAFC725100FE0005CF533 /* KanjiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KanjiTableViewCell.xib; sourceTree = "<group>"; };
 		767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AiharaHudemojiKaisho3.00.ttf; sourceTree = "<group>"; };
+		767EAFCD25104326005CF533 /* KanjisRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjisRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				767EAFA7250FE043005CF533 /*  Kanjis.swift */,
 				767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */,
+				767EAFCD25104326005CF533 /* KanjisRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				767EAFA8250FE043005CF533 /*  Kanjis.swift in Sources */,
 				767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */,
 				767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */,
+				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,
 				767EAF98250FDD4E005CF533 /* ViewController.swift in Sources */,
 				767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */,
 			);
