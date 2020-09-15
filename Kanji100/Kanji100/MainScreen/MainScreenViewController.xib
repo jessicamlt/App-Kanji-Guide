@@ -9,38 +9,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreenViewController" customModule="Kanji100" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="NR3-W1-sri" id="0e2-dX-gT8"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="tableView" destination="1wo-MG-gme" id="Ylg-ed-DDl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="WAh-Es-1BK"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1wo-MG-gme">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="110"/>
+            <constraints>
+                <constraint firstItem="1wo-MG-gme" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9Al-84-BsR"/>
+                <constraint firstItem="1wo-MG-gme" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="FTE-ly-ta6"/>
+                <constraint firstAttribute="bottom" secondItem="1wo-MG-gme" secondAttribute="bottom" id="S7r-K4-qnL"/>
+                <constraint firstItem="1wo-MG-gme" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qWq-q3-LJn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="231.8840579710145" y="209.59821428571428"/>
         </view>
-        <viewController id="zIQ-1V-oeS" customClass="MainScreenViewController" customModule="Kanji100" customModuleProvider="target">
-            <view key="view" contentMode="scaleToFill" id="GXp-Au-OhI">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NR3-W1-sri">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </tableView>
-                </subviews>
-                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="NR3-W1-sri" secondAttribute="bottom" id="3b9-Fv-9iy"/>
-                    <constraint firstItem="NR3-W1-sri" firstAttribute="leading" secondItem="dDB-fF-hCY" secondAttribute="leading" id="Mzk-tS-rOO"/>
-                    <constraint firstItem="NR3-W1-sri" firstAttribute="trailing" secondItem="dDB-fF-hCY" secondAttribute="trailing" id="efy-hK-d0G"/>
-                    <constraint firstItem="NR3-W1-sri" firstAttribute="top" secondItem="GXp-Au-OhI" secondAttribute="top" id="gCq-K1-CDR"/>
-                </constraints>
-                <viewLayoutGuide key="safeArea" id="dDB-fF-hCY"/>
-            </view>
-            <point key="canvasLocation" x="44.927536231884062" y="-77.008928571428569"/>
-        </viewController>
     </objects>
 </document>

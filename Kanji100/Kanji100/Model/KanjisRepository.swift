@@ -11,7 +11,7 @@ import Foundation
 class KanjisRepository {
     
     func getData() -> Data {
-        guard let url = Bundle.main.url(forResource: "jlptn5Kanjis", withExtension: "json") else {
+        guard let url = Bundle.main.url(forResource: "jlptn5Kanjis.json", withExtension: nil) else {
             fatalError("File not found")
         }
         

@@ -12,15 +12,23 @@ class MainScreenViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
+    
     var kanjisRepository = KanjisRepository()
-    var kanjis: [Kanji] = []
+    var kanjis: Kanjis!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.dataSource = self
-        kanjisRepository.convertJSON()
         
+        setupTableView()
+        kanjis = kanjisRepository.convertJSON()
+        tableView.reloadData()
+        
+    }
+    
+    func setupTableView() {
+        let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "cell")
+        tableView.dataSource = self
     }
 
 }
@@ -31,7 +39,7 @@ extension MainScreenViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return kanjis.count
+        return kanjis.kanjiList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,7 +47,7 @@ extension MainScreenViewController: UITableViewDataSource {
             fatalError("Cell not found")
         }
         
-        cell.kanji = kanjis[indexPath.row]
+        cell.kanji = kanjis.kanjiList[indexPath.row]
         cell.fillCell()
         
         return cell

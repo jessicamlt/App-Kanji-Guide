@@ -9,7 +9,7 @@
 import Foundation
 
 struct Kanjis: Decodable {
-    var kanjis: [Kanji]
+    var kanjiList: [Kanji]
 }
 
 struct Kanji: Decodable {
