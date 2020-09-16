@@ -29,11 +29,11 @@ class KanjiTableViewCell: UITableViewCell {
     
     func fillCell(kanji: Kanji) {
         kanjiLabel.text = kanji.kanji
-        englishMeaningLabel.text = kanji.englishMeanings?.joined(separator: ", ")
-        onyomyReadLabel.text = kanji.onyomy?.joined(separator: " / ")
-        kunyomiReadLabel.text = kanji.kunyomi?.joined(separator: " / ")
+        englishMeaningLabel.text = kanji.englishMeanings.joined(separator: ", ")
+        onyomyReadLabel.text = kanji.onyomy.joined(separator: " / ")
+        kunyomiReadLabel.text = kanji.kunyomi.joined(separator: " / ")
         
-        let examplesCollection = kanji.examples ?? []
+        let examplesCollection = kanji.examples
         var examples: [String] = []
         for word in examplesCollection {
             examples.append(word.examples)

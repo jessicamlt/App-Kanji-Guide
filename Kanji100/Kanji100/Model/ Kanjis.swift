@@ -13,22 +13,44 @@ struct Kanjis: Decodable {
 }
 
 struct Kanji: Decodable {
-    var kanji: String?
-    var englishMeanings: [String]?
-    var onyomy: [String]?
-    var kunyomi: [String]?
+    var kanji: String
+    var englishMeanings: [String]
+    var onyomy: [String]
+    var kunyomi: [String]
     var category: String
-    var examples: [Word]?
+    var examples: [Word]
+    
+    func hasWord(_ word: String) -> Bool{
+        if kanji.contains(word) {
+            return true
+        } else if (englishMeanings.joined(separator: " ")).contains(word) {
+            return true
+        } else if (onyomy.joined(separator: " ")).contains(word) {
+            return true
+        } else if (kunyomi.joined(separator: " ")).contains(word) {
+            return true
+        } else if category.contains(word) {
+            return true
+        }
+        return false
+    }
 }
 
 struct Word: Decodable {
-    var word: String?
-    var englishMeanings: [String]?
+    var word: String
+    var englishMeanings: [String]
     
     var examples: String {
-        let meanings = englishMeanings ?? []
-        return "\(word ?? "") (\(meanings.joined(separator: " / ")))"
+        let meanings = englishMeanings
+        return "\(word) (\(meanings.joined(separator: " / ")))"
     }
-        
+    
+    func hasWord(_ word: String) -> Bool {
+        if examples.contains(word) {
+            return true
+        }
+        return false
+    }
+
 }
 
