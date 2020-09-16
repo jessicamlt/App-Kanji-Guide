@@ -444,6 +444,1738 @@
                     "oneself"
                 ]
             }]
+        },
+        {
+            "kanji": "午",
+            "englishMeanings": [
+                "Noon"
+            ],
+            "onyomy": [
+                "go"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "午前",
+                "englishMeanings": [
+                    "morning",
+                    "A.M."
+                ]
+            }]
+        },
+        {
+            "kanji": "前",
+            "englishMeanings": [
+                "Before"
+            ],
+            "onyomy": [
+                "zen"
+            ],
+            "kunyomi": [
+                "mae"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "名前",
+                "englishMeanings": [
+                    "namae"
+                ]
+            }]
+        },
+        {
+            "kanji": "後",
+            "englishMeanings": [
+                "After",
+                "later",
+                "behind"
+            ],
+            "onyomy": [
+                "go",
+                "kou"
+            ],
+            "kunyomi": [
+                "ato"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "午後",
+                "englishMeanings": [
+                    "afternoon",
+                    "P.M."
+                ]
+            }]
+        },
+        {
+            "kanji": "今",
+            "englishMeanings": [
+                "Now"
+            ],
+            "onyomy": [
+                "kon",
+                "kin"
+            ],
+            "kunyomi": [
+                "ima"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "今晩 ",
+                "englishMeanings": [
+                    "this evening"
+                ]
+            },
+            {
+                "word": "今朝 ",
+                "englishMeanings": [
+                    "this morning"
+                ]
+            }]
+        },
+        {
+            "kanji": "先",
+            "englishMeanings": [
+                "Before",
+                "ahead",
+                "future"
+            ],
+            "onyomy": [
+                "sen"
+            ],
+            "kunyomi": [
+                "saki"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "先週",
+                "englishMeanings": [
+                    "last week"
+                ]
+            },
+            {
+                "word": "先生",
+                "englishMeanings": [
+                    "teacher",
+                    "master"
+                ]
+            }]
+        },
+        {
+            "kanji": "来",
+            "englishMeanings": [
+                "To come"
+            ],
+            "onyomy": [
+                "rai"
+            ],
+            "kunyomi": [
+                "ku(ru)"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "来月",
+                "englishMeanings": [
+                    "next month"
+                ]
+            },
+            {
+                "word": "来る",
+                "englishMeanings": [
+                    "to come"
+                ]
+            }]
+        },
+        {
+            "kanji": "半",
+            "englishMeanings": [
+                "Half",
+                "middle"
+            ],
+            "onyomy": [
+                "han"
+            ],
+            "kunyomi": [
+                "naka(ba)"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "半分",
+                "englishMeanings": [
+                    "half"
+                ]
+            }]
+        },
+        {
+            "kanji": "毎",
+            "englishMeanings": [
+                "Every",
+                "each"
+            ],
+            "onyomy": [
+                "mai"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "毎日",
+                "englishMeanings": [
+                    "every day"
+                ]
+            }]
+        },
+        {
+            "kanji": "何",
+            "englishMeanings": [
+                "What",
+                "which",
+                "how many"
+            ],
+            "onyomy": [
+                "ka"
+            ],
+            "kunyomi": [
+                "nan",
+                "nani"
+            ],
+            "category": "Time",
+            "examples": [{
+                "word": "何曜日",
+                "englishMeanings": [
+                    "what day of the week"
+                ]
+            }]
+        },
+        {
+            "kanji": "人",
+            "englishMeanings": [
+                "Person"
+            ],
+            "onyomy": [
+                "jin",
+                "nin"
+            ],
+            "kunyomi": [
+                "hito"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "人々",
+                "englishMeanings": [
+                    "people"
+                ]
+            }]
+        },
+        {
+            "kanji": "男",
+            "englishMeanings": [
+                "Man",
+                "boy",
+                "male"
+            ],
+            "onyomy": [
+                "dan",
+                "nan"
+            ],
+            "kunyomi": [
+                "otoko"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "男の子",
+                "englishMeanings": [
+                    "boy"
+                ]
+            }]
+        },
+        {
+            "kanji": "女",
+            "englishMeanings": [
+                "Woman",
+                "girl",
+                "female"
+            ],
+            "onyomy": [
+                "jo",
+                "nyo"
+            ],
+            "kunyomi": [
+                "onna",
+                "me"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "女の子",
+                "englishMeanings": [
+                    "girl"
+                ]
+            }]
+        },
+        {
+            "kanji": "子",
+            "englishMeanings": [
+                "Child"
+            ],
+            "onyomy": [
+                "shi",
+                "su"
+            ],
+            "kunyomi": [
+                "ko"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "子供",
+                "englishMeanings": [
+                    "child"
+                ]
+            }]
+        },
+        {
+            "kanji": "母",
+            "englishMeanings": [
+                "Mother"
+            ],
+            "onyomy": [
+                "bo"
+            ],
+            "kunyomi": [
+                "haha"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "母",
+                "englishMeanings": [
+                    "mother"
+                ]
+            }]
+        },
+        {
+            "kanji": "父",
+            "englishMeanings": [
+                "Father"
+            ],
+            "onyomy": [
+                "fu"
+            ],
+            "kunyomi": [
+                "chichi"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "父",
+                "englishMeanings": [
+                    "father"
+                ]
+            }]
+        },
+        {
+            "kanji": "友",
+            "englishMeanings": [
+                "Friend"
+            ],
+            "onyomy": [
+                "yuu"
+            ],
+            "kunyomi": [
+                "tomo"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "友達",
+                "englishMeanings": [
+                    "friend"
+                ]
+            }]
+        },
+        {
+            "kanji": "火",
+            "englishMeanings": [
+                "Fire"
+            ],
+            "onyomy": [
+                "ka"
+            ],
+            "kunyomi": [
+                "hi"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "火曜日",
+                "englishMeanings": [
+                    "Tuesday"
+                ]
+            }]
+        },
+        {
+            "kanji": "水",
+            "englishMeanings": [
+                "Water"
+            ],
+            "onyomy": [
+                "sui"
+            ],
+            "kunyomi": [
+                "mizu"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "水曜日",
+                "englishMeanings": [
+                    "Wednesday"
+                ]
+            }]
+        },
+        {
+            "kanji": "木",
+            "englishMeanings": [
+                "Tree",
+                "wood"
+            ],
+            "onyomy": [
+                "moku",
+                "boku"
+            ],
+            "kunyomi": [
+                "ki",
+                "ko"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "木曜日",
+                "englishMeanings": [
+                    "Thursday"
+                ]
+            }]
+        },
+        {
+            "kanji": "土",
+            "englishMeanings": [
+                "Earth",
+                "ground"
+            ],
+            "onyomy": [
+                "do",
+                "to"
+            ],
+            "kunyomi": [
+                "tsuchi"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "土曜日",
+                "englishMeanings": [
+                    "Saturday"
+                ]
+            }]
+        },
+        {
+            "kanji": "金",
+            "englishMeanings": [
+                "Money",
+                "gold"
+            ],
+            "onyomy": [
+                "kin",
+                "kon"
+            ],
+            "kunyomi": [
+                "kane"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "金曜日",
+                "englishMeanings": [
+                    "Friday"
+                ]
+            }]
+        },
+        {
+            "kanji": "本",
+            "englishMeanings": [
+                "Book",
+                "source"
+            ],
+            "onyomy": [
+                "hon"
+            ],
+            "kunyomi": [
+                "moto"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "日本語",
+                "englishMeanings": [
+                    "Japanese"
+                ]
+            }]
+        },
+        {
+            "kanji": "川",
+            "englishMeanings": [
+                "River"
+            ],
+            "onyomy": [
+                "sen"
+            ],
+            "kunyomi": [
+                "kawa"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "川",
+                "englishMeanings": [
+                    "river"
+                ]
+            }]
+        },
+        {
+            "kanji": "花",
+            "englishMeanings": [
+                "Flower"
+            ],
+            "onyomy": [
+                "ka"
+            ],
+            "kunyomi": [
+                "hana"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "花火",
+                "englishMeanings": [
+                    "fireworks"
+                ]
+            }]
+        },
+        {
+            "kanji": "気",
+            "englishMeanings": [
+                "Spirit"
+            ],
+            "onyomy": [
+                "ki",
+                "ke"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "元気",
+                "englishMeanings": [
+                    "healthy",
+                    "spirit",
+                    "fine"
+                ]
+            }]
+        },
+        {
+            "kanji": "生",
+            "englishMeanings": [
+                "Life",
+                "to live",
+                "to be born",
+                "to grow"
+            ],
+            "onyomy": [
+                "sei",
+                "shou"
+            ],
+            "kunyomi": [
+                "i(kuru)",
+                "u(mareru)",
+                "ha(yasu)"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "生徒",
+                "englishMeanings": [
+                    "pupil"
+                ]
+            }]
+        },
+        {
+            "kanji": "魚",
+            "englishMeanings": [
+                "Fish"
+            ],
+            "onyomy": [
+                "gyo"
+            ],
+            "kunyomi": [
+                "sakana"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "魚",
+                "englishMeanings": [
+                    "fish"
+                ]
+            }]
+        },
+        {
+            "kanji": "天",
+            "englishMeanings": [
+                "Heaven"
+            ],
+            "onyomy": [
+                "ten"
+            ],
+            "kunyomi": [
+                "ame",
+                "ama"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "天気",
+                "englishMeanings": [
+                    "weather"
+                ]
+            }]
+        },
+        {
+            "kanji": "空",
+            "englishMeanings": [
+                "Sky",
+                "empty"
+            ],
+            "onyomy": [
+                "kuu"
+            ],
+            "kunyomi": [
+                "sora",
+                "a(keru)"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "空",
+                "englishMeanings": [
+                    "sky"
+                ]
+            }]
+        },
+        {
+            "kanji": "山",
+            "englishMeanings": [
+                "Mountain"
+            ],
+            "onyomy": [
+                "san"
+            ],
+            "kunyomi": [
+                "yama"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "山",
+                "englishMeanings": [
+                    "mountain"
+                ]
+            }]
+        },
+        {
+            "kanji": "雨",
+            "englishMeanings": [
+                "Rain"
+            ],
+            "onyomy": [
+                "u"
+            ],
+            "kunyomi": [
+                "ame"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "雨",
+                "englishMeanings": [
+                    "rain"
+                ]
+            }]
+        },
+        {
+            "kanji": "電",
+            "englishMeanings": [
+                "Eletricity"
+            ],
+            "onyomy": [
+                "den"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "電",
+                "englishMeanings": [
+                    "eletricity"
+                ]
+            }]
+        },
+        {
+            "kanji": "車",
+            "englishMeanings": [
+                "Car",
+                "vehicle"
+            ],
+            "onyomy": [
+                "sha"
+            ],
+            "kunyomi": [
+                "kuruma"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "電車",
+                "englishMeanings": [
+                    "eletric train"
+                ]
+            }]
+        },
+        {
+            "kanji": "語",
+            "englishMeanings": [
+                "Language",
+                "word",
+                "to chat"
+            ],
+            "onyomy": [
+                "go"
+            ],
+            "kunyomi": [
+                "kata(ru)"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "英語",
+                "englishMeanings": [
+                    "English"
+                ]
+            }]
+        },
+        {
+            "kanji": "耳",
+            "englishMeanings": [
+                "Ear"
+            ],
+            "onyomy": [
+                "ji"
+            ],
+            "kunyomi": [
+                "mimi"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "耳",
+                "englishMeanings": [
+                    "ear"
+                ]
+            }]
+        },
+        {
+            "kanji": "手",
+            "englishMeanings": [
+                "Hand"
+            ],
+            "onyomy": [
+                "shu"
+            ],
+            "kunyomi": [
+                "te"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "手紙",
+                "englishMeanings": [
+                    "letter"
+                ]
+            }]
+        },
+        {
+            "kanji": "足",
+            "englishMeanings": [
+                "Foot",
+                "to add"
+            ],
+            "onyomy": [
+                "soku"
+            ],
+            "kunyomi": [
+                "ashi",
+                "ta(su)"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "足",
+                "englishMeanings": [
+                    "foot"
+                ]
+            }]
+        },
+        {
+            "kanji": "目",
+            "englishMeanings": [
+                "Eye"
+            ],
+            "onyomy": [
+                "moku"
+            ],
+            "kunyomi": [
+                "me"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "目",
+                "englishMeanings": [
+                    "eye"
+                ]
+            }]
+        },
+        {
+            "kanji": "口",
+            "englishMeanings": [
+                "Mouth"
+            ],
+            "onyomy": [
+                "kou",
+                "ku"
+            ],
+            "kunyomi": [
+                "kuchi"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "出口",
+                "englishMeanings": [
+                    "exit"
+                ]
+            }]
+        },
+        {
+            "kanji": "名",
+            "englishMeanings": [
+                "Name"
+            ],
+            "onyomy": [
+                "mei",
+                "myou"
+            ],
+            "kunyomi": [
+                "na"
+            ],
+            "category": "People and Things",
+            "examples": [{
+                "word": "名前",
+                "englishMeanings": [
+                    "name"
+                ]
+            }]
+        },
+        {
+            "kanji": "店",
+            "englishMeanings": [
+                "Shop"
+            ],
+            "onyomy": [
+                "ten"
+            ],
+            "kunyomi": [
+                "mise"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "喫茶店",
+                "englishMeanings": [
+                    "coffee shop"
+                ]
+            }]
+        },
+        {
+            "kanji": "駅",
+            "englishMeanings": [
+                "Station"
+            ],
+            "onyomy": [
+                "eki"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "駅前",
+                "englishMeanings": [
+                    "in front of the station"
+                ]
+            }]
+        },
+        {
+            "kanji": "道",
+            "englishMeanings": [
+                "Street",
+                "path",
+                "way"
+            ],
+            "onyomy": [
+                "dou"
+            ],
+            "kunyomi": [
+                "michi"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "道具",
+                "englishMeanings": [
+                    "tool"
+                ]
+            }]
+        },
+        {
+            "kanji": "社",
+            "englishMeanings": [
+                "Shrine",
+                "socity"
+            ],
+            "onyomy": [
+                "sha"
+            ],
+            "kunyomi": [
+                "yashiro"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "社長",
+                "englishMeanings": [
+                    "president of a company"
+                ]
+            }]
+        },
+        {
+            "kanji": "国",
+            "englishMeanings": [
+                "Country"
+            ],
+            "onyomy": [
+                "koku"
+            ],
+            "kunyomi": [
+                "kuni"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "外国人",
+                "englishMeanings": [
+                    "foreigner"
+                ]
+            }]
+        },
+        {
+            "kanji": "外",
+            "englishMeanings": [
+                "Outside"
+            ],
+            "onyomy": [
+                "gai",
+                "ge"
+            ],
+            "kunyomi": [
+                "soto",
+                "hazu(reru)",
+                "hoka"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "外国",
+                "englishMeanings": [
+                    "foreigner country"
+                ]
+            }]
+        },
+        {
+            "kanji": "学",
+            "englishMeanings": [
+                "School",
+                "learning"
+            ],
+            "onyomy": [
+                "gaku"
+            ],
+            "kunyomi": [
+                "mana(bu)"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "大学",
+                "englishMeanings": [
+                    "university"
+                ]
+            }]
+        },
+        {
+            "kanji": "校",
+            "englishMeanings": [
+                "School"
+            ],
+            "onyomy": [
+                "kou"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "学校",
+                "englishMeanings": [
+                    "school"
+                ]
+            }]
+        },
+        {
+            "kanji": "校",
+            "englishMeanings": [
+                "School"
+            ],
+            "onyomy": [
+                "kou"
+            ],
+            "kunyomi": [
+                "-"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "学校",
+                "englishMeanings": [
+                    "school"
+                ]
+            }]
+        },
+        {
+            "kanji": "上",
+            "englishMeanings": [
+                "Up",
+                "above"
+            ],
+            "onyomy": [
+                "shou",
+                "jou"
+            ],
+            "kunyomi": [
+                "ue",
+                "u",
+                "a(geru)"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "上着",
+                "englishMeanings": [
+                    "jacket"
+                ]
+            }]
+        },
+        {
+            "kanji": "下",
+            "englishMeanings": [
+                "Down",
+                "below"
+            ],
+            "onyomy": [
+                "ka",
+                "ge"
+            ],
+            "kunyomi": [
+                "ku(daru)",
+                "shita"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "靴下",
+                "englishMeanings": [
+                    "socks"
+                ]
+            }]
+        },
+        {
+            "kanji": "中",
+            "englishMeanings": [
+                "Middle",
+                "center",
+                "inner",
+                "between"
+            ],
+            "onyomy": [
+                "chuu"
+            ],
+            "kunyomi": [
+                "naka"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "日中",
+                "englishMeanings": [
+                    "during the day",
+                    "midday"
+                ]
+            }]
+        },
+        {
+            "kanji": "北",
+            "englishMeanings": [
+                "North"
+            ],
+            "onyomy": [
+                "hoku"
+            ],
+            "kunyomi": [
+                "kita"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "北",
+                "englishMeanings": [
+                    "north"
+                ]
+            }]
+        },
+        {
+            "kanji": "西",
+            "englishMeanings": [
+                "West"
+            ],
+            "onyomy": [
+                "sai",
+                "sei"
+            ],
+            "kunyomi": [
+                "nishi"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "西",
+                "englishMeanings": [
+                    "west"
+                ]
+            }]
+        },
+        {
+            "kanji": "東",
+            "englishMeanings": [
+                "East"
+            ],
+            "onyomy": [
+                "tou"
+            ],
+            "kunyomi": [
+                "higashi"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "東京",
+                "englishMeanings": [
+                    "Tokyo"
+                ]
+            }]
+        },
+        {
+            "kanji": "南",
+            "englishMeanings": [
+                "South"
+            ],
+            "onyomy": [
+                "nan"
+            ],
+            "kunyomi": [
+                "minami"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "南",
+                "englishMeanings": [
+                    "south"
+                ]
+            }]
+        },
+        {
+            "kanji": "右",
+            "englishMeanings": [
+                "Right"
+            ],
+            "onyomy": [
+                "yuu"
+            ],
+            "kunyomi": [
+                "migi"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "右",
+                "englishMeanings": [
+                    "right"
+                ]
+            }]
+        },
+        {
+            "kanji": "左",
+            "englishMeanings": [
+                "Left"
+            ],
+            "onyomy": [
+                "sa"
+            ],
+            "kunyomi": [
+                "hidari"
+            ],
+            "category": "Places and Directions",
+            "examples": [{
+                "word": "左",
+                "englishMeanings": [
+                    "left"
+                ]
+            }]
+        },
+        {
+            "kanji": "見",
+            "englishMeanings": [
+                "To see",
+                "to be visible",
+                "to show"
+            ],
+            "onyomy": [
+                "ken"
+            ],
+            "kunyomi": [
+                "mi(ru)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "見せる",
+                "englishMeanings": [
+                    "to show"
+                ]
+            }]
+        },
+        {
+            "kanji": "聞",
+            "englishMeanings": [
+                "To hear",
+                "to listen",
+                "to ask"
+            ],
+            "onyomy": [
+                "mon",
+                "bun"
+            ],
+            "kunyomi": [
+                "ki(ku)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "聞く",
+                "englishMeanings": [
+                    "to listen",
+                    "to hear"
+                ]
+            }]
+        },
+        {
+            "kanji": "書",
+            "englishMeanings": [
+                "To write"
+            ],
+            "onyomy": [
+                "sho"
+            ],
+            "kunyomi": [
+                "ka(ku)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "辞書",
+                "englishMeanings": [
+                    "dictionary"
+                ]
+            }]
+        },
+        {
+            "kanji": "読",
+            "englishMeanings": [
+                "To read"
+            ],
+            "onyomy": [
+                "doku"
+            ],
+            "kunyomi": [
+                "yo(mu)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "読む",
+                "englishMeanings": [
+                    "to read"
+                ]
+            }]
+        },
+        {
+            "kanji": "話",
+            "englishMeanings": [
+                "To talk",
+                "conversation"
+            ],
+            "onyomy": [
+                "wa"
+            ],
+            "kunyomi": [
+                "hanashi",
+                "hana(su)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "電話",
+                "englishMeanings": [
+                    "telephone"
+                ]
+            }]
+        },
+        {
+            "kanji": "買",
+            "englishMeanings": [
+                "To buy"
+            ],
+            "onyomy": [
+                "bai"
+            ],
+            "kunyomi": [
+                "ka(u)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "買い物",
+                "englishMeanings": [
+                    "shopping"
+                ]
+            }]
+        },
+        {
+            "kanji": "行",
+            "englishMeanings": [
+                "To go",
+                "to carry out"
+            ],
+            "onyomy": [
+                "kou"
+            ],
+            "kunyomi": [
+                "i(ku)",
+                "okona(u)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "銀行",
+                "englishMeanings": [
+                    "bank"
+                ]
+            }]
+        },
+        {
+            "kanji": "出",
+            "englishMeanings": [
+                "To go out",
+                "to leave"
+            ],
+            "onyomy": [
+                "shutsu"
+            ],
+            "kunyomi": [
+                "de(ru)",
+                "da(su)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "出かける",
+                "englishMeanings": [
+                    "to go out"
+                ]
+            }]
+        },
+        {
+            "kanji": "入",
+            "englishMeanings": [
+                "To enter",
+                "to put in"
+            ],
+            "onyomy": [
+                "nyuu"
+            ],
+            "kunyomi": [
+                "hai(ru)",
+                "i(reru)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "入口",
+                "englishMeanings": [
+                    "entrance"
+                ]
+            }]
+        },
+        {
+            "kanji": "休",
+            "englishMeanings": [
+                "To rest",
+                "break",
+                "holiday",
+                "vacation"
+            ],
+            "onyomy": [
+                "kyuu"
+            ],
+            "kunyomi": [
+                "yasu(mu)",
+                "yasu(mi)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "休む",
+                "englishMeanings": [
+                    "to take a day off"
+                ]
+            }]
+        },
+        {
+            "kanji": "食",
+            "englishMeanings": [
+                "To eat",
+                "food"
+            ],
+            "onyomy": [
+                "shoku"
+            ],
+            "kunyomi": [
+                "ta(beru)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "食堂",
+                "englishMeanings": [
+                    "dining room"
+                ]
+            }]
+        },
+        {
+            "kanji": "飲",
+            "englishMeanings": [
+                "To drink",
+                "a drink"
+            ],
+            "onyomy": [
+                "in"
+            ],
+            "kunyomi": [
+                "no(mu)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "飲み物",
+                "englishMeanings": [
+                    "beverage"
+                ]
+            }]
+        },
+        {
+            "kanji": "言",
+            "englishMeanings": [
+                "To talk",
+                "word"
+            ],
+            "onyomy": [
+                "gen",
+                "gon"
+            ],
+            "kunyomi": [
+                "i(u)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "言う",
+                "englishMeanings": [
+                    "to say"
+                ]
+            }]
+        },
+        {
+            "kanji": "立",
+            "englishMeanings": [
+                "To stand"
+            ],
+            "onyomy": [
+                "ritsu"
+            ],
+            "kunyomi": [
+                "ta(tsu)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "立つ",
+                "englishMeanings": [
+                    "to stand"
+                ]
+            }]
+        },
+        {
+            "kanji": "会",
+            "englishMeanings": [
+                "To meet",
+                "society"
+            ],
+            "onyomy": [
+                "kai",
+                "e"
+            ],
+            "kunyomi": [
+                "a(u)"
+            ],
+            "category": "Verbs",
+            "examples": [{
+                "word": "会社",
+                "englishMeanings": [
+                    "company"
+                ]
+            }]
+        },
+        {
+            "kanji": "多",
+            "englishMeanings": [
+                "A lot",
+                "many"
+            ],
+            "onyomy": [
+                "ta"
+            ],
+            "kunyomi": [
+                "oo(i)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "多い",
+                "englishMeanings": [
+                    "many"
+                ]
+            },
+            {
+                "word": "多分",
+                "englishMeanings": [
+                    "probably"
+                ]
+            }]
+        },
+        {
+            "kanji": "少",
+            "englishMeanings": [
+                "A little",
+                "few"
+            ],
+            "onyomy": [
+                "shou"
+            ],
+            "kunyomi": [
+                "suko(shi)",
+                "suku(nai)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "少ない",
+                "englishMeanings": [
+                    "few"
+                ]
+            }]
+        },
+        {
+            "kanji": "古",
+            "englishMeanings": [
+                "Old"
+            ],
+            "onyomy": [
+                "ko"
+            ],
+            "kunyomi": [
+                "furu(i)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "古い",
+                "englishMeanings": [
+                    "old"
+                ]
+            }]
+        },
+        {
+            "kanji": "新",
+            "englishMeanings": [
+                "New"
+            ],
+            "onyomy": [
+                "shin"
+            ],
+            "kunyomi": [
+                "atara(shii)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "新しい",
+                "englishMeanings": [
+                    "new"
+                ]
+            },
+            {
+                "word": "新聞",
+                "englishMeanings": [
+                    "newspaper"
+                ]
+            }]
+        },
+        {
+            "kanji": "大",
+            "englishMeanings": [
+                "Big",
+                "a lot"
+            ],
+            "onyomy": [
+                "dai",
+                "tai"
+            ],
+            "kunyomi": [
+                "oo(kii)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "大きい",
+                "englishMeanings": [
+                    "big"
+                ]
+            },
+            {
+                "word": "大変",
+                "englishMeanings": [
+                    "dreadful",
+                    "immense"
+                ]
+            }]
+        },
+        {
+            "kanji": "小",
+            "englishMeanings": [
+                "Little",
+                "small"
+            ],
+            "onyomy": [
+                "shou"
+            ],
+            "kunyomi": [
+                "chii(sai)",
+                "ko"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "小さい",
+                "englishMeanings": [
+                    "little"
+                ]
+            }]
+        },
+        {
+            "kanji": "安",
+            "englishMeanings": [
+                "Cheap",
+                "safety",
+                "peace"
+            ],
+            "onyomy": [
+                "an"
+            ],
+            "kunyomi": [
+                "yasu(i)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "安い",
+                "englishMeanings": [
+                    "cheap"
+                ]
+            }]
+        },
+        {
+            "kanji": "高",
+            "englishMeanings": [
+                "Expensive",
+                "high"
+            ],
+            "onyomy": [
+                "kou"
+            ],
+            "kunyomi": [
+                "taka(i)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "高い",
+                "englishMeanings": [
+                    "expensive"
+                ]
+            }]
+        },
+        {
+            "kanji": "長",
+            "englishMeanings": [
+                "Long",
+                "leader"
+            ],
+            "onyomy": [
+                "chou"
+            ],
+            "kunyomi": [
+                "naga(i)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "長い",
+                "englishMeanings": [
+                    "long"
+                ]
+            },
+            {
+                "word": "部長",
+                "englishMeanings": [
+                    "manager"
+                ]
+            }]
+        },
+        {
+            "kanji": "白",
+            "englishMeanings": [
+                "White"
+            ],
+            "onyomy": [
+                "haku",
+                "byaku"
+            ],
+            "kunyomi": [
+                "shiro",
+                "shiro(i)"
+            ],
+            "category": "Adjectives",
+            "examples": [{
+                "word": "白い",
+                "englishMeanings": [
+                    "white"
+                ]
+            },
+            {
+                "word": "面白い",
+                "englishMeanings": [
+                    "interesting"
+                ]
+            }]
         }
     ]
 }
