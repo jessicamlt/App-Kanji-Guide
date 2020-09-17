@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76428B742513FBD000651F35 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B732513FBD000651F35 /* Word.swift */; };
+		76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B7B2513FC3F00651F35 /* Kanji.swift */; };
+		76428B812513FCBE00651F35 /* WordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B802513FCBD00651F35 /* WordTests.swift */; };
 		767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAF93250FDD4E005CF533 /* AppDelegate.swift */; };
 		767EAF98250FDD4E005CF533 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAF97250FDD4E005CF533 /* ViewController.swift */; };
 		767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767EAF9C250FDD4F005CF533 /* Assets.xcassets */; };
 		767EAFA0250FDD4F005CF533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */; };
-		767EAFA8250FE043005CF533 /*  Kanjis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFA7250FE043005CF533 /*  Kanjis.swift */; };
+		767EAFA8250FE043005CF533 /* Kanjis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFA7250FE043005CF533 /* Kanjis.swift */; };
 		767EAFAA250FE1FA005CF533 /* jlptn5Kanjis.json in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */; };
 		767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */; };
 		767EAFB8250FED83005CF533 /* Kanji100Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFB7250FED83005CF533 /* Kanji100Tests.swift */; };
@@ -35,13 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76428B732513FBD000651F35 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		76428B7B2513FC3F00651F35 /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
+		76428B802513FCBD00651F35 /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
 		767EAF90250FDD4E005CF533 /* Kanji100.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanji100.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767EAF93250FDD4E005CF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		767EAF97250FDD4E005CF533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		767EAF9C250FDD4F005CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767EAF9F250FDD4F005CF533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		767EAFA1250FDD4F005CF533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		767EAFA7250FE043005CF533 /*  Kanjis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Kanjis.swift"; sourceTree = "<group>"; };
+		767EAFA7250FE043005CF533 /* Kanjis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanjis.swift; sourceTree = "<group>"; };
 		767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jlptn5Kanjis.json; sourceTree = "<group>"; };
 		767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		767EAFB5250FED83005CF533 /* Kanji100Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kanji100Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76428B7F2513FC5200651F35 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				767EAFCD25104326005CF533 /* KanjisRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		767EAF87250FDD4E005CF533 = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +109,10 @@
 		767EAF92250FDD4E005CF533 /* Kanji100 */ = {
 			isa = PBXGroup;
 			children = (
-				767EAFCA25101F1E005CF533 /* Components */,
+				76428B7F2513FC5200651F35 /* Repository */,
+				767EAFCA25101F1E005CF533 /* Resources */,
 				767EAFB0250FECEA005CF533 /* MainScreen */,
-				767EAFAB250FE953005CF533 /* Model */,
+				767EAFAB250FE953005CF533 /* DataModels */,
 				767EAF93250FDD4E005CF533 /* AppDelegate.swift */,
 				767EAF97250FDD4E005CF533 /* ViewController.swift */,
 				767EAF9C250FDD4F005CF533 /* Assets.xcassets */,
@@ -107,14 +122,14 @@
 			path = Kanji100;
 			sourceTree = "<group>";
 		};
-		767EAFAB250FE953005CF533 /* Model */ = {
+		767EAFAB250FE953005CF533 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				767EAFA7250FE043005CF533 /*  Kanjis.swift */,
-				767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */,
-				767EAFCD25104326005CF533 /* KanjisRepository.swift */,
+				767EAFA7250FE043005CF533 /* Kanjis.swift */,
+				76428B7B2513FC3F00651F35 /* Kanji.swift */,
+				76428B732513FBD000651F35 /* Word.swift */,
 			);
-			path = Model;
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 		767EAFB0250FECEA005CF533 /* MainScreen */ = {
@@ -142,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				767EAFC0250FEDEA005CF533 /* KanjiTests.swift */,
+				76428B802513FCBD00651F35 /* WordTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,12 +179,13 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		767EAFCA25101F1E005CF533 /* Components */ = {
+		767EAFCA25101F1E005CF533 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */,
 				767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */,
 			);
-			path = Components;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				767EAFA8250FE043005CF533 /*  Kanjis.swift in Sources */,
+				767EAFA8250FE043005CF533 /* Kanjis.swift in Sources */,
+				76428B742513FBD000651F35 /* Word.swift in Sources */,
 				767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */,
+				76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */,
 				767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */,
 				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,
 				767EAF98250FDD4E005CF533 /* ViewController.swift in Sources */,
@@ -289,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				767EAFC4250FEE46005CF533 /* KanjiJson.swift in Sources */,
+				76428B812513FCBE00651F35 /* WordTests.swift in Sources */,
 				767EAFB8250FED83005CF533 /* Kanji100Tests.swift in Sources */,
 				767EAFC1250FEDEA005CF533 /* KanjiTests.swift in Sources */,
 			);
