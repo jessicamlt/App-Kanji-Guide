@@ -25,7 +25,7 @@
 		767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFCD25104326005CF533 /* KanjisRepository.swift */; };
 		767EAFD02511327F005CF533 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCF2511327F005CF533 /* MainScreenViewController.xib */; };
 		76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4C025140F990059C25B /* WordsFilter.swift */; };
-		76EBA4C5251414370059C25B /* WordsFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4C4251414370059C25B /* WordsFilterTests.swift */; };
+		76EBA4CB251424BC0059C25B /* WordsFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		767EAFCD25104326005CF533 /* KanjisRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjisRepository.swift; sourceTree = "<group>"; };
 		767EAFCF2511327F005CF533 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 		76EBA4C025140F990059C25B /* WordsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilter.swift; sourceTree = "<group>"; };
-		76EBA4C4251414370059C25B /* WordsFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilterTests.swift; sourceTree = "<group>"; };
+		76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				767EAFC0250FEDEA005CF533 /* KanjiTests.swift */,
+				76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */,
 				76428B802513FCBD00651F35 /* WordTests.swift */,
-				76EBA4C4251414370059C25B /* WordsFilterTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76EBA4C5251414370059C25B /* WordsFilterTests.swift in Sources */,
+				76EBA4CB251424BC0059C25B /* WordsFilterTests.swift in Sources */,
 				767EAFC4250FEE46005CF533 /* KanjiJson.swift in Sources */,
 				76428B812513FCBE00651F35 /* WordTests.swift in Sources */,
 				767EAFB8250FED83005CF533 /* Kanji100Tests.swift in Sources */,

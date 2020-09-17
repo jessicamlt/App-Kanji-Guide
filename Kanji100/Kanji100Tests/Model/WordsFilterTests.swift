@@ -11,27 +11,43 @@ import XCTest
 
 class WordsFilterTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
+    func testFilterWordsElement1() throws {
+        let kanjis = KanjiJson.objects
 
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func filterWordsTest() throws {
-        let kanji = KanjiJson.objects.kanjiList
-
+        let filter = WordsFilter(kanjis: kanjis)
         
+        XCTAssertEqual(filter.filter(searchedWord: "ichi").count, 1)
+        XCTAssertEqual(filter.filter(searchedWord: "ichi").first?.kanji, "一")
+        XCTAssertEqual(filter.filter(searchedWord: "一人").first?.kanji, "一")
+    }
+    
+    func testFilterWordsElement2() throws {
+        let kanjis = KanjiJson.objects
+
+        let filter = WordsFilter(kanjis: kanjis)
         
+        XCTAssertEqual(filter.filter(searchedWord: "ni").count, 1)
+        XCTAssertEqual(filter.filter(searchedWord: "ni").first?.kanji, "二")
+        XCTAssertEqual(filter.filter(searchedWord: "futa").first?.kanji, "二")
+    }
+    
+    func testFilterWordsAllElements() throws {
+        let kanjis = KanjiJson.objects
+
+        let filter = WordsFilter(kanjis: kanjis)
+        
+        XCTAssertEqual(filter.filter(searchedWord: "numbers").count, 2)
+        XCTAssertEqual((filter.filter(searchedWord: "numbers")).first?.kanji, "一")
+        XCTAssertEqual((filter.filter(searchedWord: "numbers")).last?.kanji, "二")
+    }
+    
+    func testFilterWordsNoElements() throws {
+        let kanjis = KanjiJson.objects
+
+        let filter = WordsFilter(kanjis: kanjis)
+        
+        XCTAssertEqual(filter.filter(searchedWord: "Four").count, 0)
     }
 
 }
