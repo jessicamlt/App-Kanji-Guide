@@ -23,8 +23,6 @@ class KanjiTests: XCTestCase {
     func testKanjiEncoding() throws {
         let kanjis = KanjiJson.objects
         
-        print(kanjis)
-        
         guard let kanji1 = kanjis.kanjiList.first else {
             XCTFail("Erro ao tentar localizar o primeiro Kanji do Array")
             return

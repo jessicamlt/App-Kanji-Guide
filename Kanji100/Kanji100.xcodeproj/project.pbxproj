@@ -11,7 +11,6 @@
 		76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B7B2513FC3F00651F35 /* Kanji.swift */; };
 		76428B812513FCBE00651F35 /* WordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B802513FCBD00651F35 /* WordTests.swift */; };
 		767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAF93250FDD4E005CF533 /* AppDelegate.swift */; };
-		767EAF98250FDD4E005CF533 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAF97250FDD4E005CF533 /* ViewController.swift */; };
 		767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767EAF9C250FDD4F005CF533 /* Assets.xcassets */; };
 		767EAFA0250FDD4F005CF533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */; };
 		767EAFA8250FE043005CF533 /* Kanjis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFA7250FE043005CF533 /* Kanjis.swift */; };
@@ -25,6 +24,8 @@
 		767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */; };
 		767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFCD25104326005CF533 /* KanjisRepository.swift */; };
 		767EAFD02511327F005CF533 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCF2511327F005CF533 /* MainScreenViewController.xib */; };
+		76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4C025140F990059C25B /* WordsFilter.swift */; };
+		76EBA4C5251414370059C25B /* WordsFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4C4251414370059C25B /* WordsFilterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 		76428B802513FCBD00651F35 /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
 		767EAF90250FDD4E005CF533 /* Kanji100.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanji100.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767EAF93250FDD4E005CF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		767EAF97250FDD4E005CF533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		767EAF9C250FDD4F005CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767EAF9F250FDD4F005CF533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		767EAFA1250FDD4F005CF533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AiharaHudemojiKaisho3.00.ttf; sourceTree = "<group>"; };
 		767EAFCD25104326005CF533 /* KanjisRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjisRepository.swift; sourceTree = "<group>"; };
 		767EAFCF2511327F005CF533 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
+		76EBA4C025140F990059C25B /* WordsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilter.swift; sourceTree = "<group>"; };
+		76EBA4C4251414370059C25B /* WordsFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +116,6 @@
 				767EAFB0250FECEA005CF533 /* MainScreen */,
 				767EAFAB250FE953005CF533 /* DataModels */,
 				767EAF93250FDD4E005CF533 /* AppDelegate.swift */,
-				767EAF97250FDD4E005CF533 /* ViewController.swift */,
 				767EAF9C250FDD4F005CF533 /* Assets.xcassets */,
 				767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */,
 				767EAFA1250FDD4F005CF533 /* Info.plist */,
@@ -128,6 +129,7 @@
 				767EAFA7250FE043005CF533 /* Kanjis.swift */,
 				76428B7B2513FC3F00651F35 /* Kanji.swift */,
 				76428B732513FBD000651F35 /* Word.swift */,
+				76EBA4C025140F990059C25B /* WordsFilter.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -158,6 +160,7 @@
 			children = (
 				767EAFC0250FEDEA005CF533 /* KanjiTests.swift */,
 				76428B802513FCBD00651F35 /* WordTests.swift */,
+				76EBA4C4251414370059C25B /* WordsFilterTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,12 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				767EAFA8250FE043005CF533 /* Kanjis.swift in Sources */,
+				76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */,
 				76428B742513FBD000651F35 /* Word.swift in Sources */,
 				767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */,
 				76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */,
 				767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */,
 				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,
-				767EAF98250FDD4E005CF533 /* ViewController.swift in Sources */,
 				767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EBA4C5251414370059C25B /* WordsFilterTests.swift in Sources */,
 				767EAFC4250FEE46005CF533 /* KanjiJson.swift in Sources */,
 				76428B812513FCBE00651F35 /* WordTests.swift in Sources */,
 				767EAFB8250FED83005CF533 /* Kanji100Tests.swift in Sources */,
