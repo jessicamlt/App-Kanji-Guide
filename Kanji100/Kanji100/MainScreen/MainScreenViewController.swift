@@ -17,7 +17,7 @@ class MainScreenViewController: UIViewController {
     let filter = WordsFilter(kanjis: KanjisRepository().convertJSON())
     
     var searchTerm: String? = ""
-    var searchWasCancelled = false
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,8 @@ class MainScreenViewController: UIViewController {
         searchController.searchBar.delegate = self
         searchController.delegate = self
         navigationItem.searchController = searchController
-        
+        searchController.searchBar.enablesReturnKeyAutomatically = false
+                
         searchWord(nil)
     }
     
@@ -71,13 +72,11 @@ extension MainScreenViewController: UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchTerm = searchBar.text ?? ""
-        
-        if searchBar.text == nil {
-            searchTerm = nil
-        }
-        
         searchWord(searchTerm)
+    
     }
+    
+    
 }
 
 extension MainScreenViewController: UISearchControllerDelegate {
