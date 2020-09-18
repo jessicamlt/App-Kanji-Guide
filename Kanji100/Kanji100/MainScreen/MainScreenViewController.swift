@@ -17,6 +17,7 @@ class MainScreenViewController: UIViewController {
     let filter = WordsFilter(kanjis: KanjisRepository().convertJSON())
     
     var searchTerm: String? = ""
+    var wordNotFound = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,14 +33,16 @@ class MainScreenViewController: UIViewController {
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
 
+
         searchWord(nil)
     }
     
 
     
     func setupTableView() {
-        let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "cell")
+        tableView.register(KanjiTableViewCell.nib, forCellReuseIdentifier: KanjiTableViewCell.identifier)
+        tableView.register(PlaceholderTableViewCell.nib, forCellReuseIdentifier: PlaceholderTableViewCell.identifier)
+        tableView.separatorStyle = .none
         tableView.dataSource = self
     }
     
@@ -62,24 +65,38 @@ extension MainScreenViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if kanjis.kanjiList.isEmpty {
+            wordNotFound = true
+            return 1
+        }
+        wordNotFound = false
         return kanjis.kanjiList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? KanjiTableViewCell else {
+        if wordNotFound {
+            return buildPlaceholderCell(tableView: tableView, indexPath: indexPath)
+            
+        }
+        return buildKanjiCell(tableView: tableView, indexPath: indexPath)
+
+    }
+    
+    func buildKanjiCell(tableView: UITableView, indexPath: IndexPath) -> KanjiTableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: KanjiTableViewCell.identifier, for: indexPath) as? KanjiTableViewCell else {
             fatalError("Cell not found")
         }
-        
         cell.fillCell(kanji: kanjis.kanjiList[indexPath.row])
-        
         return cell
     }
     
-    override var canBecomeFirstResponder: Bool {
-        return true
+    func buildPlaceholderCell(tableView: UITableView, indexPath: IndexPath) -> PlaceholderTableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PlaceholderTableViewCell.identifier, for: indexPath) as? PlaceholderTableViewCell else {
+            fatalError("Cell not found")
+        }
+        
+        return cell
     }
-    
-    
 }
 
 extension MainScreenViewController: UISearchBarDelegate {
@@ -88,6 +105,7 @@ extension MainScreenViewController: UISearchBarDelegate {
         searchTerm = searchBar.text ?? ""
         searchWord(searchTerm)
         searchController.dismiss(animated: true, completion: nil)
+
     }
     
 }

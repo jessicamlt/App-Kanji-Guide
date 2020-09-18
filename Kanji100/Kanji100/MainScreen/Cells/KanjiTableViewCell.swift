@@ -16,6 +16,8 @@ class KanjiTableViewCell: UITableViewCell {
     @IBOutlet var kunyomiReadLabel: UILabel!
     @IBOutlet var examplesLabel: UILabel!
     
+    static let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
+    static let identifier = "cell"
 
 
     override func awakeFromNib() {

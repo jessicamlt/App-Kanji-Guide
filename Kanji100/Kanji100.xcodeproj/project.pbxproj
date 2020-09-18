@@ -24,6 +24,8 @@
 		767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */; };
 		767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFCD25104326005CF533 /* KanjisRepository.swift */; };
 		767EAFD02511327F005CF533 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCF2511327F005CF533 /* MainScreenViewController.xib */; };
+		76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */; };
+		76A53E3A2515618A008DCAC6 /* PlaceholderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */; };
 		76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4C025140F990059C25B /* WordsFilter.swift */; };
 		76EBA4CB251424BC0059C25B /* WordsFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,8 @@
 		767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AiharaHudemojiKaisho3.00.ttf; sourceTree = "<group>"; };
 		767EAFCD25104326005CF533 /* KanjisRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjisRepository.swift; sourceTree = "<group>"; };
 		767EAFCF2511327F005CF533 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
+		76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
+		76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
 		76EBA4C025140F990059C25B /* WordsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilter.swift; sourceTree = "<group>"; };
 		76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +182,8 @@
 			children = (
 				767EAFC625100FE0005CF533 /* KanjiTableViewCell.swift */,
 				767EAFC725100FE0005CF533 /* KanjiTableViewCell.xib */,
+				76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */,
+				76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 				767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */,
 				767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */,
 				767EAFC925100FE0005CF533 /* KanjiTableViewCell.xib in Resources */,
+				76A53E3A2515618A008DCAC6 /* PlaceholderTableViewCell.xib in Resources */,
 				767EAFAA250FE1FA005CF533 /* jlptn5Kanjis.json in Resources */,
 				767EAFD02511327F005CF533 /* MainScreenViewController.xib in Resources */,
 			);
@@ -301,6 +308,7 @@
 				767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */,
 				76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */,
 				767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */,
+				76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */,
 				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,
 				767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */,
 			);
