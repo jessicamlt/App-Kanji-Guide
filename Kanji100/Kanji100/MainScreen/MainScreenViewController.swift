@@ -17,21 +17,20 @@ class MainScreenViewController: UIViewController {
     let filter = WordsFilter(kanjis: KanjisRepository().convertJSON())
     
     var searchTerm: String? = ""
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupTableView()
+    
         
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         searchController.delegate = self
-        navigationItem.searchController = searchController
         searchController.searchBar.enablesReturnKeyAutomatically = false
         searchController.searchBar.resignFirstResponder()
         searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
 
         searchWord(nil)
     }
@@ -47,6 +46,12 @@ class MainScreenViewController: UIViewController {
     func searchWord(_ word: String?) {
         kanjis.kanjiList = filter.filter(searchedWord: word ?? "")
         tableView.reloadData()
+        
+        guard let searchText = word, searchText.trimmingCharacters(in: .whitespaces).isEmpty == false else {
+            title = "All Kanjis"
+            return
+        }
+        title = searchText
     }
 
 }
@@ -83,7 +88,6 @@ extension MainScreenViewController: UISearchBarDelegate {
         searchTerm = searchBar.text ?? ""
         searchWord(searchTerm)
         searchController.dismiss(animated: true, completion: nil)
-
     }
     
 }
