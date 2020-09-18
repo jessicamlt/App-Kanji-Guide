@@ -17,6 +17,7 @@ class MainScreenViewController: UIViewController {
     let filter = WordsFilter(kanjis: KanjisRepository().convertJSON())
     
     var searchTerm: String? = ""
+    
 
 
     override func viewDidLoad() {
@@ -29,7 +30,9 @@ class MainScreenViewController: UIViewController {
         searchController.delegate = self
         navigationItem.searchController = searchController
         searchController.searchBar.enablesReturnKeyAutomatically = false
-                
+        searchController.searchBar.resignFirstResponder()
+        searchController.obscuresBackgroundDuringPresentation = false
+
         searchWord(nil)
     }
     
@@ -66,6 +69,12 @@ extension MainScreenViewController: UITableViewDataSource {
         
         return cell
     }
+    
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
+    
+    
 }
 
 extension MainScreenViewController: UISearchBarDelegate {
@@ -73,9 +82,9 @@ extension MainScreenViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchTerm = searchBar.text ?? ""
         searchWord(searchTerm)
-    
+        searchController.dismiss(animated: true, completion: nil)
+
     }
-    
     
 }
 
@@ -88,17 +97,12 @@ extension MainScreenViewController: UISearchControllerDelegate {
     func willPresentSearchController(_ searchController: UISearchController) {
         searchController.searchBar.text = searchTerm
     }
-    
-    
+
 }
 
 extension MainScreenViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
-//        searchController.searchBar.text = searchTerm
     }
-    
-    
-    
-    
+
 }
