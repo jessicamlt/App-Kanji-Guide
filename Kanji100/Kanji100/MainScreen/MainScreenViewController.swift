@@ -15,6 +15,9 @@ class MainScreenViewController: UIViewController {
     let searchController = UISearchController(searchResultsController: nil)
     var kanjis = Kanjis(kanjiList: [])
     let filter = WordsFilter(kanjis: KanjisRepository().convertJSON())
+    
+    var searchTerm: String? = ""
+    var searchWasCancelled = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +25,9 @@ class MainScreenViewController: UIViewController {
         setupTableView()
         
         searchController.searchResultsUpdater = self
-        navigationItem.searchController = searchController
         searchController.searchBar.delegate = self
+        searchController.delegate = self
+        navigationItem.searchController = searchController
         
         searchWord(nil)
     }
@@ -66,13 +70,33 @@ extension MainScreenViewController: UITableViewDataSource {
 extension MainScreenViewController: UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchWord(searchBar.text)
+        searchTerm = searchBar.text ?? ""
+        
+        if searchBar.text == nil {
+            searchTerm = nil
+        }
+        
+        searchWord(searchTerm)
     }
 }
 
-extension MainScreenViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
+extension MainScreenViewController: UISearchControllerDelegate {
+    
+    func didDismissSearchController(_ searchController: UISearchController) {
+        searchController.searchBar.text = searchTerm
+    }
+    
+    func willPresentSearchController(_ searchController: UISearchController) {
+        searchController.searchBar.text = searchTerm
+    }
+    
+    
+}
 
+extension MainScreenViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+//        searchController.searchBar.text = searchTerm
     }
     
     
