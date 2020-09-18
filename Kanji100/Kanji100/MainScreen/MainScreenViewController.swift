@@ -12,23 +12,33 @@ class MainScreenViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    
-    var kanjisRepository = KanjisRepository()
-    var kanjis: Kanjis!
+    let searchController = UISearchController(searchResultsController: nil)
+    var kanjis = Kanjis(kanjiList: [])
+    let filter = WordsFilter(kanjis: KanjisRepository().convertJSON())
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupTableView()
-        kanjis = kanjisRepository.convertJSON()
-        tableView.reloadData()
         
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+        searchController.searchBar.delegate = self
+        
+        searchWord(nil)
     }
+    
+
     
     func setupTableView() {
         let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
+    }
+    
+    func searchWord(_ word: String?) {
+        kanjis.kanjiList = filter.filter(searchedWord: word ?? "")
+        tableView.reloadData()
     }
 
 }
@@ -51,4 +61,21 @@ extension MainScreenViewController: UITableViewDataSource {
         
         return cell
     }
+}
+
+extension MainScreenViewController: UISearchBarDelegate {
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchWord(searchBar.text)
+    }
+}
+
+extension MainScreenViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+
+    }
+    
+    
+    
+    
 }
