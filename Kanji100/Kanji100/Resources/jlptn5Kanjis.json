@@ -1,6 +1,7 @@
 {
     "kanjiList": [
         {
+            "id": 1,
             "kanji": "一",
             "englishMeanings": [
                 "One"
@@ -23,6 +24,7 @@
             }]
         },
         {
+            "id": 2,
             "kanji": "二",
             "englishMeanings": [
                 "Two"
@@ -44,6 +46,7 @@
             }]
         },
         {
+            "id": 3,
             "kanji": "三",
             "englishMeanings": [
                 "Three"
@@ -64,6 +67,7 @@
             }]
         },
         {
+            "id": 4,
             "kanji": "四",
             "englishMeanings": [
                 "Four"
@@ -85,6 +89,7 @@
             }]
         },
         {
+            "id": 5,
             "kanji": "五",
             "englishMeanings": [
                 "Five"
@@ -105,6 +110,7 @@
             }]
         },
         {
+            "id": 6,
             "kanji": "六",
             "englishMeanings": [
                 "Six"
@@ -125,6 +131,7 @@
             }]
         },
         {
+            "id": 7,
             "kanji": "七",
             "englishMeanings": [
                 "Seven"
@@ -145,6 +152,7 @@
             }]
         },
         {
+            "id": 8,
             "kanji": "八",
             "englishMeanings": [
                 "Eight"
@@ -165,6 +173,7 @@
             }]
         },
         {
+            "id": 9,
             "kanji": "九",
             "englishMeanings": [
                 "Nine"
@@ -186,6 +195,7 @@
             }]
         },
         {
+            "id": 10,
             "kanji": "十",
             "englishMeanings": [
                 "Ten"
@@ -207,6 +217,7 @@
             }]
         },
         {
+            "id": 11,
             "kanji": "百",
             "englishMeanings": [
                 "Hundred"
@@ -226,6 +237,7 @@
             }]
         },
         {
+            "id": 12,
             "kanji": "千",
             "englishMeanings": [
                 "Thousand"
@@ -245,6 +257,7 @@
             }]
         },
         {
+            "id": 13,
             "kanji": "万",
             "englishMeanings": [
                 "Ten thousand"
@@ -265,6 +278,7 @@
             }]
         },
         {
+            "id": 14,
             "kanji": "円",
             "englishMeanings": [
                 "Yen",
@@ -286,6 +300,7 @@
             }]
         },
         {
+            "id": 17,
             "kanji": "日",
             "englishMeanings": [
                 "Day",
@@ -308,6 +323,7 @@
             }]
         },
         {
+            "id": 118,
             "kanji": "週",
             "englishMeanings": [
                 "Week"
@@ -327,6 +343,7 @@
             }]
         },
         {
+            "id": 16,
             "kanji": "月",
             "englishMeanings": [
                 "Month",
@@ -348,6 +365,7 @@
             }]
         },
         {
+            "id": 15,
             "kanji": "年",
             "englishMeanings": [
                 "Year"
@@ -373,6 +391,7 @@
             }]
         },
         {
+            "id": 19,
             "kanji": "時",
             "englishMeanings": [
                 "Time",
@@ -394,6 +413,7 @@
             }]
         },
         {
+            "id": 145,
             "kanji": "間",
             "englishMeanings": [
                 "Time frame",
@@ -416,6 +436,7 @@
             }]
         },
         {
+            "id": 20,
             "kanji": "分",
             "englishMeanings": [
                 "Minute",
@@ -446,6 +467,7 @@
             }]
         },
         {
+            "id": 33,
             "kanji": "午",
             "englishMeanings": [
                 "Noon"
@@ -466,6 +488,7 @@
             }]
         },
         {
+            "id": 31,
             "kanji": "前",
             "englishMeanings": [
                 "Before"
@@ -485,6 +508,7 @@
             }]
         },
         {
+            "id": 32,
             "kanji": "後",
             "englishMeanings": [
                 "After",
@@ -508,6 +532,7 @@
             }]
         },
         {
+            "id": 28,
             "kanji": "今",
             "englishMeanings": [
                 "Now"
@@ -534,6 +559,7 @@
             }]
         },
         {
+            "id": 120,
             "kanji": "先",
             "englishMeanings": [
                 "Before",
@@ -562,6 +588,7 @@
             }]
         },
         {
+            "id": 35,
             "kanji": "来",
             "englishMeanings": [
                 "To come"
@@ -587,6 +614,7 @@
             }]
         },
         {
+            "id": 30,
             "kanji": "半",
             "englishMeanings": [
                 "Half",
@@ -607,6 +635,7 @@
             }]
         },
         {
+            "id": 91,
             "kanji": "毎",
             "englishMeanings": [
                 "Every",
@@ -627,6 +656,7 @@
             }]
         },
         {
+            "id": 29,
             "kanji": "何",
             "englishMeanings": [
                 "What",
@@ -649,6 +679,7 @@
             }]
         },
         {
+            "id": 75,
             "kanji": "人",
             "englishMeanings": [
                 "Person"
@@ -669,6 +700,7 @@
             }]
         },
         {
+            "id": 175,
             "kanji": "男",
             "englishMeanings": [
                 "Man",
@@ -691,6 +723,7 @@
             }]
         },
         {
+            "id": 176,
             "kanji": "女",
             "englishMeanings": [
                 "Woman",
@@ -714,6 +747,7 @@
             }]
         },
         {
+            "id": 86,
             "kanji": "子",
             "englishMeanings": [
                 "Child"
@@ -734,6 +768,7 @@
             }]
         },
         {
+            "id": 82,
             "kanji": "母",
             "englishMeanings": [
                 "Mother"
@@ -753,6 +788,7 @@
             }]
         },
         {
+            "id": 83,
             "kanji": "父",
             "englishMeanings": [
                 "Father"
@@ -772,6 +808,7 @@
             }]
         },
         {
+            "id": 115,
             "kanji": "友",
             "englishMeanings": [
                 "Friend"
@@ -791,6 +828,7 @@
             }]
         },
         {
+            "id": 21,
             "kanji": "火",
             "englishMeanings": [
                 "Fire"
@@ -810,6 +848,7 @@
             }]
         },
         {
+            "id": 22,
             "kanji": "水",
             "englishMeanings": [
                 "Water"
@@ -829,6 +868,7 @@
             }]
         },
         {
+            "id": 23,
             "kanji": "木",
             "englishMeanings": [
                 "Tree",
@@ -851,6 +891,7 @@
             }]
         },
         {
+            "id": 25,
             "kanji": "土",
             "englishMeanings": [
                 "Earth",
@@ -872,6 +913,7 @@
             }]
         },
         {
+            "id": 24,
             "kanji": "金",
             "englishMeanings": [
                 "Money",
@@ -893,6 +935,7 @@
             }]
         },
         {
+            "id": 46,
             "kanji": "本",
             "englishMeanings": [
                 "Book",
@@ -913,6 +956,7 @@
             }]
         },
         {
+            "id": 234,
             "kanji": "川",
             "englishMeanings": [
                 "River"
@@ -932,6 +976,7 @@
             }]
         },
         {
+            "id": 54,
             "kanji": "花",
             "englishMeanings": [
                 "Flower"
@@ -951,6 +996,7 @@
             }]
         },
         {
+            "id": 114,
             "kanji": "気",
             "englishMeanings": [
                 "Spirit"
@@ -973,6 +1019,7 @@
             }]
         },
         {
+            "id": 77,
             "kanji": "生",
             "englishMeanings": [
                 "Life",
@@ -998,6 +1045,7 @@
             }]
         },
         {
+            "id": 251,
             "kanji": "魚",
             "englishMeanings": [
                 "Fish"
@@ -1017,6 +1065,7 @@
             }]
         },
         {
+            "id": 243,
             "kanji": "天",
             "englishMeanings": [
                 "Heaven"
@@ -1037,6 +1086,7 @@
             }]
         },
         {
+            "id": 136,
             "kanji": "空",
             "englishMeanings": [
                 "Sky",
@@ -1058,6 +1108,7 @@
             }]
         },
         {
+            "id": 231,
             "kanji": "山",
             "englishMeanings": [
                 "Mountain"
@@ -1077,6 +1128,7 @@
             }]
         },
         {
+            "id": 244,
             "kanji": "雨",
             "englishMeanings": [
                 "Rain"
@@ -1096,6 +1148,7 @@
             }]
         },
         {
+            "id": 50,
             "kanji": "電",
             "englishMeanings": [
                 "Eletricity"
@@ -1115,6 +1168,7 @@
             }]
         },
         {
+            "id": 117,
             "kanji": "車",
             "englishMeanings": [
                 "Car",
@@ -1135,6 +1189,7 @@
             }]
         },
         {
+            "id": 69,
             "kanji": "語",
             "englishMeanings": [
                 "Language",
@@ -1156,6 +1211,7 @@
             }]
         },
         {
+            "id": 202,
             "kanji": "耳",
             "englishMeanings": [
                 "Ear"
@@ -1175,6 +1231,7 @@
             }]
         },
         {
+            "id": 155,
             "kanji": "手",
             "englishMeanings": [
                 "Hand"
@@ -1194,6 +1251,7 @@
             }]
         },
         {
+            "id": 204,
             "kanji": "足",
             "englishMeanings": [
                 "Foot",
@@ -1215,6 +1273,7 @@
             }]
         },
         {
+            "id": 200,
             "kanji": "目",
             "englishMeanings": [
                 "Eye"
@@ -1234,6 +1293,7 @@
             }]
         },
         {
+            "id": 61,
             "kanji": "口",
             "englishMeanings": [
                 "Mouth"
@@ -1254,6 +1314,7 @@
             }]
         },
         {
+            "id": 71,
             "kanji": "名",
             "englishMeanings": [
                 "Name"
@@ -1274,6 +1335,7 @@
             }]
         },
         {
+            "id": 58,
             "kanji": "店",
             "englishMeanings": [
                 "Shop"
@@ -1293,6 +1355,7 @@
             }]
         },
         {
+            "id": 59,
             "kanji": "駅",
             "englishMeanings": [
                 "Station"
@@ -1312,6 +1375,7 @@
             }]
         },
         {
+            "id": 158,
             "kanji": "道",
             "englishMeanings": [
                 "Street",
@@ -1333,6 +1397,7 @@
             }]
         },
         {
+            "id": 38,
             "kanji": "社",
             "englishMeanings": [
                 "Shrine",
@@ -1353,6 +1418,7 @@
             }]
         },
         {
+            "id": 72,
             "kanji": "国",
             "englishMeanings": [
                 "Country"
@@ -1372,6 +1438,7 @@
             }]
         },
         {
+            "id": 167,
             "kanji": "外",
             "englishMeanings": [
                 "Outside"
@@ -1394,6 +1461,7 @@
             }]
         },
         {
+            "id": 76,
             "kanji": "学",
             "englishMeanings": [
                 "School",
@@ -1414,6 +1482,7 @@
             }]
         },
         {
+            "id": 104,
             "kanji": "校",
             "englishMeanings": [
                 "School"
@@ -1433,25 +1502,7 @@
             }]
         },
         {
-            "kanji": "校",
-            "englishMeanings": [
-                "School"
-            ],
-            "onyomy": [
-                "kou"
-            ],
-            "kunyomi": [
-                "-"
-            ],
-            "category": "Places and Directions",
-            "examples": [{
-                "word": "学校",
-                "englishMeanings": [
-                    "school"
-                ]
-            }]
-        },
-        {
+            "id": 52,
             "kanji": "上",
             "englishMeanings": [
                 "Up",
@@ -1475,6 +1526,7 @@
             }]
         },
         {
+            "id": 53,
             "kanji": "下",
             "englishMeanings": [
                 "Down",
@@ -1497,6 +1549,7 @@
             }]
         },
         {
+            "id": 56,
             "kanji": "中",
             "englishMeanings": [
                 "Middle",
@@ -1520,6 +1573,7 @@
             }]
         },
         {
+            "id": 62,
             "kanji": "北",
             "englishMeanings": [
                 "North"
@@ -1539,6 +1593,7 @@
             }]
         },
         {
+            "id": 63,
             "kanji": "西",
             "englishMeanings": [
                 "West"
@@ -1559,6 +1614,7 @@
             }]
         },
         {
+            "id": 64,
             "kanji": "東",
             "englishMeanings": [
                 "East"
@@ -1578,6 +1634,7 @@
             }]
         },
         {
+            "id": 60,
             "kanji": "南",
             "englishMeanings": [
                 "South"
@@ -1597,6 +1654,7 @@
             }]
         },
         {
+            "id": 57,
             "kanji": "右",
             "englishMeanings": [
                 "Right"
@@ -1616,6 +1674,7 @@
             }]
         },
         {
+            "id": 55,
             "kanji": "左",
             "englishMeanings": [
                 "Left"
@@ -1635,6 +1694,7 @@
             }]
         },
         {
+            "id": 98,
             "kanji": "見",
             "englishMeanings": [
                 "To see",
@@ -1656,6 +1716,7 @@
             }]
         },
         {
+            "id": 99,
             "kanji": "聞",
             "englishMeanings": [
                 "To hear",
@@ -1679,6 +1740,7 @@
             }]
         },
         {
+            "id": 101,
             "kanji": "書",
             "englishMeanings": [
                 "To write"
@@ -1698,6 +1760,7 @@
             }]
         },
         {
+            "id": 100,
             "kanji": "読",
             "englishMeanings": [
                 "To read"
@@ -1717,6 +1780,7 @@
             }]
         },
         {
+            "id": 51,
             "kanji": "話",
             "englishMeanings": [
                 "To talk",
@@ -1738,6 +1802,7 @@
             }]
         },
         {
+            "id": 45,
             "kanji": "買",
             "englishMeanings": [
                 "To buy"
@@ -1757,6 +1822,7 @@
             }]
         },
         {
+            "id": 34,
             "kanji": "行",
             "englishMeanings": [
                 "To go",
@@ -1778,6 +1844,7 @@
             }]
         },
         {
+            "id": 68,
             "kanji": "出",
             "englishMeanings": [
                 "To go out",
@@ -1799,6 +1866,7 @@
             }]
         },
         {
+            "id": 67,
             "kanji": "入",
             "englishMeanings": [
                 "To enter",
@@ -1820,6 +1888,7 @@
             }]
         },
         {
+            "id": 27,
             "kanji": "休",
             "englishMeanings": [
                 "To rest",
@@ -1843,6 +1912,7 @@
             }]
         },
         {
+            "id": 96,
             "kanji": "食",
             "englishMeanings": [
                 "To eat",
@@ -1863,6 +1933,7 @@
             }]
         },
         {
+            "id": 97,
             "kanji": "飲",
             "englishMeanings": [
                 "To drink",
@@ -1883,6 +1954,7 @@
             }]
         },
         {
+            "id": 252,
             "kanji": "言",
             "englishMeanings": [
                 "To talk",
@@ -1904,6 +1976,7 @@
             }]
         },
         {
+            "id": 106,
             "kanji": "立",
             "englishMeanings": [
                 "To stand"
@@ -1923,6 +1996,7 @@
             }]
         },
         {
+            "id": 37,
             "kanji": "会",
             "englishMeanings": [
                 "To meet",
@@ -1944,6 +2018,7 @@
             }]
         },
         {
+            "id": 235,
             "kanji": "多",
             "englishMeanings": [
                 "A lot",
@@ -1970,6 +2045,7 @@
             }]
         },
         {
+            "id": 236,
             "kanji": "少",
             "englishMeanings": [
                 "A little",
@@ -1991,6 +2067,7 @@
             }]
         },
         {
+            "id": 187,
             "kanji": "古",
             "englishMeanings": [
                 "Old"
@@ -2010,6 +2087,7 @@
             }]
         },
         {
+            "id": 116,
             "kanji": "新",
             "englishMeanings": [
                 "New"
@@ -2035,6 +2113,7 @@
             }]
         },
         {
+            "id": 48,
             "kanji": "大",
             "englishMeanings": [
                 "Big",
@@ -2063,6 +2142,7 @@
             }]
         },
         {
+            "id": 47,
             "kanji": "小",
             "englishMeanings": [
                 "Little",
@@ -2084,6 +2164,7 @@
             }]
         },
         {
+            "id": 49,
             "kanji": "安",
             "englishMeanings": [
                 "Cheap",
@@ -2105,6 +2186,7 @@
             }]
         },
         {
+            "id": 39,
             "kanji": "高",
             "englishMeanings": [
                 "Expensive",
@@ -2125,6 +2207,7 @@
             }]
         },
         {
+            "id": 154,
             "kanji": "長",
             "englishMeanings": [
                 "Long",
@@ -2151,6 +2234,7 @@
             }]
         },
         {
+            "id": 42,
             "kanji": "白",
             "englishMeanings": [
                 "White"
