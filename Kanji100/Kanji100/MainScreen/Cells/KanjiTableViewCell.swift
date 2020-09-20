@@ -15,6 +15,7 @@ class KanjiTableViewCell: UITableViewCell {
     @IBOutlet var onyomyReadLabel: UILabel!
     @IBOutlet var kunyomiReadLabel: UILabel!
     @IBOutlet var examplesLabel: UILabel!
+    @IBOutlet var favoriteButton: UIButton!
     
     static let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
     static let identifier = "cell"
@@ -28,6 +29,10 @@ class KanjiTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    @IBAction func makeFavorite(_ sender: UIButton) {
+    }
+    
     
     func fillCell(kanji: Kanji) {
         kanjiLabel.text = kanji.kanji
