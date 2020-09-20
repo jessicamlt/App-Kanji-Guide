@@ -19,8 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let screenFrame = UIScreen.main.bounds
         window = UIWindow(frame: screenFrame)
         
-        let viewController = MainScreenViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let mainScreenViewController = MainScreenViewController()
+        let favoriteScreenViewController = FavoriteScreenViewController()
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [mainScreenViewController, favoriteScreenViewController]
+        tabBarController.selectedViewController = mainScreenViewController
+        
+        let navigationController = UINavigationController(rootViewController: tabBarController)
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
