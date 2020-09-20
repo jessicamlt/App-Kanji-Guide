@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7624D95425179FC5002D0FE2 /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */; };
+		7624D95525179FC5002D0FE2 /* FavoriteScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */; };
 		76428B742513FBD000651F35 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B732513FBD000651F35 /* Word.swift */; };
 		76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B7B2513FC3F00651F35 /* Kanji.swift */; };
 		76428B812513FCBE00651F35 /* WordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B802513FCBD00651F35 /* WordTests.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenViewController.swift; sourceTree = "<group>"; };
+		7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteScreenViewController.xib; sourceTree = "<group>"; };
 		76428B732513FBD000651F35 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		76428B7B2513FC3F00651F35 /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
 		76428B802513FCBD00651F35 /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7624D95125179FA4002D0FE2 /* FavoriteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */,
+				7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */,
+			);
+			path = FavoriteScreen;
+			sourceTree = "<group>";
+		};
 		76428B7F2513FC5200651F35 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +128,7 @@
 		767EAF92250FDD4E005CF533 /* Kanji100 */ = {
 			isa = PBXGroup;
 			children = (
+				7624D95125179FA4002D0FE2 /* FavoriteScreen */,
 				76428B7F2513FC5200651F35 /* Repository */,
 				767EAFCA25101F1E005CF533 /* Resources */,
 				767EAFB0250FECEA005CF533 /* MainScreen */,
@@ -278,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7624D95525179FC5002D0FE2 /* FavoriteScreenViewController.xib in Resources */,
 				767EAFA0250FDD4F005CF533 /* LaunchScreen.storyboard in Resources */,
 				767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */,
 				767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */,
@@ -304,6 +319,7 @@
 			files = (
 				767EAFA8250FE043005CF533 /* Kanjis.swift in Sources */,
 				76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */,
+				7624D95425179FC5002D0FE2 /* FavoriteScreenViewController.swift in Sources */,
 				76428B742513FBD000651F35 /* Word.swift in Sources */,
 				767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */,
 				76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */,
