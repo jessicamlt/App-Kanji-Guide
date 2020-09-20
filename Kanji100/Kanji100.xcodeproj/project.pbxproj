@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7624D95425179FC5002D0FE2 /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */; };
 		7624D95525179FC5002D0FE2 /* FavoriteScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */; };
+		7624D95B2517A013002D0FE2 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624D9592517A013002D0FE2 /* FavoriteTableViewCell.swift */; };
+		7624D95C2517A013002D0FE2 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7624D95A2517A013002D0FE2 /* FavoriteTableViewCell.xib */; };
 		76428B742513FBD000651F35 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B732513FBD000651F35 /* Word.swift */; };
 		76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B7B2513FC3F00651F35 /* Kanji.swift */; };
 		76428B812513FCBE00651F35 /* WordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B802513FCBD00651F35 /* WordTests.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenViewController.swift; sourceTree = "<group>"; };
 		7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteScreenViewController.xib; sourceTree = "<group>"; };
+		7624D9592517A013002D0FE2 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		7624D95A2517A013002D0FE2 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		76428B732513FBD000651F35 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		76428B7B2513FC3F00651F35 /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
 		76428B802513FCBD00651F35 /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
@@ -93,10 +97,20 @@
 		7624D95125179FA4002D0FE2 /* FavoriteScreen */ = {
 			isa = PBXGroup;
 			children = (
+				7624D95825179FE2002D0FE2 /* Cells */,
 				7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */,
 				7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */,
 			);
 			path = FavoriteScreen;
+			sourceTree = "<group>";
+		};
+		7624D95825179FE2002D0FE2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7624D9592517A013002D0FE2 /* FavoriteTableViewCell.swift */,
+				7624D95A2517A013002D0FE2 /* FavoriteTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		76428B7F2513FC5200651F35 /* Repository */ = {
@@ -297,6 +311,7 @@
 				767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */,
 				767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */,
 				767EAFC925100FE0005CF533 /* KanjiTableViewCell.xib in Resources */,
+				7624D95C2517A013002D0FE2 /* FavoriteTableViewCell.xib in Resources */,
 				76A53E3A2515618A008DCAC6 /* PlaceholderTableViewCell.xib in Resources */,
 				767EAFAA250FE1FA005CF533 /* jlptn5Kanjis.json in Resources */,
 				767EAFD02511327F005CF533 /* MainScreenViewController.xib in Resources */,
@@ -327,6 +342,7 @@
 				76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */,
 				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,
 				767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */,
+				7624D95B2517A013002D0FE2 /* FavoriteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
