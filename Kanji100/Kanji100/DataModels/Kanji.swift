@@ -9,6 +9,7 @@
 import Foundation
 
 struct Kanji: Decodable {
+    var id: Int
     var kanji: String
     var englishMeanings: [String]
     var onyomy: [String]
