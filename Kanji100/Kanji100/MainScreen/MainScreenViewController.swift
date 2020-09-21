@@ -15,6 +15,7 @@ class MainScreenViewController: UIViewController {
     let searchController = UISearchController(searchResultsController: nil)
     var kanjis = Kanjis(kanjiList: [])
     let filter = WordsFilter(kanjis: KanjisRepository().convertJSON())
+    let favoriteManager = FavoriteManager()
     
     var searchTerm: String? = ""
     var wordNotFound = false
@@ -86,7 +87,9 @@ extension MainScreenViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: KanjiTableViewCell.identifier, for: indexPath) as? KanjiTableViewCell else {
             fatalError("Cell not found")
         }
-        cell.fillCell(kanji: kanjis.kanjiList[indexPath.row])
+        cell.kanji = kanjis.kanjiList[indexPath.row]
+        cell.isFavorite = favoriteManager.contains(id: kanjis.kanjiList[indexPath.row].id)
+        cell.fillCell()
         return cell
     }
     

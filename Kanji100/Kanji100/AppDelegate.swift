@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.viewControllers = [mainScreenViewController, favoriteScreenViewController]
         tabBarController.selectedViewController = mainScreenViewController
         
+        let mainScreenTabBarItem = UITabBarItem(title: "All Kanjis", image: UIImage(systemName: "book.fill"), tag: 0)
+        let favoriteScreenTabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "star.fill"), tag: 1)
+        mainScreenViewController.tabBarItem = mainScreenTabBarItem
+        favoriteScreenViewController.tabBarItem = favoriteScreenTabBarItem
+        
         let navigationController = UINavigationController(rootViewController: tabBarController)
         
         window?.rootViewController = navigationController

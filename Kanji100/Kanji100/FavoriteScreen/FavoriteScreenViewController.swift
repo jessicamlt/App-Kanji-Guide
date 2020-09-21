@@ -10,21 +10,55 @@ import UIKit
 
 class FavoriteScreenViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//    @IBOutlet var tableView: UITableView!
+//
+//    var kanjis = Kanjis(kanjiList: [])
+//    var favoriteIdsList = (UserDefaults.standard.array(forKey: "ids") as? [Int]) ?? []
+//    var favoriteListIsEmpty = true
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        setupTableView()
+//
+//    }
+//
+//    func setupTableView() {
+//        tableView.register(KanjiTableViewCell.nib, forCellReuseIdentifier: KanjiTableViewCell.identifier)
+//        tableView.register(PlaceholderTableViewCell.nib, forCellReuseIdentifier: PlaceholderTableViewCell.identifier)
+//        tableView.separatorStyle = .none
+//        tableView.dataSource = self
+//    }
+//}
+//
+//extension FavoriteScreenViewController: UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        if favoriteIdsList.isEmpty {
+//            favoriteListIsEmpty = true
+//            return 1
+//        }
+//        favoriteListIsEmpty = false
+//        return favoriteIdsList.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        if !favoriteListIsEmpty {
+//             return buildKanjiCell(tableView: tableView, indexPath: indexPath)
+//        }
+//         return buildPlaceholderCell(tableView: tableView, indexPath: indexPath)
+//    }
+//
+//    func buildKanjiCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: KanjiTableViewCell.identifier, for: indexPath) as? KanjiTableViewCell else {
+//            fatalError("Cell not found")
+//        }
+//        cell.kanji = favoriteList[indexPath.row]
+//        cell.fillCell()
+//        return cell
+//    }
+//
+//    func buildPlaceholderCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+//
+//    }
 
-        // Do any additional setup after loading the view.
-    }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

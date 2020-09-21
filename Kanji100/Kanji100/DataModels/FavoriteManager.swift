@@ -11,17 +11,34 @@ import Foundation
 class FavoriteManager {
     let userDefaults = UserDefaults.standard
     
+    private(set) var list: [Int] = []
+    
+    init() {
+        loadFavorites()
+    }
+    
     func saveFavorite(id: Int) {
-        var idsCollection = (userDefaults.array(forKey: "ids") as? [Int]) ?? []
-        idsCollection.append(id)
-        userDefaults.set(idsCollection, forKey: "ids")
+        loadFavorites()
+        list.append(id)
+        userDefaults.set(list, forKey: "ids")
+        print(list)
     }
     
     func removeFavorite(id: Int) {
-        var idsCollection = (userDefaults.array(forKey: "ids") as? [Int]) ?? []
-        idsCollection = idsCollection.filter({ (number) -> Bool in
+        loadFavorites()
+        list = list.filter({ (number) -> Bool in
             return number != id
         })
-        userDefaults.set(idsCollection, forKey: "ids")
+        userDefaults.set(list, forKey: "ids")
+        print(list)
+    }
+    
+    private func loadFavorites() {
+        let idsCollection = (userDefaults.array(forKey: "ids") as? [Int]) ?? []
+        list = idsCollection
+    }
+    
+    func contains(id: Int) -> Bool {
+        return list.contains(id)
     }
 }

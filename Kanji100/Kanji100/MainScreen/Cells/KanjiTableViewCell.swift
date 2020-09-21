@@ -19,11 +19,21 @@ class KanjiTableViewCell: UITableViewCell {
     
     static let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
     static let identifier = "cell"
+    
+    var isFavorite = false {
+        didSet {
+            fillCell()
+        }
+    }
+    
+    let favoriteManager = FavoriteManager()
+    var kanji: Kanji!
 
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
+        favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .selected)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,10 +41,19 @@ class KanjiTableViewCell: UITableViewCell {
     }
     
     @IBAction func makeFavorite(_ sender: UIButton) {
+        if favoriteManager.contains(id: kanji.id) {
+            favoriteManager.removeFavorite(id: kanji.id)
+            isFavorite = false
+            //favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
+            return
+        }
+        favoriteManager.saveFavorite(id: kanji.id)
+        isFavorite = true
+//        favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
     }
     
     
-    func fillCell(kanji: Kanji) {
+    func fillCell() {
         kanjiLabel.text = kanji.kanji
         englishMeaningLabel.text = kanji.englishMeanings.joined(separator: ", ")
         onyomyReadLabel.text = kanji.onyomy.joined(separator: " / ")
@@ -47,6 +66,7 @@ class KanjiTableViewCell: UITableViewCell {
         }
         
         examplesLabel.text = examples.joined(separator: ", ")
+        favoriteButton.isSelected = isFavorite
 
     }
     
