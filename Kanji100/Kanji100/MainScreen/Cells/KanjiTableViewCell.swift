@@ -26,7 +26,7 @@ class KanjiTableViewCell: UITableViewCell {
         }
     }
     
-    let favoriteManager = FavoriteManager()
+    var favoriteManager: FavoriteManager?
     var kanji: Kanji!
 
 
@@ -41,15 +41,17 @@ class KanjiTableViewCell: UITableViewCell {
     }
     
     @IBAction func makeFavorite(_ sender: UIButton) {
-        if favoriteManager.contains(id: kanji.id) {
-            favoriteManager.removeFavorite(id: kanji.id)
+        verifyFavoritesList()
+    }
+    
+    func verifyFavoritesList() {
+        if favoriteManager?.contains(id: kanji.id) == true {
+            favoriteManager?.removeFavorite(id: kanji.id)
             isFavorite = false
-            //favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
             return
         }
-        favoriteManager.saveFavorite(id: kanji.id)
+        favoriteManager?.saveFavorite(id: kanji.id)
         isFavorite = true
-//        favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
     }
     
     

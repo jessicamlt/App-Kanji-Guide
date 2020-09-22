@@ -10,6 +10,11 @@ import UIKit
 
 class PlaceholderTableViewCell: UITableViewCell {
     
+    @IBOutlet var principalImageView: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var messageLabel: UILabel!
+    
+    
     static let nib = UINib(nibName: "PlaceholderTableViewCell", bundle: nil)
     static let identifier = "placeholderCell"
 

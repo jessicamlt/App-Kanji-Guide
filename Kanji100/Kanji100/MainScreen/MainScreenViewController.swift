@@ -38,6 +38,12 @@ class MainScreenViewController: UIViewController {
         searchWord(nil)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        favoriteManager.loadFavorites()
+        tableView.reloadData()
+    }
+    
 
     
     func setupTableView() {
@@ -87,6 +93,8 @@ extension MainScreenViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: KanjiTableViewCell.identifier, for: indexPath) as? KanjiTableViewCell else {
             fatalError("Cell not found")
         }
+
+        cell.favoriteManager = favoriteManager
         cell.kanji = kanjis.kanjiList[indexPath.row]
         cell.isFavorite = favoriteManager.contains(id: kanjis.kanjiList[indexPath.row].id)
         cell.fillCell()
@@ -97,6 +105,10 @@ extension MainScreenViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PlaceholderTableViewCell.identifier, for: indexPath) as? PlaceholderTableViewCell else {
             fatalError("Cell not found")
         }
+        
+        cell.principalImageView.image = UIImage(named: "Lupa")
+        cell.titleLabel.text = "We're sorry"
+        cell.messageLabel.text = "We can't find the word that you're looking for..."
         
         return cell
     }

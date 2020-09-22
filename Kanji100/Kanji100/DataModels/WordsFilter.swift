@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WordsFilter {
+struct WordsFilter {
     let kanjis: Kanjis
     
     init(kanjis: Kanjis) {

@@ -33,7 +33,7 @@ class FavoriteManager {
         print(list)
     }
     
-    private func loadFavorites() {
+    func loadFavorites() {
         let idsCollection = (userDefaults.array(forKey: "ids") as? [Int]) ?? []
         list = idsCollection
     }
