@@ -10,14 +10,12 @@ import Foundation
 
 struct FavoritesFilter {
     let kanjis: Kanjis
-    let favoritesList: [Int]
     
-    init(kanjis: Kanjis, favoritesList: [Int]) {
+    init(kanjis: Kanjis) {
         self.kanjis = kanjis
-        self.favoritesList = favoritesList
     }
     
-    func filter() -> [Kanji] {
+    func filter(favoritesList: [Int]) -> [Kanji] {
         if favoritesList.isEmpty {
             return []
         }
@@ -28,10 +26,4 @@ struct FavoritesFilter {
         return favoritesKanjis
     }
     
-    func reloadFilter() -> [Kanji] {
-        let favoriteKanjis = kanjis.kanjiList.filter { (kanji) -> Bool in
-            return favoritesList.contains(kanji.id)
-        }
-        return favoriteKanjis
-    }
 }

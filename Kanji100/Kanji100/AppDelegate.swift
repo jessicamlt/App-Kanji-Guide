@@ -22,18 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainScreenViewController = MainScreenViewController()
         let favoriteScreenViewController = FavoriteScreenViewController()
         
+        let mainScreenNavigationController = UINavigationController(rootViewController: mainScreenViewController)
+        let favoriteScreenNavigationController = UINavigationController(rootViewController: favoriteScreenViewController)
+        
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [mainScreenViewController, favoriteScreenViewController]
-        tabBarController.selectedViewController = mainScreenViewController
+        tabBarController.viewControllers = [mainScreenNavigationController, favoriteScreenNavigationController]
+        tabBarController.selectedViewController = mainScreenNavigationController
         
-        let mainScreenTabBarItem = UITabBarItem(title: "All Kanjis", image: UIImage(systemName: "book.fill"), tag: 0)
+        let MainScreenTabBarItem = UITabBarItem(title: "All Kanjis", image: UIImage(systemName: "book.fill"), tag: 0)
         let favoriteScreenTabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "star.fill"), tag: 1)
-        mainScreenViewController.tabBarItem = mainScreenTabBarItem
-        favoriteScreenViewController.tabBarItem = favoriteScreenTabBarItem
+        mainScreenNavigationController.tabBarItem = MainScreenTabBarItem
+        favoriteScreenNavigationController.tabBarItem = favoriteScreenTabBarItem
         
-        let navigationController = UINavigationController(rootViewController: tabBarController)
         
-        window?.rootViewController = navigationController
+        window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         return true
     }

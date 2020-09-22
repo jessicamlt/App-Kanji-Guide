@@ -12,20 +12,21 @@ class FavoriteScreenViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
-    var favoriteIdsList = FavoriteManager().list
     var favoriteManager = FavoriteManager()
-    var kanjis = FavoritesFilter(kanjis: KanjisRepository().convertJSON(), favoritesList: FavoriteManager().list).filter()
+    var kanjis: [Kanji] = []
+    let favoritesFilter = FavoritesFilter(kanjis: KanjisRepository().convertJSON())
     var favoriteListIsEmpty = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        kanjis = favoritesFilter.filter(favoritesList: FavoriteManager().list)
         setupTableView()
+        title = "Favorites"
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        favoriteIdsList = FavoriteManager().list
-        kanjis = FavoritesFilter(kanjis: KanjisRepository().convertJSON(), favoritesList: favoriteIdsList).reloadFilter()
+        kanjis = favoritesFilter.filter(favoritesList: FavoriteManager().list)
         tableView.reloadData()
     }
 
@@ -39,12 +40,12 @@ class FavoriteScreenViewController: UIViewController {
 
 extension FavoriteScreenViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if favoriteIdsList.isEmpty {
+        if kanjis.isEmpty {
             favoriteListIsEmpty = true
             return 1
         }
         favoriteListIsEmpty = false
-        return favoriteIdsList.count
+        return kanjis.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,14 +59,9 @@ extension FavoriteScreenViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: KanjiTableViewCell.identifier, for: indexPath) as? KanjiTableViewCell else {
             fatalError("Cell not found")
         }
-        
-//        cell.favoriteManager = favoriteManager
-//        cell.kanji = kanjis[indexPath.row]
-//        cell.isFavorite = favoriteManager.contains(id: kanjis[indexPath.row].id)
-//        cell.fillCell()
+
         let kanji = kanjis[indexPath.row]
-        let isFavorite = favoriteManager.contains(id: kanjis[indexPath.row].id)
-        cell.fillCell(kanji: kanji, indexPath: indexPath, isFavorite: isFavorite)
+        cell.fillCell(kanji: kanji, indexPath: indexPath, isFavorite: true)
         cell.delegate = self
         return cell
     }
@@ -83,15 +79,18 @@ extension FavoriteScreenViewController: UITableViewDataSource {
 }
 
 extension FavoriteScreenViewController: KanjiTableViewCellDelegate {
-    func kanjiAddedToFavorite(at indexPath: IndexPath) {
-        let kanji = kanjis[indexPath.row]
-        favoriteManager.saveFavorite(id: kanji.id)
-        tableView.reloadData()
-    }
+    func kanjiAddedToFavorite(at indexPath: IndexPath) { /* Do nothing */ }
     
     func kanjiRemovedFromFavorite(at indexPath: IndexPath) {
         let kanji = kanjis[indexPath.row]
         favoriteManager.removeFavorite(id: kanji.id)
+        kanjis = favoritesFilter.filter(favoritesList: favoriteManager.list)
+        
+        if favoriteManager.favoritesCount > 1 {
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            return
+        }
+
         tableView.reloadData()
     }
 }

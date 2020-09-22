@@ -13,6 +13,10 @@ class FavoriteManager {
     
     private(set) var list: [Int] = []
     
+    var favoritesCount: Int {
+        return list.count
+    }
+    
     init() {
         loadFavorites()
     }
