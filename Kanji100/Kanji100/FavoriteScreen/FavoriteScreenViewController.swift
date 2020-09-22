@@ -85,12 +85,6 @@ extension FavoriteScreenViewController: KanjiTableViewCellDelegate {
         let kanji = kanjis[indexPath.row]
         favoriteManager.removeFavorite(id: kanji.id)
         kanjis = favoritesFilter.filter(favoritesList: favoriteManager.list)
-        
-        if favoriteManager.favoritesCount > 1 {
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            return
-        }
-
         tableView.reloadData()
     }
 }
