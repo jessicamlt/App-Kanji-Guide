@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol KanjiTableViewCellDelegate: AnyObject {
+    func kanjiAddedToFavorite(at indexPath: IndexPath)
+    func kanjiRemovedFromFavorite(at indexPath: IndexPath)
+}
+
 class KanjiTableViewCell: UITableViewCell {
     
     @IBOutlet var kanjiLabel: UILabel!
@@ -17,18 +22,12 @@ class KanjiTableViewCell: UITableViewCell {
     @IBOutlet var examplesLabel: UILabel!
     @IBOutlet var favoriteButton: UIButton!
     
+    weak var delegate: KanjiTableViewCellDelegate?
+    var indexPath: IndexPath?
     static let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
     static let identifier = "cell"
     
-    var isFavorite = false {
-        didSet {
-            fillCell()
-        }
-    }
-    
-    var favoriteManager: FavoriteManager?
-    var kanji: Kanji!
-
+    var isFavorite = false
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,21 +40,22 @@ class KanjiTableViewCell: UITableViewCell {
     }
     
     @IBAction func makeFavorite(_ sender: UIButton) {
-        verifyFavoritesList()
-    }
-    
-    func verifyFavoritesList() {
-        if favoriteManager?.contains(id: kanji.id) == true {
-            favoriteManager?.removeFavorite(id: kanji.id)
-            isFavorite = false
+        guard let indexPath = indexPath else {
             return
         }
-        favoriteManager?.saveFavorite(id: kanji.id)
-        isFavorite = true
+        
+        if isFavorite {
+            delegate?.kanjiRemovedFromFavorite(at: indexPath)
+            return
+        }
+        
+        delegate?.kanjiAddedToFavorite(at: indexPath)
     }
     
     
-    func fillCell() {
+    func fillCell(kanji: Kanji, indexPath: IndexPath, isFavorite: Bool) {
+        self.isFavorite = isFavorite
+        self.indexPath = indexPath
         kanjiLabel.text = kanji.kanji
         englishMeaningLabel.text = kanji.englishMeanings.joined(separator: ", ")
         onyomyReadLabel.text = kanji.onyomy.joined(separator: " / ")
@@ -73,3 +73,5 @@ class KanjiTableViewCell: UITableViewCell {
     }
     
 }
+
+

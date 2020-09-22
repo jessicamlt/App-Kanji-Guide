@@ -20,7 +20,6 @@ class FavoriteScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,10 +59,14 @@ extension FavoriteScreenViewController: UITableViewDataSource {
             fatalError("Cell not found")
         }
         
-        cell.favoriteManager = favoriteManager
-        cell.kanji = kanjis[indexPath.row]
-        cell.isFavorite = favoriteManager.contains(id: kanjis[indexPath.row].id)
-        cell.fillCell()
+//        cell.favoriteManager = favoriteManager
+//        cell.kanji = kanjis[indexPath.row]
+//        cell.isFavorite = favoriteManager.contains(id: kanjis[indexPath.row].id)
+//        cell.fillCell()
+        let kanji = kanjis[indexPath.row]
+        let isFavorite = favoriteManager.contains(id: kanjis[indexPath.row].id)
+        cell.fillCell(kanji: kanji, indexPath: indexPath, isFavorite: isFavorite)
+        cell.delegate = self
         return cell
     }
 
@@ -77,6 +80,18 @@ extension FavoriteScreenViewController: UITableViewDataSource {
         
         return cell
     }
+}
 
-
+extension FavoriteScreenViewController: KanjiTableViewCellDelegate {
+    func kanjiAddedToFavorite(at indexPath: IndexPath) {
+        let kanji = kanjis[indexPath.row]
+        favoriteManager.saveFavorite(id: kanji.id)
+        tableView.reloadData()
+    }
+    
+    func kanjiRemovedFromFavorite(at indexPath: IndexPath) {
+        let kanji = kanjis[indexPath.row]
+        favoriteManager.removeFavorite(id: kanji.id)
+        tableView.reloadData()
+    }
 }

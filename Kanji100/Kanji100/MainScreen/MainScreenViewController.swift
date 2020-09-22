@@ -93,11 +93,10 @@ extension MainScreenViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: KanjiTableViewCell.identifier, for: indexPath) as? KanjiTableViewCell else {
             fatalError("Cell not found")
         }
-
-        cell.favoriteManager = favoriteManager
-        cell.kanji = kanjis.kanjiList[indexPath.row]
-        cell.isFavorite = favoriteManager.contains(id: kanjis.kanjiList[indexPath.row].id)
-        cell.fillCell()
+        let kanji = kanjis.kanjiList[indexPath.row]
+        let isFavorite = favoriteManager.contains(id: kanjis.kanjiList[indexPath.row].id)
+        cell.fillCell(kanji: kanji, indexPath: indexPath, isFavorite: isFavorite)
+        cell.delegate = self
         return cell
     }
     
@@ -142,4 +141,21 @@ extension MainScreenViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
     }
 
+}
+
+extension MainScreenViewController: KanjiTableViewCellDelegate {
+    func kanjiAddedToFavorite(at indexPath: IndexPath) {
+        let kanji = kanjis.kanjiList[indexPath.row]
+        favoriteManager.saveFavorite(id: kanji.id)
+        tableView.reloadData()
+        
+    }
+    
+    func kanjiRemovedFromFavorite(at indexPath: IndexPath) {
+        let kanji = kanjis.kanjiList[indexPath.row]
+        favoriteManager.removeFavorite(id: kanji.id)
+        tableView.reloadData()
+    }
+    
+    
 }
