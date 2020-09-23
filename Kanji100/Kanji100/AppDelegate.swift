@@ -34,11 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mainScreenNavigationController.tabBarItem = MainScreenTabBarItem
         favoriteScreenNavigationController.tabBarItem = favoriteScreenTabBarItem
         
-        
+        window?.overrideUserInterfaceStyle = .light
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         return true
     }
+
 
 }
 
