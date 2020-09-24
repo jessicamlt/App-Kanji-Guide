@@ -159,12 +159,12 @@
 		767EAF92250FDD4E005CF533 /* Kanji100 */ = {
 			isa = PBXGroup;
 			children = (
+				767EAF93250FDD4E005CF533 /* AppDelegate.swift */,
 				7624D998251C0F8C002D0FE2 /* Components */,
 				7624D997251C0F64002D0FE2 /* Scenes */,
 				76428B7F2513FC5200651F35 /* Repository */,
 				767EAFCA25101F1E005CF533 /* Resources */,
 				767EAFAB250FE953005CF533 /* DataModels */,
-				767EAF93250FDD4E005CF533 /* AppDelegate.swift */,
 				767EAF9C250FDD4F005CF533 /* Assets.xcassets */,
 				767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */,
 				767EAFA1250FDD4F005CF533 /* Info.plist */,

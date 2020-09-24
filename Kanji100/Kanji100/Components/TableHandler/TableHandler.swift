@@ -13,7 +13,6 @@ protocol TableHandlerDelegate: AnyObject {
 }
 
 class TableHandler: NSObject, UITableViewDataSource {
-    
     enum Scene {
         case mainScreen
         case favoriteScreen
@@ -29,14 +28,13 @@ class TableHandler: NSObject, UITableViewDataSource {
     private let tableView: UITableView
     private let favoriteManager: FavoriteManager
     private var kanjiListIsEmpty = true
+    weak var delegate: TableHandlerDelegate?
+    let scene: Scene
     var kanjis: [Kanji] = [] {
         didSet {
             reload()
         }
     }
-    let scene: Scene
-    weak var delegate: TableHandlerDelegate?
-    
     
     init(tableView: UITableView, favoriteManager: FavoriteManager, scene: Scene) {
         self.tableView = tableView
@@ -57,6 +55,7 @@ class TableHandler: NSObject, UITableViewDataSource {
         tableView.dataSource = self
     }
     
+    // MARK: - TableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -73,10 +72,8 @@ class TableHandler: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if kanjiListIsEmpty {
             return buildPlaceholderCell(tableView: tableView, indexPath: indexPath)
-            
         }
         return buildKanjiCell(tableView: tableView, indexPath: indexPath)
-
     }
     
     private func buildKanjiCell(tableView: UITableView, indexPath: IndexPath) -> KanjiTableViewCell {
@@ -100,6 +97,7 @@ class TableHandler: NSObject, UITableViewDataSource {
     }
 }
 
+// MARK: - KanjiTableViewCellDelegate
 extension TableHandler: KanjiTableViewCellDelegate {
     func kanjiAddedToFavorite(at indexPath: IndexPath) {
         let kanji = kanjis[indexPath.row]

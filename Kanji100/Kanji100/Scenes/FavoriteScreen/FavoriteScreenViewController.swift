@@ -35,10 +35,10 @@ class FavoriteScreenViewController: UIViewController {
     }
 }
 
+//MARK: - TableHandlerDelegate
 extension FavoriteScreenViewController: TableHandlerDelegate {
     func cellDidDeselect(at index: Int) {
         kanjis.remove(at: index)
         tableHandler.kanjis = kanjis
     }
-    
 }

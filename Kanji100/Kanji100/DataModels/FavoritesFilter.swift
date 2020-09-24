@@ -19,11 +19,9 @@ struct FavoritesFilter {
         if favoritesList.isEmpty {
             return []
         }
-        
         let favoritesKanjis = kanjis.kanjiList.filter { (kanji) -> Bool in
             return favoritesList.contains(kanji.id)
         }
         return favoritesKanjis
     }
-    
 }

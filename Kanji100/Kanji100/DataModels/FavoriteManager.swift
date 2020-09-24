@@ -10,7 +10,6 @@ import Foundation
 
 class FavoriteManager {
     let userDefaults = UserDefaults.standard
-    
     private(set) var list: [Int] = []
     
     var favoritesCount: Int {

@@ -19,7 +19,6 @@ struct WordsFilter {
         if searchedWord.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             return kanjis.kanjiList
         }
-        
         let filteredKanjis = kanjis.kanjiList.filter { (kanji) -> Bool in
             return kanji.hasWord(searchedWord)
         }

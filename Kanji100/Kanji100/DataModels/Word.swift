@@ -13,5 +13,4 @@ struct Word: Decodable {
         let lowerWord = word.lowercased()
         return examples.lowercased().contains(lowerWord)
     }
-
 }

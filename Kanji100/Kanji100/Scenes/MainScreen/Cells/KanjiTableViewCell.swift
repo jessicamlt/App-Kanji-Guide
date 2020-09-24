@@ -14,7 +14,6 @@ protocol KanjiTableViewCellDelegate: AnyObject {
 }
 
 class KanjiTableViewCell: UITableViewCell {
-    
     @IBOutlet var kanjiLabel: UILabel!
     @IBOutlet var englishMeaningLabel: UILabel!
     @IBOutlet var onyomyReadLabel: UILabel!
@@ -23,11 +22,10 @@ class KanjiTableViewCell: UITableViewCell {
     @IBOutlet var favoriteButton: UIButton!
     
     weak var delegate: KanjiTableViewCellDelegate?
-    var indexPath: IndexPath?
     static let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
     static let identifier = "cell"
-    
     var isFavorite = false
+    var indexPath: IndexPath?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,15 +41,12 @@ class KanjiTableViewCell: UITableViewCell {
         guard let indexPath = indexPath else {
             return
         }
-        
         if isFavorite {
             delegate?.kanjiRemovedFromFavorite(at: indexPath)
             return
         }
-        
         delegate?.kanjiAddedToFavorite(at: indexPath)
     }
-    
     
     func fillCell(kanji: Kanji, indexPath: IndexPath, isFavorite: Bool) {
         self.isFavorite = isFavorite
@@ -69,9 +64,7 @@ class KanjiTableViewCell: UITableViewCell {
         
         examplesLabel.text = examples.joined(separator: ", ")
         favoriteButton.isSelected = isFavorite
-
     }
-    
 }
 
 

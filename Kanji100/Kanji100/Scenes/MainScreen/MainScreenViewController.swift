@@ -17,7 +17,6 @@ class MainScreenViewController: UIViewController {
     let filter = WordsFilter(kanjis: KanjisRepository().convertJSON()) //Model
     let favoriteManager = FavoriteManager()
     var tableHandler: TableHandler!
-    
     var searchTerm: String? = ""
 
     override func viewDidLoad() {
@@ -25,7 +24,6 @@ class MainScreenViewController: UIViewController {
         tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager, scene: .mainScreen)
         tableHandler.kanjis = []
         setupSearchController()
-    
         searchWord(nil)
     }
     
@@ -48,7 +46,6 @@ class MainScreenViewController: UIViewController {
     func searchWord(_ word: String?) {
         tableHandler.kanjis = filter.filter(searchedWord: word ?? "")
         tableView.reloadData()
-
         guard let searchText = word, searchText.trimmingCharacters(in: .whitespaces).isEmpty == false else {
             title = "All Kanjis"
             return
@@ -57,6 +54,7 @@ class MainScreenViewController: UIViewController {
     }
 }
 
+// MARK: - SearchBarDelegate
 extension MainScreenViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchTerm = searchBar.text ?? ""
@@ -65,6 +63,7 @@ extension MainScreenViewController: UISearchBarDelegate {
     }
 }
 
+//MARK: - SearchControllerDelegate
 extension MainScreenViewController: UISearchControllerDelegate {
     func didDismissSearchController(_ searchController: UISearchController) {
         searchController.searchBar.text = searchTerm
@@ -75,6 +74,7 @@ extension MainScreenViewController: UISearchControllerDelegate {
     }
 }
 
+//MARK: - SearchResultsUpdating
 extension MainScreenViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
     }

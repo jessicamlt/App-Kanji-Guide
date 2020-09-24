@@ -9,16 +9,13 @@
 import Foundation
 
 class KanjisRepository {
-    
     func getData() -> Data {
         guard let url = Bundle.main.url(forResource: "jlptn5Kanjis.json", withExtension: nil) else {
             fatalError("File not found")
         }
-        
         guard let data = try? Data(contentsOf: url) else {
             fatalError("Fail to get data")
         }
-        
         return data
     }
     
