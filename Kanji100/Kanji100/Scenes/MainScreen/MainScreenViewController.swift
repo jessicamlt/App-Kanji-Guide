@@ -22,11 +22,17 @@ class MainScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager)
+        tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager, scene: .mainScreen)
         tableHandler.kanjis = []
         setupSearchController()
     
         searchWord(nil)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        favoriteManager.loadFavorites()
+        tableHandler.reload()
     }
     
     func setupSearchController() {
@@ -37,12 +43,6 @@ class MainScreenViewController: UIViewController {
         searchController.searchBar.resignFirstResponder()
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        favoriteManager.loadFavorites()
-        tableHandler.reload()
     }
     
     func searchWord(_ word: String?) {

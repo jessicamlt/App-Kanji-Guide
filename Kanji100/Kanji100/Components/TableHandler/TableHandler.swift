@@ -8,7 +8,24 @@
 
 import UIKit
 
+protocol TableHandlerDelegate: AnyObject {
+    func cellDidDeselect(at index: Int)
+}
+
 class TableHandler: NSObject, UITableViewDataSource {
+    
+    enum Scene {
+        case mainScreen
+        case favoriteScreen
+        
+        var placeholder: PlaceholderCellType {
+            if self == .mainScreen {
+                return .generalList
+            }
+            return .favoriteList
+        }
+    }
+    
     private let tableView: UITableView
     private let favoriteManager: FavoriteManager
     private var kanjiListIsEmpty = true
@@ -17,11 +34,14 @@ class TableHandler: NSObject, UITableViewDataSource {
             reload()
         }
     }
+    let scene: Scene
+    weak var delegate: TableHandlerDelegate?
     
     
-    init(tableView: UITableView, favoriteManager: FavoriteManager) {
+    init(tableView: UITableView, favoriteManager: FavoriteManager, scene: Scene) {
         self.tableView = tableView
         self.favoriteManager = favoriteManager
+        self.scene = scene
         super.init()
         setupTableView()
     }
@@ -74,11 +94,8 @@ class TableHandler: NSObject, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PlaceholderTableViewCell.identifier, for: indexPath) as? PlaceholderTableViewCell else {
             fatalError("Cell not found")
         }
-        
-        cell.principalImageView.image = UIImage(named: "Lupa")
-        cell.titleLabel.text = "We're sorry"
-        cell.messageLabel.text = "We can't find the word that you're looking for..."
-        
+        cell.placeholderCellType = scene.placeholder
+        cell.fillCell()
         return cell
     }
 }
@@ -88,14 +105,12 @@ extension TableHandler: KanjiTableViewCellDelegate {
         let kanji = kanjis[indexPath.row]
         favoriteManager.saveFavorite(id: kanji.id)
         reload()
-        
     }
     
     func kanjiRemovedFromFavorite(at indexPath: IndexPath) {
         let kanji = kanjis[indexPath.row]
         favoriteManager.removeFavorite(id: kanji.id)
         reload()
+        delegate?.cellDidDeselect(at: indexPath.row)
     }
-    
-    
 }
