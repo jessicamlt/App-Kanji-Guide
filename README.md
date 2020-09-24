@@ -1,2 +1,3 @@
-# Kanji100
- App que lista os 100 principais Kanjis para a prova de proeficiência de língua japonesa JLPT N5
+# Kanji Guide
+ App que possui uma lista com os 105 Kanjis mais utilizados na prova de proeficiência em língua japonesa JLPT-N5.
+ O app também possui um filtro que permite que o usuário possa realizar uma buscar por termos ou assuntos de interesse e uma tela de favoritos para guardar os Kanjis que ele tem interesse em acessar de forma mais rápida no futuro.
