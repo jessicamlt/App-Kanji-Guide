@@ -8,17 +8,27 @@
 
 import UIKit
 
-class MainScreenViewController: UIViewController {
+final class MainScreenViewController: UIViewController {
     
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet private var tableView: UITableView!
     
-    let searchController = UISearchController(searchResultsController: nil)
-    var kanjis = Kanjis(kanjiList: [])
-    let filter = WordsFilter(kanjis: KanjisRepository().convertJSON()) //Model
-    let favoriteManager = FavoriteManager()
-    var tableHandler: TableHandler!
-    var searchTerm: String? = ""
-
+    private let searchController = UISearchController(searchResultsController: nil)
+    private var kanjis = Kanjis(kanjiList: [])
+    private let favoriteManager: FavoriteManager
+    private var tableHandler: TableHandler!
+    private var searchTerm: String? = ""
+    private let model: MainScreenModel
+    
+    init(favoriteManager: FavoriteManager, model: MainScreenModel = MainScreenModel()) {
+        self.favoriteManager = favoriteManager
+        self.model = model
+        super.init(nibName: "MainScreenViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager, scene: .mainScreen)
@@ -33,7 +43,7 @@ class MainScreenViewController: UIViewController {
         tableHandler.reload()
     }
     
-    func setupSearchController() {
+    private func setupSearchController() {
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         searchController.delegate = self
@@ -43,9 +53,8 @@ class MainScreenViewController: UIViewController {
         navigationItem.searchController = searchController
     }
     
-    func searchWord(_ word: String?) {
-        tableHandler.kanjis = filter.filter(searchedWord: word ?? "")
-        tableView.reloadData()
+    private func searchWord(_ word: String?) {
+        tableHandler.kanjis = model.getKanjis(searchedWord: word ?? "")
         guard let searchText = word, searchText.trimmingCharacters(in: .whitespaces).isEmpty == false else {
             title = "All Kanjis"
             return

@@ -31,7 +31,7 @@
 		767EAFD02511327F005CF533 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCF2511327F005CF533 /* MainScreenViewController.xib */; };
 		76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */; };
 		76A53E3A2515618A008DCAC6 /* PlaceholderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */; };
-		76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4C025140F990059C25B /* WordsFilter.swift */; };
+		76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF02251D649B00A1B579 /* MainScreenModel.swift */; };
 		76EBA4CB251424BC0059C25B /* WordsFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +74,7 @@
 		767EAFCF2511327F005CF533 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 		76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
 		76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
-		76EBA4C025140F990059C25B /* WordsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilter.swift; sourceTree = "<group>"; };
+		76C3CF02251D649B00A1B579 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
 		76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,7 +178,6 @@
 				767EAFA7250FE043005CF533 /* Kanjis.swift */,
 				76428B7B2513FC3F00651F35 /* Kanji.swift */,
 				76428B732513FBD000651F35 /* Word.swift */,
-				76EBA4C025140F990059C25B /* WordsFilter.swift */,
 				7624D9612518E40F002D0FE2 /* FavoriteManager.swift */,
 				7624D98F251954B4002D0FE2 /* FavoritesFilter.swift */,
 			);
@@ -191,6 +190,7 @@
 				767EAFC525100FB9005CF533 /* Cells */,
 				767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */,
 				767EAFCF2511327F005CF533 /* MainScreenViewController.xib */,
+				76C3CF02251D649B00A1B579 /* MainScreenModel.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -352,12 +352,12 @@
 			files = (
 				767EAFA8250FE043005CF533 /* Kanjis.swift in Sources */,
 				7624D990251954B4002D0FE2 /* FavoritesFilter.swift in Sources */,
-				76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */,
 				7624D95425179FC5002D0FE2 /* FavoriteScreenViewController.swift in Sources */,
 				76428B742513FBD000651F35 /* Word.swift in Sources */,
 				767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */,
 				7624D9622518E40F002D0FE2 /* FavoriteManager.swift in Sources */,
 				76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */,
+				76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */,
 				767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */,
 				76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */,
 				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,

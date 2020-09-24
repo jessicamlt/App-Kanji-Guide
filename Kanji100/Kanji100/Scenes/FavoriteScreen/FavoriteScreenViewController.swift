@@ -8,15 +8,24 @@
 
 import UIKit
 
-class FavoriteScreenViewController: UIViewController {
+final class FavoriteScreenViewController: UIViewController {
 
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet private var tableView: UITableView!
     
-    var favoriteManager = FavoriteManager()
-    var kanjis: [Kanji] = []
-    let favoritesFilter = FavoritesFilter(kanjis: KanjisRepository().convertJSON())
-    var tableHandler: TableHandler!
-
+    private var favoriteManager: FavoriteManager
+    private var kanjis: [Kanji] = []
+    private let favoritesFilter = FavoritesFilter(kanjis: KanjisRepository().getKanjis())
+    private var tableHandler: TableHandler!
+    
+    init(favoriteManager: FavoriteManager) {
+        self.favoriteManager = favoriteManager
+        super.init(nibName: "FavoriteScreenViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         kanjis = favoritesFilter.filter(favoritesList: FavoriteManager().list)

@@ -16,9 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let screenFrame = UIScreen.main.bounds
         window = UIWindow(frame: screenFrame)
+        let favoriteManager = FavoriteManager()
         
-        let mainScreenViewController = MainScreenViewController()
-        let favoriteScreenViewController = FavoriteScreenViewController()
+        let mainScreenViewController = MainScreenViewController(favoriteManager: favoriteManager)
+        let favoriteScreenViewController = FavoriteScreenViewController(favoriteManager: favoriteManager)
         
         let mainScreenNavigationController = UINavigationController(rootViewController: mainScreenViewController)
         let favoriteScreenNavigationController = UINavigationController(rootViewController: favoriteScreenViewController)

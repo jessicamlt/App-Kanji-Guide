@@ -1,21 +1,22 @@
 //
-//  WordsFilter.swift
+//  MainScreenModel.swift
 //  Kanji100
 //
-//  Created by Jéssica Trindade on 17/09/20.
+//  Created by Jéssica Trindade on 24/09/20.
 //  Copyright © 2020 Jéssica Trindade. All rights reserved.
 //
 
 import Foundation
 
-struct WordsFilter {
-    let kanjis: Kanjis
+class MainScreenModel {
+    let repository:KanjisRepository
     
-    init(kanjis: Kanjis) {
-        self.kanjis = kanjis
+    init(repository: KanjisRepository = KanjisRepository()) {
+        self.repository = repository
     }
     
-    func filter(searchedWord: String) -> [Kanji] {
+    func getKanjis(searchedWord: String) -> [Kanji] {
+        let kanjis = repository.getKanjis()
         if searchedWord.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             return kanjis.kanjiList
         }
