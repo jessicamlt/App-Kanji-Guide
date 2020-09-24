@@ -16,6 +16,7 @@ class FavoriteScreenViewController: UIViewController {
     var kanjis: [Kanji] = []
     let favoritesFilter = FavoritesFilter(kanjis: KanjisRepository().convertJSON())
     var favoriteListIsEmpty = true
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

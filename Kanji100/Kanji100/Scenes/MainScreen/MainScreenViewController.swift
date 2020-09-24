@@ -19,13 +19,17 @@ class MainScreenViewController: UIViewController {
     var tableHandler: TableHandler!
     
     var searchTerm: String? = ""
-    var wordNotFound = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager)
         tableHandler.kanjis = []
+        setupSearchController()
     
+        searchWord(nil)
+    }
+    
+    func setupSearchController() {
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         searchController.delegate = self
@@ -33,9 +37,6 @@ class MainScreenViewController: UIViewController {
         searchController.searchBar.resignFirstResponder()
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
-
-
-        searchWord(nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,35 +45,27 @@ class MainScreenViewController: UIViewController {
         tableHandler.reload()
     }
     
-    
-    
     func searchWord(_ word: String?) {
         tableHandler.kanjis = filter.filter(searchedWord: word ?? "")
         tableView.reloadData()
-        
+
         guard let searchText = word, searchText.trimmingCharacters(in: .whitespaces).isEmpty == false else {
             title = "All Kanjis"
             return
         }
         title = searchText
     }
-
 }
 
-
 extension MainScreenViewController: UISearchBarDelegate {
-
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchTerm = searchBar.text ?? ""
         searchWord(searchTerm)
         searchController.dismiss(animated: true, completion: nil)
-
     }
-    
 }
 
 extension MainScreenViewController: UISearchControllerDelegate {
-    
     func didDismissSearchController(_ searchController: UISearchController) {
         searchController.searchBar.text = searchTerm
     }
@@ -80,14 +73,9 @@ extension MainScreenViewController: UISearchControllerDelegate {
     func willPresentSearchController(_ searchController: UISearchController) {
         searchController.searchBar.text = searchTerm
     }
-
 }
 
 extension MainScreenViewController: UISearchResultsUpdating {
-    
     func updateSearchResults(for searchController: UISearchController) {
     }
-
 }
-
-
