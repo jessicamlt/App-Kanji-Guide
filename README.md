@@ -1,3 +1,3 @@
-# Kanji Guide
- App que possui uma lista com os 105 Kanjis mais utilizados na prova de proeficiência em língua japonesa JLPT-N5.
- O app também possui um filtro que permite que o usuário possa realizar uma buscar por termos ou assuntos de interesse e uma tela de favoritos para guardar os Kanjis que ele tem interesse em acessar de forma mais rápida no futuro.
+# Kanji Guide App
+App that has a list with the 105 most used Kanji in the Japanese language proficiency test N5.
+The app also has a filter that allows the user to perform a search for terms or subjects of interest and a favorites screen to save the Kanji of interest to be able to access them more quickly in the future.
