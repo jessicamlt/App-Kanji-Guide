@@ -32,6 +32,7 @@
 		76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */; };
 		76A53E3A2515618A008DCAC6 /* PlaceholderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */; };
 		76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF02251D649B00A1B579 /* MainScreenModel.swift */; };
+		76C3CF09251D67BB00A1B579 /* FavoriteScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF08251D67BB00A1B579 /* FavoriteScreenModel.swift */; };
 		76EBA4CB251424BC0059C25B /* WordsFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
 		76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
 		76C3CF02251D649B00A1B579 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
+		76C3CF08251D67BB00A1B579 /* FavoriteScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenModel.swift; sourceTree = "<group>"; };
 		76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 			children = (
 				7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */,
 				7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */,
+				76C3CF08251D67BB00A1B579 /* FavoriteScreenModel.swift */,
 			);
 			path = FavoriteScreen;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */,
 				76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */,
 				767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */,
+				76C3CF09251D67BB00A1B579 /* FavoriteScreenModel.swift in Sources */,
 				76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */,
 				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,
 				7624D99B251C0FCE002D0FE2 /* TableHandler.swift in Sources */,

@@ -16,9 +16,11 @@ final class FavoriteScreenViewController: UIViewController {
     private var kanjis: [Kanji] = []
     private let favoritesFilter = FavoritesFilter(kanjis: KanjisRepository().getKanjis())
     private var tableHandler: TableHandler!
+    private var model: FavoriteScreenModel
     
-    init(favoriteManager: FavoriteManager) {
+    init(favoriteManager: FavoriteManager, model: FavoriteScreenModel) {
         self.favoriteManager = favoriteManager
+        self.model = model
         super.init(nibName: "FavoriteScreenViewController", bundle: nil)
     }
     
