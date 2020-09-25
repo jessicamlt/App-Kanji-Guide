@@ -19,7 +19,7 @@ final class MainScreenViewController: UIViewController {
     private var searchTerm: String? = ""
     private let model: MainScreenModel
     
-    init(favoriteManager: FavoriteManager, model: MainScreenModel = MainScreenModel()) {
+    init(favoriteManager: FavoriteManager, model: MainScreenModel) {
         self.favoriteManager = favoriteManager
         self.model = model
         super.init(nibName: "MainScreenViewController", bundle: nil)
@@ -31,7 +31,8 @@ final class MainScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager, scene: .mainScreen)
+        tableHandler = TableHandler(tableView: tableView, scene: .mainScreen)
+        tableHandler.delegate = self
         tableHandler.kanjis = []
         setupSearchController()
         searchWord(nil)
@@ -87,4 +88,18 @@ extension MainScreenViewController: UISearchControllerDelegate {
 extension MainScreenViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
     }
+}
+
+extension MainScreenViewController: TableHandlerDelegate {
+    func cellDidDeselect(kanji: KanjiData) {
+        model.saveFavorite(id: kanji.id)
+        tableHandler.reload()
+    }
+    
+    func cellDidSelect(kanji: KanjiData) {
+        model.removeFavorite(id: kanji.id)
+        tableHandler.reload()
+    }
+    
+    
 }

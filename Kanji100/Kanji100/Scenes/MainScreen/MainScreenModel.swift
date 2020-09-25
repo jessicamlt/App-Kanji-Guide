@@ -9,20 +9,35 @@
 import Foundation
 
 class MainScreenModel {
+    let favoriteManager: FavoriteManager
     let repository:KanjisRepository
     
-    init(repository: KanjisRepository = KanjisRepository()) {
+    init(favoriteManager: FavoriteManager, repository: KanjisRepository = KanjisRepository()) {
+        self.favoriteManager = favoriteManager
         self.repository = repository
     }
     
-    func getKanjis(searchedWord: String) -> [Kanji] {
-        let kanjis = repository.getKanjis()
+    func getKanjis(searchedWord: String) -> [KanjiData] {
+        let kanjis = repository
+            .getKanjis()
+            .kanjiList
+            .map { KanjiData(kanji: $0, isFavorite: favoriteManager.contains(id: $0.id))}
+        
         if searchedWord.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            return kanjis.kanjiList
+            return kanjis
         }
-        let filteredKanjis = kanjis.kanjiList.filter { (kanji) -> Bool in
+        
+        let filteredKanjis = kanjis.filter { (kanji) -> Bool in
             return kanji.hasWord(searchedWord)
         }
         return filteredKanjis
+    }
+    
+    func saveFavorite(id: Int) {
+        favoriteManager.saveFavorite(id: id)
+    }
+    
+    func removeFavorite(id: Int) {
+        favoriteManager.removeFavorite(id: id)
     }
 }

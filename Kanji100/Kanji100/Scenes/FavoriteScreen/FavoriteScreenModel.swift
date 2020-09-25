@@ -17,7 +17,7 @@ class FavoriteScreenModel {
         self.repository = repository
     }
     
-    func getFavoritesKanjis() -> [Kanji] {
+    func getFavoritesKanjis() -> [KanjiData] {
         let kanjis = repository.getKanjis()
         let favoritesIds = favoriteManager.list
         if favoritesIds.isEmpty {
@@ -25,7 +25,16 @@ class FavoriteScreenModel {
         }
         let favoritesKanjis = kanjis.kanjiList.filter { (kanji) -> Bool in
             return favoritesIds.contains(kanji.id)
-        }
+        }.map { KanjiData(kanji: $0, isFavorite: true)}
+        
         return favoritesKanjis
+    }
+    
+    func saveFavorite(id: Int) {
+        favoriteManager.saveFavorite(id: id)
+    }
+    
+    func removeFavorite(id: Int) {
+        favoriteManager.removeFavorite(id: id)
     }
 }

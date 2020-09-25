@@ -32,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func createMainScreen(favoriteManager: FavoriteManager) -> UINavigationController {
-        let mainScreenViewController = MainScreenViewController(favoriteManager: favoriteManager)
+        let model = MainScreenModel(favoriteManager: favoriteManager)
+        let mainScreenViewController = MainScreenViewController(favoriteManager: favoriteManager, model: model)
         let mainScreenNavigationController = UINavigationController(rootViewController: mainScreenViewController)
         let mainScreenTabBarItem = UITabBarItem(title: "All Kanjis", image: UIImage(systemName: "book.fill"), tag: 0)
         mainScreenNavigationController.tabBarItem = mainScreenTabBarItem

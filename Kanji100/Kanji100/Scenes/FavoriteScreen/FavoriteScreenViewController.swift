@@ -13,8 +13,7 @@ final class FavoriteScreenViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     
     private var favoriteManager: FavoriteManager
-    private var kanjis: [Kanji] = []
-    private let favoritesFilter = FavoritesFilter(kanjis: KanjisRepository().getKanjis())
+    private var kanjis: [KanjiData] = []
     private var tableHandler: TableHandler!
     private var model: FavoriteScreenModel
     
@@ -30,8 +29,8 @@ final class FavoriteScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        kanjis = favoritesFilter.filter(favoritesList: FavoriteManager().list)
-        tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager, scene: .favoriteScreen)
+        kanjis = model.getFavoritesKanjis()
+        tableHandler = TableHandler(tableView: tableView, scene: .favoriteScreen)
         tableHandler.kanjis = kanjis
         title = "Favorites"
         tableHandler.delegate = self
@@ -39,7 +38,7 @@ final class FavoriteScreenViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        kanjis = favoritesFilter.filter(favoritesList: FavoriteManager().list)
+        kanjis = model.getFavoritesKanjis()
         tableHandler.kanjis = kanjis
         favoriteManager.loadFavorites()
         tableHandler.reload()
@@ -48,8 +47,13 @@ final class FavoriteScreenViewController: UIViewController {
 
 //MARK: - TableHandlerDelegate
 extension FavoriteScreenViewController: TableHandlerDelegate {
-    func cellDidDeselect(at index: Int) {
-        kanjis.remove(at: index)
+    func cellDidDeselect(kanji: KanjiData) {
+        model.removeFavorite(id: kanji.id)
+        tableHandler.kanjis = kanjis
+    }
+    
+    func cellDidSelect(kanji: KanjiData) {
+        model.saveFavorite(id: kanji.id)
         tableHandler.kanjis = kanjis
     }
 }

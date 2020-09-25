@@ -9,8 +9,8 @@
 import UIKit
 
 protocol KanjiTableViewCellDelegate: AnyObject {
-    func kanjiAddedToFavorite(at indexPath: IndexPath)
-    func kanjiRemovedFromFavorite(at indexPath: IndexPath)
+    func kanjiAddedToFavorite(kanji: KanjiData)
+    func kanjiRemovedFromFavorite(kanji: KanjiData)
 }
 
 class KanjiTableViewCell: UITableViewCell {
@@ -24,8 +24,7 @@ class KanjiTableViewCell: UITableViewCell {
     weak var delegate: KanjiTableViewCellDelegate?
     static let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
     static let identifier = "cell"
-    var isFavorite = false
-    var indexPath: IndexPath?
+    var kanji: KanjiData?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,19 +37,18 @@ class KanjiTableViewCell: UITableViewCell {
     }
     
     @IBAction func makeFavorite(_ sender: UIButton) {
-        guard let indexPath = indexPath else {
+        guard let kanji = kanji else {
             return
         }
-        if isFavorite {
-            delegate?.kanjiRemovedFromFavorite(at: indexPath)
+        if kanji.isFavorite {
+            delegate?.kanjiRemovedFromFavorite(kanji: kanji)
             return
         }
-        delegate?.kanjiAddedToFavorite(at: indexPath)
+        delegate?.kanjiAddedToFavorite(kanji: kanji)
     }
     
-    func fillCell(kanji: Kanji, indexPath: IndexPath, isFavorite: Bool) {
-        self.isFavorite = isFavorite
-        self.indexPath = indexPath
+    func fillCell(kanji: KanjiData) {
+        self.kanji = kanji
         kanjiLabel.text = kanji.kanji
         englishMeaningLabel.text = kanji.englishMeanings.joined(separator: ", ")
         onyomyReadLabel.text = kanji.onyomy.joined(separator: " / ")
@@ -63,7 +61,7 @@ class KanjiTableViewCell: UITableViewCell {
         }
         
         examplesLabel.text = examples.joined(separator: ", ")
-        favoriteButton.isSelected = isFavorite
+        favoriteButton.isSelected = kanji.isFavorite
     }
 }
 

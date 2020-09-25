@@ -9,7 +9,8 @@
 import UIKit
 
 protocol TableHandlerDelegate: AnyObject {
-    func cellDidDeselect(at index: Int)
+    func cellDidDeselect(kanji: KanjiData)
+    func cellDidSelect(kanji: KanjiData)
 }
 
 class TableHandler: NSObject, UITableViewDataSource {
@@ -26,19 +27,17 @@ class TableHandler: NSObject, UITableViewDataSource {
     }
     
     private let tableView: UITableView
-    private let favoriteManager: FavoriteManager
     private var kanjiListIsEmpty = true
     weak var delegate: TableHandlerDelegate?
     let scene: Scene
-    var kanjis: [Kanji] = [] {
+    var kanjis: [KanjiData] = [] {
         didSet {
             reload()
         }
     }
     
-    init(tableView: UITableView, favoriteManager: FavoriteManager, scene: Scene) {
+    init(tableView: UITableView, scene: Scene) {
         self.tableView = tableView
-        self.favoriteManager = favoriteManager
         self.scene = scene
         super.init()
         setupTableView()
@@ -81,8 +80,7 @@ class TableHandler: NSObject, UITableViewDataSource {
             fatalError("Cell not found")
         }
         let kanji = kanjis[indexPath.row]
-        let isFavorite = favoriteManager.contains(id: kanjis[indexPath.row].id)
-        cell.fillCell(kanji: kanji, indexPath: indexPath, isFavorite: isFavorite)
+        cell.fillCell(kanji: kanji)
         cell.delegate = self
         return cell
     }
@@ -99,16 +97,11 @@ class TableHandler: NSObject, UITableViewDataSource {
 
 // MARK: - KanjiTableViewCellDelegate
 extension TableHandler: KanjiTableViewCellDelegate {
-    func kanjiAddedToFavorite(at indexPath: IndexPath) {
-        let kanji = kanjis[indexPath.row]
-        favoriteManager.saveFavorite(id: kanji.id)
-        reload()
+    func kanjiAddedToFavorite(kanji: KanjiData) {
+        delegate?.cellDidSelect(kanji: kanji)
     }
     
-    func kanjiRemovedFromFavorite(at indexPath: IndexPath) {
-        let kanji = kanjis[indexPath.row]
-        favoriteManager.removeFavorite(id: kanji.id)
-        reload()
-        delegate?.cellDidDeselect(at: indexPath.row)
+    func kanjiRemovedFromFavorite(kanji: KanjiData) {
+        delegate?.cellDidDeselect(kanji: kanji)
     }
 }
