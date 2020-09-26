@@ -40,8 +40,7 @@ final class MainScreenViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        favoriteManager.loadFavorites()
-        tableHandler.reload()
+        searchWord(searchTerm)
     }
     
     private func setupSearchController() {
@@ -91,14 +90,14 @@ extension MainScreenViewController: UISearchResultsUpdating {
 }
 
 extension MainScreenViewController: TableHandlerDelegate {
-    func cellDidDeselect(kanji: KanjiData) {
+    func cellDidSelect(kanji: KanjiData) {
         model.saveFavorite(id: kanji.id)
-        tableHandler.reload()
+        searchWord(searchTerm)
     }
     
-    func cellDidSelect(kanji: KanjiData) {
+    func cellDidDeselect(kanji: KanjiData) {
         model.removeFavorite(id: kanji.id)
-        tableHandler.reload()
+        searchWord(searchTerm)
     }
     
     

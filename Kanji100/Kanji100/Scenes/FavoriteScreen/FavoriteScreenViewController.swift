@@ -29,19 +29,20 @@ final class FavoriteScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        kanjis = model.getFavoritesKanjis()
         tableHandler = TableHandler(tableView: tableView, scene: .favoriteScreen)
-        tableHandler.kanjis = kanjis
-        title = "Favorites"
         tableHandler.delegate = self
+        title = "Favorites"
+        updateKanjis()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         kanjis = model.getFavoritesKanjis()
-        tableHandler.kanjis = kanjis
-        favoriteManager.loadFavorites()
-        tableHandler.reload()
+        updateKanjis()
+    }
+    
+    private func updateKanjis() {
+        tableHandler.kanjis = model.getFavoritesKanjis()
     }
 }
 
@@ -49,11 +50,11 @@ final class FavoriteScreenViewController: UIViewController {
 extension FavoriteScreenViewController: TableHandlerDelegate {
     func cellDidDeselect(kanji: KanjiData) {
         model.removeFavorite(id: kanji.id)
-        tableHandler.kanjis = kanjis
+        updateKanjis()
     }
     
     func cellDidSelect(kanji: KanjiData) {
         model.saveFavorite(id: kanji.id)
-        tableHandler.kanjis = kanjis
+        updateKanjis()
     }
 }

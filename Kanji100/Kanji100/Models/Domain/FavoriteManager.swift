@@ -22,6 +22,11 @@ class FavoriteManager {
     
     func saveFavorite(id: Int) {
         loadFavorites()
+        
+        if list.contains(id) {
+            return
+        }
+        
         list.append(id)
         userDefaults.set(list, forKey: "ids")
         print(list)
@@ -36,7 +41,7 @@ class FavoriteManager {
         print(list)
     }
     
-    func loadFavorites() {
+    private func loadFavorites() {
         let idsCollection = (userDefaults.array(forKey: "ids") as? [Int]) ?? []
         list = idsCollection
     }
