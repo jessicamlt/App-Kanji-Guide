@@ -1,6 +1,0 @@
-framework module Pods_Kanji100 {
-  umbrella header "Pods-Kanji100-umbrella.h"
-
-  export *
-  module * { export * }
-}
