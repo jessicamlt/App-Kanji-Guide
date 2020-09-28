@@ -3,17 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7624D95425179FC5002D0FE2 /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */; };
 		7624D95525179FC5002D0FE2 /* FavoriteScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */; };
 		7624D9622518E40F002D0FE2 /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624D9612518E40F002D0FE2 /* FavoriteManager.swift */; };
-		7624D990251954B4002D0FE2 /* FavoritesFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624D98F251954B4002D0FE2 /* FavoritesFilter.swift */; };
 		7624D99B251C0FCE002D0FE2 /* TableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624D99A251C0FCE002D0FE2 /* TableHandler.swift */; };
 		76428B742513FBD000651F35 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B732513FBD000651F35 /* Word.swift */; };
-		76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B7B2513FC3F00651F35 /* Kanji.swift */; };
+		76428B7C2513FC3F00651F35 /* KanjiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B7B2513FC3F00651F35 /* KanjiData.swift */; };
 		76428B812513FCBE00651F35 /* WordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76428B802513FCBD00651F35 /* WordTests.swift */; };
 		767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAF93250FDD4E005CF533 /* AppDelegate.swift */; };
 		767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767EAF9C250FDD4F005CF533 /* Assets.xcassets */; };
@@ -29,10 +28,15 @@
 		767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */; };
 		767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFCD25104326005CF533 /* KanjisRepository.swift */; };
 		767EAFD02511327F005CF533 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCF2511327F005CF533 /* MainScreenViewController.xib */; };
+		7686B65F252272FB0088A304 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7686B65E252272FB0088A304 /* GoogleService-Info.plist */; };
 		76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */; };
 		76A53E3A2515618A008DCAC6 /* PlaceholderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */; };
-		76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4C025140F990059C25B /* WordsFilter.swift */; };
+		76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF02251D649B00A1B579 /* MainScreenModel.swift */; };
+		76C3CF09251D67BB00A1B579 /* FavoriteScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF08251D67BB00A1B579 /* FavoriteScreenModel.swift */; };
+		76C3CF11251D715A00A1B579 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF10251D715A00A1B579 /* Kanji.swift */; };
 		76EBA4CB251424BC0059C25B /* WordsFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */; };
+		EEF2B61642F22FF97CE6E6DF /* Pods_Kanji100Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0873EFB98EA39E1756F811CB /* Pods_Kanji100Tests.framework */; };
+		FE4700B9858CA83C77F00685 /* Pods_Kanji100.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A870B6F1D4DD16377E0CD8 /* Pods_Kanji100.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0873EFB98EA39E1756F811CB /* Pods_Kanji100Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kanji100Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1C50C6CAE6041F2619E473 /* Pods-Kanji100Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji100Tests.release.xcconfig"; path = "Target Support Files/Pods-Kanji100Tests/Pods-Kanji100Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenViewController.swift; sourceTree = "<group>"; };
 		7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteScreenViewController.xib; sourceTree = "<group>"; };
 		7624D9612518E40F002D0FE2 /* FavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManager.swift; sourceTree = "<group>"; };
-		7624D98F251954B4002D0FE2 /* FavoritesFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesFilter.swift; sourceTree = "<group>"; };
 		7624D99A251C0FCE002D0FE2 /* TableHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHandler.swift; sourceTree = "<group>"; };
 		76428B732513FBD000651F35 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		76428B7B2513FC3F00651F35 /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
+		76428B7B2513FC3F00651F35 /* KanjiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiData.swift; sourceTree = "<group>"; };
 		76428B802513FCBD00651F35 /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
 		767EAF90250FDD4E005CF533 /* Kanji100.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanji100.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767EAF93250FDD4E005CF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,10 +77,17 @@
 		767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AiharaHudemojiKaisho3.00.ttf; sourceTree = "<group>"; };
 		767EAFCD25104326005CF533 /* KanjisRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjisRepository.swift; sourceTree = "<group>"; };
 		767EAFCF2511327F005CF533 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
+		7686B65E252272FB0088A304 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
 		76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
-		76EBA4C025140F990059C25B /* WordsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilter.swift; sourceTree = "<group>"; };
+		76C3CF02251D649B00A1B579 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
+		76C3CF08251D67BB00A1B579 /* FavoriteScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenModel.swift; sourceTree = "<group>"; };
+		76C3CF10251D715A00A1B579 /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
 		76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilterTests.swift; sourceTree = "<group>"; };
+		8B1CCB6A73D33199869C618D /* Pods-Kanji100Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji100Tests.debug.xcconfig"; path = "Target Support Files/Pods-Kanji100Tests/Pods-Kanji100Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6C72522B1D77CF841679B1D /* Pods-Kanji100.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji100.release.xcconfig"; path = "Target Support Files/Pods-Kanji100/Pods-Kanji100.release.xcconfig"; sourceTree = "<group>"; };
+		AD33FC65488BC07998676806 /* Pods-Kanji100.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji100.debug.xcconfig"; path = "Target Support Files/Pods-Kanji100/Pods-Kanji100.debug.xcconfig"; sourceTree = "<group>"; };
+		C1A870B6F1D4DD16377E0CD8 /* Pods_Kanji100.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kanji100.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4700B9858CA83C77F00685 /* Pods_Kanji100.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF2B61642F22FF97CE6E6DF /* Pods_Kanji100Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +115,7 @@
 			children = (
 				7624D95225179FC4002D0FE2 /* FavoriteScreenViewController.swift */,
 				7624D95325179FC4002D0FE2 /* FavoriteScreenViewController.xib */,
+				76C3CF08251D67BB00A1B579 /* FavoriteScreenModel.swift */,
 			);
 			path = FavoriteScreen;
 			sourceTree = "<group>";
@@ -144,6 +159,8 @@
 				767EAF92250FDD4E005CF533 /* Kanji100 */,
 				767EAFB6250FED83005CF533 /* Kanji100Tests */,
 				767EAF91250FDD4E005CF533 /* Products */,
+				C8506CA642B50EB5984C5C74 /* Pods */,
+				E63FFCF9AFA3E19CD63FE315 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,25 +181,22 @@
 				7624D997251C0F64002D0FE2 /* Scenes */,
 				76428B7F2513FC5200651F35 /* Repository */,
 				767EAFCA25101F1E005CF533 /* Resources */,
-				767EAFAB250FE953005CF533 /* DataModels */,
+				767EAFAB250FE953005CF533 /* Models */,
 				767EAF9C250FDD4F005CF533 /* Assets.xcassets */,
 				767EAF9E250FDD4F005CF533 /* LaunchScreen.storyboard */,
 				767EAFA1250FDD4F005CF533 /* Info.plist */,
+				7686B65E252272FB0088A304 /* GoogleService-Info.plist */,
 			);
 			path = Kanji100;
 			sourceTree = "<group>";
 		};
-		767EAFAB250FE953005CF533 /* DataModels */ = {
+		767EAFAB250FE953005CF533 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				767EAFA7250FE043005CF533 /* Kanjis.swift */,
-				76428B7B2513FC3F00651F35 /* Kanji.swift */,
-				76428B732513FBD000651F35 /* Word.swift */,
-				76EBA4C025140F990059C25B /* WordsFilter.swift */,
-				7624D9612518E40F002D0FE2 /* FavoriteManager.swift */,
-				7624D98F251954B4002D0FE2 /* FavoritesFilter.swift */,
+				76C3CF0D251D702B00A1B579 /* App */,
+				76C3CF0C251D6FFB00A1B579 /* Domain */,
 			);
-			path = DataModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		767EAFB0250FECEA005CF533 /* MainScreen */ = {
@@ -191,6 +205,7 @@
 				767EAFC525100FB9005CF533 /* Cells */,
 				767EAFAC250FEB5F005CF533 /* MainScreenViewController.swift */,
 				767EAFCF2511327F005CF533 /* MainScreenViewController.xib */,
+				76C3CF02251D649B00A1B579 /* MainScreenModel.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -244,6 +259,45 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		76C3CF0C251D6FFB00A1B579 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				767EAFA7250FE043005CF533 /* Kanjis.swift */,
+				76C3CF10251D715A00A1B579 /* Kanji.swift */,
+				76428B732513FBD000651F35 /* Word.swift */,
+				7624D9612518E40F002D0FE2 /* FavoriteManager.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		76C3CF0D251D702B00A1B579 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				76428B7B2513FC3F00651F35 /* KanjiData.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C8506CA642B50EB5984C5C74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD33FC65488BC07998676806 /* Pods-Kanji100.debug.xcconfig */,
+				A6C72522B1D77CF841679B1D /* Pods-Kanji100.release.xcconfig */,
+				8B1CCB6A73D33199869C618D /* Pods-Kanji100Tests.debug.xcconfig */,
+				1F1C50C6CAE6041F2619E473 /* Pods-Kanji100Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E63FFCF9AFA3E19CD63FE315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1A870B6F1D4DD16377E0CD8 /* Pods_Kanji100.framework */,
+				0873EFB98EA39E1756F811CB /* Pods_Kanji100Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,9 +305,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 767EAFA4250FDD4F005CF533 /* Build configuration list for PBXNativeTarget "Kanji100" */;
 			buildPhases = (
+				7EEFBD62285A9811394AE4C0 /* [CP] Check Pods Manifest.lock */,
 				767EAF8C250FDD4E005CF533 /* Sources */,
 				767EAF8D250FDD4E005CF533 /* Frameworks */,
 				767EAF8E250FDD4E005CF533 /* Resources */,
+				1F7E55302AFD0CDB5A24308A /* [CP] Embed Pods Frameworks */,
+				7686B672252274040088A304 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -268,6 +325,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 767EAFBC250FED83005CF533 /* Build configuration list for PBXNativeTarget "Kanji100Tests" */;
 			buildPhases = (
+				24FB85421280FB64CB12402E /* [CP] Check Pods Manifest.lock */,
 				767EAFB1250FED83005CF533 /* Sources */,
 				767EAFB2250FED83005CF533 /* Frameworks */,
 				767EAFB3250FED83005CF533 /* Resources */,
@@ -327,6 +385,7 @@
 			files = (
 				7624D95525179FC5002D0FE2 /* FavoriteScreenViewController.xib in Resources */,
 				767EAFA0250FDD4F005CF533 /* LaunchScreen.storyboard in Resources */,
+				7686B65F252272FB0088A304 /* GoogleService-Info.plist in Resources */,
 				767EAFCC25101F49005CF533 /* AiharaHudemojiKaisho3.00.ttf in Resources */,
 				767EAF9D250FDD4F005CF533 /* Assets.xcassets in Resources */,
 				767EAFC925100FE0005CF533 /* KanjiTableViewCell.xib in Resources */,
@@ -345,24 +404,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F7E55302AFD0CDB5A24308A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kanji100/Pods-Kanji100-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kanji100/Pods-Kanji100-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kanji100/Pods-Kanji100-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24FB85421280FB64CB12402E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kanji100Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7686B672252274040088A304 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		7EEFBD62285A9811394AE4C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kanji100-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		767EAF8C250FDD4E005CF533 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				767EAFA8250FE043005CF533 /* Kanjis.swift in Sources */,
-				7624D990251954B4002D0FE2 /* FavoritesFilter.swift in Sources */,
-				76EBA4C125140F990059C25B /* WordsFilter.swift in Sources */,
 				7624D95425179FC5002D0FE2 /* FavoriteScreenViewController.swift in Sources */,
 				76428B742513FBD000651F35 /* Word.swift in Sources */,
 				767EAFAE250FEB5F005CF533 /* MainScreenViewController.swift in Sources */,
 				7624D9622518E40F002D0FE2 /* FavoriteManager.swift in Sources */,
-				76428B7C2513FC3F00651F35 /* Kanji.swift in Sources */,
+				76428B7C2513FC3F00651F35 /* KanjiData.swift in Sources */,
+				76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */,
 				767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */,
+				76C3CF09251D67BB00A1B579 /* FavoriteScreenModel.swift in Sources */,
 				76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */,
 				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,
 				7624D99B251C0FCE002D0FE2 /* TableHandler.swift in Sources */,
 				767EAF94250FDD4E005CF533 /* AppDelegate.swift in Sources */,
+				76C3CF11251D715A00A1B579 /* Kanji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,16 +659,18 @@
 		};
 		767EAFA5250FDD4F005CF533 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD33FC65488BC07998676806 /* Pods-Kanji100.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = L442N5GXM2;
 				INFOPLIST_FILE = Kanji100/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = trindade.jessica.Kanji100;
+				PRODUCT_BUNDLE_IDENTIFIER = trindade.jessica.KanjiGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -536,16 +679,18 @@
 		};
 		767EAFA6250FDD4F005CF533 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C72522B1D77CF841679B1D /* Pods-Kanji100.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = L442N5GXM2;
 				INFOPLIST_FILE = Kanji100/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = trindade.jessica.Kanji100;
+				PRODUCT_BUNDLE_IDENTIFIER = trindade.jessica.KanjiGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -554,6 +699,7 @@
 		};
 		767EAFBD250FED83005CF533 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1CCB6A73D33199869C618D /* Pods-Kanji100Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -574,6 +720,7 @@
 		};
 		767EAFBE250FED83005CF533 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F1C50C6CAE6041F2619E473 /* Pods-Kanji100Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

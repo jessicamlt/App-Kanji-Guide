@@ -8,20 +8,31 @@
 
 import UIKit
 
-class MainScreenViewController: UIViewController {
+final class MainScreenViewController: UIViewController {
     
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet private var tableView: UITableView!
     
-    let searchController = UISearchController(searchResultsController: nil)
-    var kanjis = Kanjis(kanjiList: [])
-    let filter = WordsFilter(kanjis: KanjisRepository().convertJSON()) //Model
-    let favoriteManager = FavoriteManager()
-    var tableHandler: TableHandler!
-    var searchTerm: String? = ""
-
+    private let searchController = UISearchController(searchResultsController: nil)
+    private var kanjis = Kanjis(kanjiList: [])
+    private let favoriteManager: FavoriteManager
+    private var tableHandler: TableHandler!
+    private var searchTerm: String? = ""
+    private let model: MainScreenModel
+    
+    init(favoriteManager: FavoriteManager, model: MainScreenModel) {
+        self.favoriteManager = favoriteManager
+        self.model = model
+        super.init(nibName: "MainScreenViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager, scene: .mainScreen)
+        tableHandler = TableHandler(tableView: tableView, scene: .mainScreen)
+        tableHandler.delegate = self
         tableHandler.kanjis = []
         setupSearchController()
         searchWord(nil)
@@ -29,11 +40,10 @@ class MainScreenViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        favoriteManager.loadFavorites()
-        tableHandler.reload()
+        searchWord(searchTerm)
     }
     
-    func setupSearchController() {
+    private func setupSearchController() {
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         searchController.delegate = self
@@ -43,15 +53,15 @@ class MainScreenViewController: UIViewController {
         navigationItem.searchController = searchController
     }
     
-    func searchWord(_ word: String?) {
-        tableHandler.kanjis = filter.filter(searchedWord: word ?? "")
-        tableView.reloadData()
+    private func searchWord(_ word: String?) {
+        tableHandler.kanjis = model.getKanjis(searchedWord: word ?? "")
         guard let searchText = word, searchText.trimmingCharacters(in: .whitespaces).isEmpty == false else {
             title = "All Kanjis"
             return
         }
         title = searchText
     }
+    
 }
 
 // MARK: - SearchBarDelegate
@@ -78,4 +88,18 @@ extension MainScreenViewController: UISearchControllerDelegate {
 extension MainScreenViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
     }
+}
+
+extension MainScreenViewController: TableHandlerDelegate {
+    func cellDidSelect(kanji: KanjiData) {
+        model.saveFavorite(id: kanji.id)
+        searchWord(searchTerm)
+    }
+    
+    func cellDidDeselect(kanji: KanjiData) {
+        model.removeFavorite(id: kanji.id)
+        searchWord(searchTerm)
+    }
+    
+    
 }

@@ -8,37 +8,53 @@
 
 import UIKit
 
-class FavoriteScreenViewController: UIViewController {
+final class FavoriteScreenViewController: UIViewController {
 
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet private var tableView: UITableView!
     
-    var favoriteManager = FavoriteManager()
-    var kanjis: [Kanji] = []
-    let favoritesFilter = FavoritesFilter(kanjis: KanjisRepository().convertJSON())
-    var tableHandler: TableHandler!
-
+    private var favoriteManager: FavoriteManager
+    private var kanjis: [KanjiData] = []
+    private var tableHandler: TableHandler!
+    private var model: FavoriteScreenModel
+    
+    init(favoriteManager: FavoriteManager, model: FavoriteScreenModel) {
+        self.favoriteManager = favoriteManager
+        self.model = model
+        super.init(nibName: "FavoriteScreenViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        kanjis = favoritesFilter.filter(favoritesList: FavoriteManager().list)
-        tableHandler = TableHandler(tableView: tableView, favoriteManager: favoriteManager, scene: .favoriteScreen)
-        tableHandler.kanjis = kanjis
-        title = "Favorites"
+        tableHandler = TableHandler(tableView: tableView, scene: .favoriteScreen)
         tableHandler.delegate = self
+        title = "Favorites"
+        updateKanjis()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        kanjis = favoritesFilter.filter(favoritesList: FavoriteManager().list)
-        tableHandler.kanjis = kanjis
-        favoriteManager.loadFavorites()
-        tableHandler.reload()
+        kanjis = model.getFavoritesKanjis()
+        updateKanjis()
+    }
+    
+    private func updateKanjis() {
+        tableHandler.kanjis = model.getFavoritesKanjis()
     }
 }
 
 //MARK: - TableHandlerDelegate
 extension FavoriteScreenViewController: TableHandlerDelegate {
-    func cellDidDeselect(at index: Int) {
-        kanjis.remove(at: index)
-        tableHandler.kanjis = kanjis
+    func cellDidDeselect(kanji: KanjiData) {
+        model.removeFavorite(id: kanji.id)
+        updateKanjis()
+    }
+    
+    func cellDidSelect(kanji: KanjiData) {
+        model.saveFavorite(id: kanji.id)
+        updateKanjis()
     }
 }
