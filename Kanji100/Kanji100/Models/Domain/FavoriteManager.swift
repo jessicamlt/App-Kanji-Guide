@@ -38,7 +38,6 @@ class FavoriteManager {
             return number != id
         })
         userDefaults.set(list, forKey: "ids")
-        print(list)
     }
     
     private func loadFavorites() {

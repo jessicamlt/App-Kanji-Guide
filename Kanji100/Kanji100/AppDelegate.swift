@@ -6,6 +6,7 @@
 //  Copyright © 2020 Jéssica Trindade. All rights reserved.
 //
 
+import Firebase
 import UIKit
 
 @UIApplicationMain
@@ -28,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.overrideUserInterfaceStyle = .light
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+        
+        FirebaseApp.configure()
+        
         return true
     }
     
