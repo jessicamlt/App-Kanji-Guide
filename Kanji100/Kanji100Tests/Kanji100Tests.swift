@@ -1,11 +1,3 @@
-//
-//  Kanji100Tests.swift
-//  Kanji100Tests
-//
-//  Created by Jéssica Trindade on 14/09/20.
-//  Copyright © 2020 Jéssica Trindade. All rights reserved.
-//
-
 import XCTest
 
 class Kanji100Tests: XCTestCase {

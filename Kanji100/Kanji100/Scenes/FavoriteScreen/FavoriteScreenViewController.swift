@@ -1,11 +1,3 @@
-//
-//  FavoriteScreenViewController.swift
-//  Kanji100
-//
-//  Created by Jéssica Trindade on 20/09/20.
-//  Copyright © 2020 Jéssica Trindade. All rights reserved.
-//
-
 import UIKit
 
 final class FavoriteScreenViewController: UIViewController {

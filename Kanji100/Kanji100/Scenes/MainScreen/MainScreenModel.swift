@@ -1,11 +1,3 @@
-//
-//  MainScreenModel.swift
-//  Kanji100
-//
-//  Created by Jéssica Trindade on 24/09/20.
-//  Copyright © 2020 Jéssica Trindade. All rights reserved.
-//
-
 import Foundation
 
 class MainScreenModel {

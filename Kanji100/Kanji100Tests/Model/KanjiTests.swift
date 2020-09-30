@@ -1,11 +1,3 @@
-//
-//  KanjiTests.swift
-//  Kanji100Tests
-//
-//  Created by Jéssica Trindade on 14/09/20.
-//  Copyright © 2020 Jéssica Trindade. All rights reserved.
-//
-
 import XCTest
 @testable import Kanji100
 
@@ -25,9 +17,9 @@ class KanjiTests: XCTestCase {
         XCTAssertEqual(kanji1.kanji, "一")
         XCTAssertEqual(kanji1.englishMeanings.count, 1)
         XCTAssertEqual(kanji1.englishMeanings[0], "One")
-        XCTAssertEqual(kanji1.onyomy.count, 2)
-        XCTAssertEqual(kanji1.onyomy[0], "ichi")
-        XCTAssertEqual(kanji1.onyomy[1], "itsu")
+        XCTAssertEqual(kanji1.onyomi.count, 2)
+        XCTAssertEqual(kanji1.onyomi[0], "ichi")
+        XCTAssertEqual(kanji1.onyomi[1], "itsu")
         XCTAssertEqual(kanji1.kunyomi.count, 2)
         XCTAssertEqual(kanji1.kunyomi[0], "hito(tsu)")
         XCTAssertEqual(kanji1.kunyomi[1], "hito")
@@ -41,7 +33,12 @@ class KanjiTests: XCTestCase {
     }
     
     func testHasKanji() throws {
-        let kanji = KanjiJson.objects.kanjiList.first!
+        let repository = KanjisRepository()
+        let favoriteManager = FavoriteManager()
+        let kanji = repository
+            .getKanjis()
+            .kanjiList
+            .map { KanjiData(kanji: $0, isFavorite: favoriteManager.contains(id: $0.id))}.first!
         XCTAssertTrue(kanji.hasWord("ichi"))
         XCTAssertTrue(kanji.hasWord("ich"))
         XCTAssertTrue(kanji.hasWord("Ich"))
