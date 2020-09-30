@@ -6,7 +6,7 @@
             "englishMeanings": [
                 "One"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ichi",
                 "itsu"
             ],
@@ -29,7 +29,7 @@
             "englishMeanings": [
                 "Two"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ni"
             ],
             "kunyomi": [
@@ -51,7 +51,7 @@
             "englishMeanings": [
                 "Three"
             ],
-            "onyomy": [
+            "onyomi": [
                 "san"
             ],
             "kunyomi": [
@@ -72,7 +72,7 @@
             "englishMeanings": [
                 "Four"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shi"
             ],
             "kunyomi": [
@@ -94,7 +94,7 @@
             "englishMeanings": [
                 "Five"
             ],
-            "onyomy": [
+            "onyomi": [
                 "go"
             ],
             "kunyomi": [
@@ -115,7 +115,7 @@
             "englishMeanings": [
                 "Six"
             ],
-            "onyomy": [
+            "onyomi": [
                 "roku"
             ],
             "kunyomi": [
@@ -136,7 +136,7 @@
             "englishMeanings": [
                 "Seven"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shichi"
             ],
             "kunyomi": [
@@ -157,7 +157,7 @@
             "englishMeanings": [
                 "Eight"
             ],
-            "onyomy": [
+            "onyomi": [
                 "hachi"
             ],
             "kunyomi": [
@@ -178,7 +178,7 @@
             "englishMeanings": [
                 "Nine"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kyuu",
                 "ku"
             ],
@@ -200,7 +200,7 @@
             "englishMeanings": [
                 "Ten"
             ],
-            "onyomy": [
+            "onyomi": [
                 "juu",
                 "ji"
             ],
@@ -222,7 +222,7 @@
             "englishMeanings": [
                 "Hundred"
             ],
-            "onyomy": [
+            "onyomi": [
                 "hyaku"
             ],
             "kunyomi": [
@@ -242,7 +242,7 @@
             "englishMeanings": [
                 "Thousand"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sen"
             ],
             "kunyomi": [
@@ -262,7 +262,7 @@
             "englishMeanings": [
                 "Ten thousand"
             ],
-            "onyomy": [
+            "onyomi": [
                 "man",
                 "ban"
             ],
@@ -285,7 +285,7 @@
                 "circle",
                 "round"
             ],
-            "onyomy": [
+            "onyomi": [
                 "en"
             ],
             "kunyomi": [
@@ -306,7 +306,7 @@
                 "Day",
                 "sun"
             ],
-            "onyomy": [
+            "onyomi": [
                 "nichi",
                 "jitsu"
             ],
@@ -328,7 +328,7 @@
             "englishMeanings": [
                 "Week"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shuu"
             ],
             "kunyomi": [
@@ -349,7 +349,7 @@
                 "Month",
                 "moon"
             ],
-            "onyomy": [
+            "onyomi": [
                 "getsu",
                 "gatsu"
             ],
@@ -370,7 +370,7 @@
             "englishMeanings": [
                 "Year"
             ],
-            "onyomy": [
+            "onyomi": [
                 "nen"
             ],
             "kunyomi": [
@@ -397,7 +397,7 @@
                 "Time",
                 "hour"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ji"
             ],
             "kunyomi": [
@@ -419,7 +419,7 @@
                 "Time frame",
                 "span of time"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kan",
                 "ken"
             ],
@@ -444,7 +444,7 @@
                 "to understand",
                 "to divide"
             ],
-            "onyomy": [
+            "onyomi": [
                 "bun",
                 "bu",
                 "fun"
@@ -472,7 +472,7 @@
             "englishMeanings": [
                 "Noon"
             ],
-            "onyomy": [
+            "onyomi": [
                 "go"
             ],
             "kunyomi": [
@@ -493,7 +493,7 @@
             "englishMeanings": [
                 "Before"
             ],
-            "onyomy": [
+            "onyomi": [
                 "zen"
             ],
             "kunyomi": [
@@ -515,7 +515,7 @@
                 "later",
                 "behind"
             ],
-            "onyomy": [
+            "onyomi": [
                 "go",
                 "kou"
             ],
@@ -537,7 +537,7 @@
             "englishMeanings": [
                 "Now"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kon",
                 "kin"
             ],
@@ -566,7 +566,7 @@
                 "ahead",
                 "future"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sen"
             ],
             "kunyomi": [
@@ -593,7 +593,7 @@
             "englishMeanings": [
                 "To come"
             ],
-            "onyomy": [
+            "onyomi": [
                 "rai"
             ],
             "kunyomi": [
@@ -620,7 +620,7 @@
                 "Half",
                 "middle"
             ],
-            "onyomy": [
+            "onyomi": [
                 "han"
             ],
             "kunyomi": [
@@ -641,7 +641,7 @@
                 "Every",
                 "each"
             ],
-            "onyomy": [
+            "onyomi": [
                 "mai"
             ],
             "kunyomi": [
@@ -663,7 +663,7 @@
                 "which",
                 "how many"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ka"
             ],
             "kunyomi": [
@@ -684,7 +684,7 @@
             "englishMeanings": [
                 "Person"
             ],
-            "onyomy": [
+            "onyomi": [
                 "jin",
                 "nin"
             ],
@@ -707,7 +707,7 @@
                 "boy",
                 "male"
             ],
-            "onyomy": [
+            "onyomi": [
                 "dan",
                 "nan"
             ],
@@ -730,7 +730,7 @@
                 "girl",
                 "female"
             ],
-            "onyomy": [
+            "onyomi": [
                 "jo",
                 "nyo"
             ],
@@ -752,7 +752,7 @@
             "englishMeanings": [
                 "Child"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shi",
                 "su"
             ],
@@ -773,7 +773,7 @@
             "englishMeanings": [
                 "Mother"
             ],
-            "onyomy": [
+            "onyomi": [
                 "bo"
             ],
             "kunyomi": [
@@ -793,7 +793,7 @@
             "englishMeanings": [
                 "Father"
             ],
-            "onyomy": [
+            "onyomi": [
                 "fu"
             ],
             "kunyomi": [
@@ -813,7 +813,7 @@
             "englishMeanings": [
                 "Friend"
             ],
-            "onyomy": [
+            "onyomi": [
                 "yuu"
             ],
             "kunyomi": [
@@ -833,7 +833,7 @@
             "englishMeanings": [
                 "Fire"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ka"
             ],
             "kunyomi": [
@@ -853,7 +853,7 @@
             "englishMeanings": [
                 "Water"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sui"
             ],
             "kunyomi": [
@@ -874,7 +874,7 @@
                 "Tree",
                 "wood"
             ],
-            "onyomy": [
+            "onyomi": [
                 "moku",
                 "boku"
             ],
@@ -897,7 +897,7 @@
                 "Earth",
                 "ground"
             ],
-            "onyomy": [
+            "onyomi": [
                 "do",
                 "to"
             ],
@@ -919,7 +919,7 @@
                 "Money",
                 "gold"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kin",
                 "kon"
             ],
@@ -941,7 +941,7 @@
                 "Book",
                 "source"
             ],
-            "onyomy": [
+            "onyomi": [
                 "hon"
             ],
             "kunyomi": [
@@ -961,7 +961,7 @@
             "englishMeanings": [
                 "River"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sen"
             ],
             "kunyomi": [
@@ -981,7 +981,7 @@
             "englishMeanings": [
                 "Flower"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ka"
             ],
             "kunyomi": [
@@ -1001,7 +1001,7 @@
             "englishMeanings": [
                 "Spirit"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ki",
                 "ke"
             ],
@@ -1027,7 +1027,7 @@
                 "to be born",
                 "to grow"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sei",
                 "shou"
             ],
@@ -1050,7 +1050,7 @@
             "englishMeanings": [
                 "Fish"
             ],
-            "onyomy": [
+            "onyomi": [
                 "gyo"
             ],
             "kunyomi": [
@@ -1070,7 +1070,7 @@
             "englishMeanings": [
                 "Heaven"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ten"
             ],
             "kunyomi": [
@@ -1092,7 +1092,7 @@
                 "Sky",
                 "empty"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kuu"
             ],
             "kunyomi": [
@@ -1113,7 +1113,7 @@
             "englishMeanings": [
                 "Mountain"
             ],
-            "onyomy": [
+            "onyomi": [
                 "san"
             ],
             "kunyomi": [
@@ -1133,7 +1133,7 @@
             "englishMeanings": [
                 "Rain"
             ],
-            "onyomy": [
+            "onyomi": [
                 "u"
             ],
             "kunyomi": [
@@ -1153,7 +1153,7 @@
             "englishMeanings": [
                 "Eletricity"
             ],
-            "onyomy": [
+            "onyomi": [
                 "den"
             ],
             "kunyomi": [
@@ -1174,7 +1174,7 @@
                 "Car",
                 "vehicle"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sha"
             ],
             "kunyomi": [
@@ -1196,7 +1196,7 @@
                 "word",
                 "to chat"
             ],
-            "onyomy": [
+            "onyomi": [
                 "go"
             ],
             "kunyomi": [
@@ -1216,7 +1216,7 @@
             "englishMeanings": [
                 "Ear"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ji"
             ],
             "kunyomi": [
@@ -1236,7 +1236,7 @@
             "englishMeanings": [
                 "Hand"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shu"
             ],
             "kunyomi": [
@@ -1257,7 +1257,7 @@
                 "Foot",
                 "to add"
             ],
-            "onyomy": [
+            "onyomi": [
                 "soku"
             ],
             "kunyomi": [
@@ -1278,7 +1278,7 @@
             "englishMeanings": [
                 "Eye"
             ],
-            "onyomy": [
+            "onyomi": [
                 "moku"
             ],
             "kunyomi": [
@@ -1298,7 +1298,7 @@
             "englishMeanings": [
                 "Mouth"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kou",
                 "ku"
             ],
@@ -1319,7 +1319,7 @@
             "englishMeanings": [
                 "Name"
             ],
-            "onyomy": [
+            "onyomi": [
                 "mei",
                 "myou"
             ],
@@ -1340,7 +1340,7 @@
             "englishMeanings": [
                 "Shop"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ten"
             ],
             "kunyomi": [
@@ -1360,7 +1360,7 @@
             "englishMeanings": [
                 "Station"
             ],
-            "onyomy": [
+            "onyomi": [
                 "eki"
             ],
             "kunyomi": [
@@ -1382,7 +1382,7 @@
                 "path",
                 "way"
             ],
-            "onyomy": [
+            "onyomi": [
                 "dou"
             ],
             "kunyomi": [
@@ -1403,7 +1403,7 @@
                 "Shrine",
                 "socity"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sha"
             ],
             "kunyomi": [
@@ -1423,7 +1423,7 @@
             "englishMeanings": [
                 "Country"
             ],
-            "onyomy": [
+            "onyomi": [
                 "koku"
             ],
             "kunyomi": [
@@ -1443,7 +1443,7 @@
             "englishMeanings": [
                 "Outside"
             ],
-            "onyomy": [
+            "onyomi": [
                 "gai",
                 "ge"
             ],
@@ -1467,7 +1467,7 @@
                 "School",
                 "learning"
             ],
-            "onyomy": [
+            "onyomi": [
                 "gaku"
             ],
             "kunyomi": [
@@ -1487,7 +1487,7 @@
             "englishMeanings": [
                 "School"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kou"
             ],
             "kunyomi": [
@@ -1508,7 +1508,7 @@
                 "Up",
                 "above"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shou",
                 "jou"
             ],
@@ -1532,7 +1532,7 @@
                 "Down",
                 "below"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ka",
                 "ge"
             ],
@@ -1557,7 +1557,7 @@
                 "inner",
                 "between"
             ],
-            "onyomy": [
+            "onyomi": [
                 "chuu"
             ],
             "kunyomi": [
@@ -1578,7 +1578,7 @@
             "englishMeanings": [
                 "North"
             ],
-            "onyomy": [
+            "onyomi": [
                 "hoku"
             ],
             "kunyomi": [
@@ -1598,7 +1598,7 @@
             "englishMeanings": [
                 "West"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sai",
                 "sei"
             ],
@@ -1619,7 +1619,7 @@
             "englishMeanings": [
                 "East"
             ],
-            "onyomy": [
+            "onyomi": [
                 "tou"
             ],
             "kunyomi": [
@@ -1639,7 +1639,7 @@
             "englishMeanings": [
                 "South"
             ],
-            "onyomy": [
+            "onyomi": [
                 "nan"
             ],
             "kunyomi": [
@@ -1659,7 +1659,7 @@
             "englishMeanings": [
                 "Right"
             ],
-            "onyomy": [
+            "onyomi": [
                 "yuu"
             ],
             "kunyomi": [
@@ -1679,7 +1679,7 @@
             "englishMeanings": [
                 "Left"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sa"
             ],
             "kunyomi": [
@@ -1701,7 +1701,7 @@
                 "to be visible",
                 "to show"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ken"
             ],
             "kunyomi": [
@@ -1723,7 +1723,7 @@
                 "to listen",
                 "to ask"
             ],
-            "onyomy": [
+            "onyomi": [
                 "mon",
                 "bun"
             ],
@@ -1745,7 +1745,7 @@
             "englishMeanings": [
                 "To write"
             ],
-            "onyomy": [
+            "onyomi": [
                 "sho"
             ],
             "kunyomi": [
@@ -1765,7 +1765,7 @@
             "englishMeanings": [
                 "To read"
             ],
-            "onyomy": [
+            "onyomi": [
                 "doku"
             ],
             "kunyomi": [
@@ -1786,7 +1786,7 @@
                 "To talk",
                 "conversation"
             ],
-            "onyomy": [
+            "onyomi": [
                 "wa"
             ],
             "kunyomi": [
@@ -1807,7 +1807,7 @@
             "englishMeanings": [
                 "To buy"
             ],
-            "onyomy": [
+            "onyomi": [
                 "bai"
             ],
             "kunyomi": [
@@ -1828,7 +1828,7 @@
                 "To go",
                 "to carry out"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kou"
             ],
             "kunyomi": [
@@ -1850,7 +1850,7 @@
                 "To go out",
                 "to leave"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shutsu"
             ],
             "kunyomi": [
@@ -1872,7 +1872,7 @@
                 "To enter",
                 "to put in"
             ],
-            "onyomy": [
+            "onyomi": [
                 "nyuu"
             ],
             "kunyomi": [
@@ -1896,7 +1896,7 @@
                 "holiday",
                 "vacation"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kyuu"
             ],
             "kunyomi": [
@@ -1918,7 +1918,7 @@
                 "To eat",
                 "food"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shoku"
             ],
             "kunyomi": [
@@ -1939,7 +1939,7 @@
                 "To drink",
                 "a drink"
             ],
-            "onyomy": [
+            "onyomi": [
                 "in"
             ],
             "kunyomi": [
@@ -1960,7 +1960,7 @@
                 "To talk",
                 "word"
             ],
-            "onyomy": [
+            "onyomi": [
                 "gen",
                 "gon"
             ],
@@ -1981,7 +1981,7 @@
             "englishMeanings": [
                 "To stand"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ritsu"
             ],
             "kunyomi": [
@@ -2002,7 +2002,7 @@
                 "To meet",
                 "society"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kai",
                 "e"
             ],
@@ -2024,7 +2024,7 @@
                 "A lot",
                 "many"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ta"
             ],
             "kunyomi": [
@@ -2051,7 +2051,7 @@
                 "A little",
                 "few"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shou"
             ],
             "kunyomi": [
@@ -2072,7 +2072,7 @@
             "englishMeanings": [
                 "Old"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ko"
             ],
             "kunyomi": [
@@ -2092,7 +2092,7 @@
             "englishMeanings": [
                 "New"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shin"
             ],
             "kunyomi": [
@@ -2119,7 +2119,7 @@
                 "Big",
                 "a lot"
             ],
-            "onyomy": [
+            "onyomi": [
                 "dai",
                 "tai"
             ],
@@ -2148,7 +2148,7 @@
                 "Little",
                 "small"
             ],
-            "onyomy": [
+            "onyomi": [
                 "shou"
             ],
             "kunyomi": [
@@ -2171,7 +2171,7 @@
                 "safety",
                 "peace"
             ],
-            "onyomy": [
+            "onyomi": [
                 "an"
             ],
             "kunyomi": [
@@ -2192,7 +2192,7 @@
                 "Expensive",
                 "high"
             ],
-            "onyomy": [
+            "onyomi": [
                 "kou"
             ],
             "kunyomi": [
@@ -2213,7 +2213,7 @@
                 "Long",
                 "leader"
             ],
-            "onyomy": [
+            "onyomi": [
                 "chou"
             ],
             "kunyomi": [
@@ -2239,7 +2239,7 @@
             "englishMeanings": [
                 "White"
             ],
-            "onyomy": [
+            "onyomi": [
                 "haku",
                 "byaku"
             ],
