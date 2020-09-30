@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 final class MainScreenViewController: UIViewController {
     
@@ -36,6 +37,12 @@ final class MainScreenViewController: UIViewController {
         tableHandler.kanjis = []
         setupSearchController()
         searchWord(nil)
+        
+        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+          AnalyticsParameterItemID: "id-\(title!)",
+          AnalyticsParameterItemName: title!,
+          AnalyticsParameterContentType: "cont"
+          ])
     }
     
     override func viewDidAppear(_ animated: Bool) {
