@@ -32,7 +32,7 @@ struct KanjiJson {
             "englishMeanings": [
                 "One"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ichi",
                 "itsu"
             ],
@@ -54,7 +54,7 @@ struct KanjiJson {
             "englishMeanings": [
                 "Two"
             ],
-            "onyomy": [
+            "onyomi": [
                 "ni"
             ],
             "kunyomi": [
