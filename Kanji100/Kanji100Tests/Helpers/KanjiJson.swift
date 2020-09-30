@@ -12,7 +12,6 @@ struct KanjiJson {
             XCTFail("Erro ao transformar Data em JSON")
             fatalError()
         }
-        
         return kanjis
     }
     

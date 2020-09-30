@@ -14,7 +14,6 @@ class FavoriteManager {
     
     func saveFavorite(id: Int) {
         loadFavorites()
-        
         if list.contains(id) {
             return
         }

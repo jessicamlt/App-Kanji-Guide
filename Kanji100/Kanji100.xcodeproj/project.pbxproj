@@ -34,7 +34,6 @@
 		76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF02251D649B00A1B579 /* MainScreenModel.swift */; };
 		76C3CF09251D67BB00A1B579 /* FavoriteScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF08251D67BB00A1B579 /* FavoriteScreenModel.swift */; };
 		76C3CF11251D715A00A1B579 /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF10251D715A00A1B579 /* Kanji.swift */; };
-		76EBA4CB251424BC0059C25B /* WordsFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */; };
 		EEF2B61642F22FF97CE6E6DF /* Pods_Kanji100Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0873EFB98EA39E1756F811CB /* Pods_Kanji100Tests.framework */; };
 		FE4700B9858CA83C77F00685 /* Pods_Kanji100.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A870B6F1D4DD16377E0CD8 /* Pods_Kanji100.framework */; };
 /* End PBXBuildFile section */
@@ -83,7 +82,6 @@
 		76C3CF02251D649B00A1B579 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
 		76C3CF08251D67BB00A1B579 /* FavoriteScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenModel.swift; sourceTree = "<group>"; };
 		76C3CF10251D715A00A1B579 /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
-		76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsFilterTests.swift; sourceTree = "<group>"; };
 		8B1CCB6A73D33199869C618D /* Pods-Kanji100Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji100Tests.debug.xcconfig"; path = "Target Support Files/Pods-Kanji100Tests/Pods-Kanji100Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C72522B1D77CF841679B1D /* Pods-Kanji100.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji100.release.xcconfig"; path = "Target Support Files/Pods-Kanji100/Pods-Kanji100.release.xcconfig"; sourceTree = "<group>"; };
 		AD33FC65488BC07998676806 /* Pods-Kanji100.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanji100.debug.xcconfig"; path = "Target Support Files/Pods-Kanji100/Pods-Kanji100.debug.xcconfig"; sourceTree = "<group>"; };
@@ -225,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				767EAFC0250FEDEA005CF533 /* KanjiTests.swift */,
-				76EBA4CA251424BC0059C25B /* WordsFilterTests.swift */,
 				76428B802513FCBD00651F35 /* WordTests.swift */,
 			);
 			path = Model;
@@ -511,7 +508,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76EBA4CB251424BC0059C25B /* WordsFilterTests.swift in Sources */,
 				767EAFC4250FEE46005CF533 /* KanjiJson.swift in Sources */,
 				76428B812513FCBE00651F35 /* WordTests.swift in Sources */,
 				767EAFB8250FED83005CF533 /* Kanji100Tests.swift in Sources */,

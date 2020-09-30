@@ -3,7 +3,6 @@ import XCTest
 
 class KanjiTests: XCTestCase {
 
-
     func testKanjiEncoding() throws {
         let kanjis = KanjiJson.objects
         
@@ -12,7 +11,6 @@ class KanjiTests: XCTestCase {
             return
         }
         
-
         XCTAssertEqual(kanjis.kanjiList.count , 2)
         XCTAssertEqual(kanji1.kanji, "一")
         XCTAssertEqual(kanji1.englishMeanings.count, 1)

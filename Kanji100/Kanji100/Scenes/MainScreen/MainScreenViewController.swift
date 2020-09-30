@@ -60,7 +60,6 @@ final class MainScreenViewController: UIViewController {
         }
         title = searchText
     }
-    
 }
 
 // MARK: - SearchBarDelegate
@@ -99,6 +98,4 @@ extension MainScreenViewController: TableHandlerDelegate {
         model.removeFavorite(id: kanji.id)
         searchWord(searchTerm)
     }
-    
-    
 }
