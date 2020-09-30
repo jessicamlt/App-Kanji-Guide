@@ -12,7 +12,7 @@ struct KanjiData: Decodable {
     var id: Int
     var kanji: String
     var englishMeanings: [String]
-    var onyomi: [String]
+    var onyomy: [String]
     var kunyomi: [String]
     var category: String
     var examples: [Word]
@@ -22,7 +22,7 @@ struct KanjiData: Decodable {
         self.id = kanji.id
         self.kanji = kanji.kanji
         self.englishMeanings = kanji.englishMeanings
-        self.onyomi = kanji.onyomi
+        self.onyomy = kanji.kunyomi
         self.kunyomi = kanji.kunyomi
         self.category = kanji.category
         self.examples = kanji.examples
@@ -33,7 +33,7 @@ struct KanjiData: Decodable {
         let lowerWord = word.lowercased()
         return kanji.lowercased().contains(lowerWord) ||
             englishMeanings.joined(separator: " ").lowercased().contains(lowerWord) ||
-            onyomi.joined(separator: " ").lowercased().contains(lowerWord) ||
+            onyomy.joined(separator: " ").lowercased().contains(lowerWord) ||
             kunyomi.joined(separator: " ").lowercased().contains(lowerWord) ||
             category.lowercased().contains(lowerWord) ||
             !(examples.filter { $0.hasWord(lowerWord) }.isEmpty)
