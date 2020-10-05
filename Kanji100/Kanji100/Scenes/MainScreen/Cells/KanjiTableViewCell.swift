@@ -61,8 +61,8 @@ class KanjiTableViewCell: UITableViewCell {
         self.kanji = kanji
         kanjiLabel.text = kanji.kanji
         englishMeaningLabel.text = kanji.englishMeanings.joined(separator: ", ")
-        onyomyReadLabel.text = kanji.onyomi.joined(separator: " / ")
-        kunyomiReadLabel.text = kanji.kunyomi.joined(separator: " / ")
+        onyomyReadLabel.text = "Onyomi: \(kanji.onyomi.joined(separator: " / "))"
+        kunyomiReadLabel.text = "Kunyomi: \(kanji.kunyomi.joined(separator: " / "))"
         
         let examplesCollection = kanji.examples
         var examples: [String] = []
