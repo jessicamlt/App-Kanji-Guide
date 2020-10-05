@@ -25,7 +25,8 @@ class KanjiTableViewCell: UITableViewCell {
         super.awakeFromNib()
         favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
         favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .selected)
-        cellViewAbove.layer.borderWidth = 1
+        cellViewAbove.layer.cornerRadius = 8.0
+        cellViewAbove.layer.borderWidth = 1.0
         cellViewAbove.layer.borderColor = UIColor(named: "main")?.cgColor
         kanjiView.layer.cornerRadius = 33.0
         kanjiView.layer.masksToBounds = true
