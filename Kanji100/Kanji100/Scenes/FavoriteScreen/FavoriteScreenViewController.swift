@@ -38,6 +38,15 @@ final class FavoriteScreenViewController: UIViewController {
     }
 }
 
+//MARK: - Create FavoriteScreen
+extension FavoriteScreenViewController {
+    static func create(favoriteManager: FavoriteManager) -> FavoriteScreenViewController {
+        let model = FavoriteScreenModel(favoriteManager: favoriteManager)
+        let favoriteScreenViewController = FavoriteScreenViewController(favoriteManager: favoriteManager, model: model)
+        return favoriteScreenViewController
+    }
+}
+
 //MARK: - TableHandlerDelegate
 extension FavoriteScreenViewController: TableHandlerDelegate {
     func cellDidDeselect(kanji: KanjiData) {

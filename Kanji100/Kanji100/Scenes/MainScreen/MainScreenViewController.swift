@@ -39,18 +39,23 @@ final class MainScreenViewController: UIViewController {
           ])
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         searchWord(searchTerm)
     }
     
     private func setupNavigationBar() {
         let searchNavigationItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
-        let favoriteNavigationItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+        let favoriteNavigationItem = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(goToFavoriteScreen))
         searchNavigationItem.tintColor = .white
         favoriteNavigationItem.tintColor = .white
         navigationItem.leftBarButtonItem = searchNavigationItem
         navigationItem.rightBarButtonItem = favoriteNavigationItem
+    }
+    
+    @objc func goToFavoriteScreen() {
+        let vc = FavoriteScreenViewController.create(favoriteManager: favoriteManager)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 //    private func setupSearchController() {
@@ -73,7 +78,17 @@ final class MainScreenViewController: UIViewController {
     }
 }
 
-// MARK: - SearchBarDelegate
+//MARK: - Create MainScreen
+
+extension MainScreenViewController {
+    static func create(favoriteManager: FavoriteManager) -> MainScreenViewController {
+        let model = MainScreenModel(favoriteManager: favoriteManager)
+        let mainScreenViewController = MainScreenViewController(favoriteManager: favoriteManager, model: model)
+        return mainScreenViewController
+    }
+}
+
+//MARK: - SearchBarDelegate
 extension MainScreenViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchTerm = searchBar.text ?? ""
