@@ -14,12 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainScreenNavigationController = createMainScreen(favoriteManager: favoriteManager)
         let favoriteScreenNavigationController = createFavoriteScreen(favoriteManager: favoriteManager)
         
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [mainScreenNavigationController, favoriteScreenNavigationController]
-        tabBarController.selectedViewController = mainScreenNavigationController
-        
         window?.overrideUserInterfaceStyle = .light
-        window?.rootViewController = tabBarController
+        window?.rootViewController = mainScreenNavigationController
         window?.makeKeyAndVisible()
         
         FirebaseApp.configure()
@@ -31,8 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let model = MainScreenModel(favoriteManager: favoriteManager)
         let mainScreenViewController = MainScreenViewController(favoriteManager: favoriteManager, model: model)
         let mainScreenNavigationController = UINavigationController(rootViewController: mainScreenViewController)
-        let mainScreenTabBarItem = UITabBarItem(title: "All Kanjis", image: UIImage(systemName: "book.fill"), tag: 0)
-        mainScreenNavigationController.tabBarItem = mainScreenTabBarItem
+        mainScreenNavigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        mainScreenNavigationController.navigationBar.barTintColor = UIColor(named: "second")
+//        let searchNavigationItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
+//        let favoriteNavigationItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+//        searchNavigationItem.tintColor = .white
+//        favoriteNavigationItem.tintColor = .white
+//        mainScreenNavigationController.navigationItem.leftBarButtonItem = searchNavigationItem
+//        mainScreenNavigationController.navigationItem.rightBarButtonItem = favoriteNavigationItem
         return mainScreenNavigationController
     }
     
@@ -40,9 +42,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let model = FavoriteScreenModel(favoriteManager: favoriteManager)
         let favoriteScreenViewController = FavoriteScreenViewController(favoriteManager: favoriteManager, model: model)
         let favoriteScreenNavigationController = UINavigationController(rootViewController: favoriteScreenViewController)
-        let favoriteScreenTabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "star.fill"), tag: 1)
-        favoriteScreenNavigationController.tabBarItem = favoriteScreenTabBarItem
+        favoriteScreenNavigationController.title = "Favorites"
+        favoriteScreenNavigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         favoriteScreenNavigationController.navigationBar.barTintColor = UIColor(named: "second")
+        
         return favoriteScreenNavigationController
     }
 }

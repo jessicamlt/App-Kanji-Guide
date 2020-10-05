@@ -5,7 +5,7 @@ final class MainScreenViewController: UIViewController {
     
     @IBOutlet private var tableView: UITableView!
     
-    private let searchController = UISearchController(searchResultsController: nil)
+    //private let searchController = UISearchController(searchResultsController: nil)
     private var kanjis = Kanjis(kanjiList: [])
     private let favoriteManager: FavoriteManager
     private var tableHandler: TableHandler!
@@ -27,8 +27,10 @@ final class MainScreenViewController: UIViewController {
         tableHandler = TableHandler(tableView: tableView, scene: .mainScreen)
         tableHandler.delegate = self
         tableHandler.kanjis = []
-        setupSearchController()
+        //setupSearchController()
         searchWord(nil)
+        setupNavigationBar()
+        
         
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
           AnalyticsParameterItemID: "id-\(title!)",
@@ -42,15 +44,24 @@ final class MainScreenViewController: UIViewController {
         searchWord(searchTerm)
     }
     
-    private func setupSearchController() {
-        searchController.searchResultsUpdater = self
-        searchController.searchBar.delegate = self
-        searchController.delegate = self
-        searchController.searchBar.enablesReturnKeyAutomatically = false
-        searchController.searchBar.resignFirstResponder()
-        searchController.obscuresBackgroundDuringPresentation = false
-        navigationItem.searchController = searchController
+    private func setupNavigationBar() {
+        let searchNavigationItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
+        let favoriteNavigationItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+        searchNavigationItem.tintColor = .white
+        favoriteNavigationItem.tintColor = .white
+        navigationItem.leftBarButtonItem = searchNavigationItem
+        navigationItem.rightBarButtonItem = favoriteNavigationItem
     }
+    
+//    private func setupSearchController() {
+//        searchController.searchResultsUpdater = self
+//        searchController.searchBar.delegate = self
+//        searchController.delegate = self
+//        searchController.searchBar.enablesReturnKeyAutomatically = false
+//        searchController.searchBar.resignFirstResponder()
+//        searchController.obscuresBackgroundDuringPresentation = false
+//        navigationItem.searchController = searchController
+//    }
     
     private func searchWord(_ word: String?) {
         tableHandler.kanjis = model.getKanjis(searchedWord: word ?? "")
@@ -67,7 +78,7 @@ extension MainScreenViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchTerm = searchBar.text ?? ""
         searchWord(searchTerm)
-        searchController.dismiss(animated: true, completion: nil)
+        //searchController.dismiss(animated: true, completion: nil)
     }
 }
 
