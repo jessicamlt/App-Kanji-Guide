@@ -24,6 +24,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="543" height="122"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bo-D3-ZP1">
+                        <rect key="frame" x="18" y="10" width="507" height="102"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFi-HS-zI4">
                         <rect key="frame" x="16" y="8" width="511" height="106"/>
                         <subviews>
@@ -108,7 +112,7 @@
                                         <color key="tintColor" name="main"/>
                                         <state key="normal" image="star" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             </preferredSymbolConfiguration>
                                         </state>
                                         <connections>
@@ -134,8 +138,12 @@
                     </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="kFi-HS-zI4" firstAttribute="bottom" secondItem="1bo-D3-ZP1" secondAttribute="bottom" constant="2" id="4fn-Ct-zoZ"/>
+                    <constraint firstItem="kFi-HS-zI4" firstAttribute="leading" secondItem="1bo-D3-ZP1" secondAttribute="leading" constant="-2" id="6UU-eN-Kna"/>
+                    <constraint firstItem="kFi-HS-zI4" firstAttribute="top" secondItem="1bo-D3-ZP1" secondAttribute="top" constant="-2" id="Mbt-BX-Dhw"/>
                     <constraint firstAttribute="trailing" secondItem="kFi-HS-zI4" secondAttribute="trailing" constant="16" id="PMq-xc-l7Q"/>
                     <constraint firstItem="kFi-HS-zI4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="UDl-s2-dAE"/>
+                    <constraint firstItem="kFi-HS-zI4" firstAttribute="trailing" secondItem="1bo-D3-ZP1" secondAttribute="trailing" constant="2" id="bpX-og-ErZ"/>
                     <constraint firstAttribute="bottom" secondItem="kFi-HS-zI4" secondAttribute="bottom" constant="8" id="l2L-M1-V5O"/>
                     <constraint firstItem="kFi-HS-zI4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vlt-ce-hbU"/>
                 </constraints>
@@ -143,6 +151,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cellViewAbove" destination="kFi-HS-zI4" id="6b5-hO-afP"/>
+                <outlet property="cellViewUnder" destination="1bo-D3-ZP1" id="cXB-2p-N4k"/>
                 <outlet property="englishMeaningLabel" destination="yxf-O9-Tm2" id="7l6-kV-EB0"/>
                 <outlet property="examplesLabel" destination="Jo2-tb-quz" id="wRa-kB-U9S"/>
                 <outlet property="favoriteButton" destination="464-Vz-AMw" id="FDs-Pt-mAc"/>
