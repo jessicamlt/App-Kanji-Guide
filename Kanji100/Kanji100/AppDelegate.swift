@@ -38,11 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func createFavoriteScreen(favoriteManager: FavoriteManager) -> UINavigationController {
         let model = FavoriteScreenModel(favoriteManager: favoriteManager)
-        let favoriteScreenViewController = FavoriteScreenViewController(favoriteManager: favoriteManager,
-                                                                        model: model)
+        let favoriteScreenViewController = FavoriteScreenViewController(favoriteManager: favoriteManager, model: model)
         let favoriteScreenNavigationController = UINavigationController(rootViewController: favoriteScreenViewController)
         let favoriteScreenTabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "star.fill"), tag: 1)
         favoriteScreenNavigationController.tabBarItem = favoriteScreenTabBarItem
+        favoriteScreenNavigationController.navigationBar.barTintColor = UIColor(named: "second")
         return favoriteScreenNavigationController
     }
 }
