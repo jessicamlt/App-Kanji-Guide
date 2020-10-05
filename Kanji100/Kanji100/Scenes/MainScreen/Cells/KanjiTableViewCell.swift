@@ -12,6 +12,7 @@ class KanjiTableViewCell: UITableViewCell {
     @IBOutlet var kunyomiReadLabel: UILabel!
     @IBOutlet var examplesLabel: UILabel!
     @IBOutlet var favoriteButton: UIButton!
+    @IBOutlet var kanjiView: UIView!
     
     weak var delegate: KanjiTableViewCellDelegate?
     static let nib = UINib(nibName: "KanjiTableViewCell", bundle: nil)
@@ -22,6 +23,8 @@ class KanjiTableViewCell: UITableViewCell {
         super.awakeFromNib()
         favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
         favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .selected)
+        kanjiView.layer.cornerRadius = 40.0
+        kanjiView.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

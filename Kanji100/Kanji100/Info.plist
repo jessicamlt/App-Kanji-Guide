@@ -22,6 +22,9 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>SFProText-Bold.ttf</string>
+		<string>SFProText-Semibold.ttf</string>
+		<string>SFProText-Regular.ttf</string>
 		<string>AiharaHudemojiKaisho3.00.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
