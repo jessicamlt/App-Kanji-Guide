@@ -25,6 +25,8 @@ final class FavoriteScreenViewController: UIViewController {
         tableHandler.delegate = self
         title = "Favorites"
         updateKanjis()
+        
+        tableView.contentInset = UIEdgeInsets(top: 8.0, left: 0.0, bottom: 8.0, right: 0.0)
     }
     
     override func viewDidAppear(_ animated: Bool) {

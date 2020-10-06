@@ -43,6 +43,8 @@ final class MainScreenViewController: UIViewController {
         searchView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         searchView.layer.cornerRadius = 16.0
         
+        tableView.contentInset = UIEdgeInsets(top: 8.0, left: 0.0, bottom: 8.0, right: 0.0)
+        
         hideSearchBar(animated: true)
         
         searchTextField.delegate = self

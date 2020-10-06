@@ -20,23 +20,31 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="UuY-Ct-H0S">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lTP-5l-yA8">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="lTP-5l-yA8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2Et-MC-Mhb"/>
+                <constraint firstAttribute="bottom" secondItem="UuY-Ct-H0S" secondAttribute="bottom" id="96D-3j-pPW"/>
                 <constraint firstItem="lTP-5l-yA8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="A6u-1N-0ox"/>
                 <constraint firstItem="lTP-5l-yA8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Bg3-yS-N6p"/>
-                <constraint firstItem="lTP-5l-yA8" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ufl-2r-0SP"/>
+                <constraint firstItem="UuY-Ct-H0S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gef-Qr-ATr"/>
+                <constraint firstItem="UuY-Ct-H0S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ckv-7Y-lFw"/>
+                <constraint firstItem="UuY-Ct-H0S" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="m8v-9u-7jm"/>
+                <constraint firstAttribute="bottom" secondItem="lTP-5l-yA8" secondAttribute="bottom" id="tCt-6D-4bk"/>
             </constraints>
             <point key="canvasLocation" x="-284.05797101449275" y="122.54464285714285"/>
         </view>
     </objects>
     <resources>
+        <image name="background" width="1024" height="1366"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

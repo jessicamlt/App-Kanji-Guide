@@ -75,6 +75,10 @@ class TableHandler: NSObject, UITableViewDataSource {
         cell.fillCell(kanji: kanji)
         cell.delegate = self
         cell.selectionStyle = .none
+        let view = UIView()
+        view.backgroundColor = .clear
+        cell.backgroundColor = .clear
+        cell.backgroundView = view
         return cell
     }
     
@@ -84,6 +88,10 @@ class TableHandler: NSObject, UITableViewDataSource {
         }
         cell.placeholderCellType = scene.placeholder
         cell.fillCell()
+        let view = UIView()
+        view.backgroundColor = .clear
+        cell.backgroundColor = .clear
+        cell.backgroundView = view
         return cell
     }
 }

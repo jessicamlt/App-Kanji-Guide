@@ -26,20 +26,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8SA-cV-Jup">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8SA-cV-Jup">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3cm-7o-U8n">
-                    <rect key="frame" x="0.0" y="165" width="414" height="697"/>
+                    <rect key="frame" x="0.0" y="173" width="414" height="723"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPa-IH-jO1">
-                    <rect key="frame" x="0.0" y="44" width="414" height="121"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="129"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-l8-ohn">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a word" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-l8-ohn">
                             <rect key="frame" x="16" y="40" width="382" height="22"/>
+                            <color key="tintColor" name="second"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bp-Cx-S2A">
                             <rect key="frame" x="16" y="66" width="382" height="1"/>
@@ -49,7 +50,7 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-Y2-KHD">
-                            <rect key="frame" x="99" y="75" width="216" height="30"/>
+                            <rect key="frame" x="99" y="83" width="216" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eK4-3b-L9Y">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
@@ -85,7 +86,7 @@
                     <constraints>
                         <constraint firstItem="8bp-Cx-S2A" firstAttribute="trailing" secondItem="5qL-l8-ohn" secondAttribute="trailing" id="0Cj-rw-Fl2"/>
                         <constraint firstItem="8bp-Cx-S2A" firstAttribute="leading" secondItem="5qL-l8-ohn" secondAttribute="leading" id="AzD-gJ-BqX"/>
-                        <constraint firstItem="LmE-Y2-KHD" firstAttribute="top" secondItem="8bp-Cx-S2A" secondAttribute="bottom" constant="8" id="NNc-HJ-jZH"/>
+                        <constraint firstItem="LmE-Y2-KHD" firstAttribute="top" secondItem="8bp-Cx-S2A" secondAttribute="bottom" constant="16" id="NNc-HJ-jZH"/>
                         <constraint firstItem="8bp-Cx-S2A" firstAttribute="top" secondItem="5qL-l8-ohn" secondAttribute="bottom" constant="4" id="OR8-7h-b5g"/>
                         <constraint firstItem="LmE-Y2-KHD" firstAttribute="centerX" secondItem="dPa-IH-jO1" secondAttribute="centerX" id="T0x-28-wm0"/>
                         <constraint firstAttribute="bottom" secondItem="LmE-Y2-KHD" secondAttribute="bottom" constant="16" id="ajD-AI-yeo"/>
@@ -99,9 +100,9 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="8SA-cV-Jup" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="3Fv-hM-plQ"/>
-                <constraint firstItem="3cm-7o-U8n" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="7tF-kC-fXb"/>
                 <constraint firstItem="8SA-cV-Jup" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="L0w-gW-r07"/>
                 <constraint firstItem="8SA-cV-Jup" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Osn-kH-eI5"/>
+                <constraint firstAttribute="bottom" secondItem="3cm-7o-U8n" secondAttribute="bottom" id="cdX-pc-EJR"/>
                 <constraint firstItem="3cm-7o-U8n" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gDU-Cf-qKs"/>
                 <constraint firstAttribute="bottom" secondItem="8SA-cV-Jup" secondAttribute="bottom" id="nbf-DX-GNz"/>
                 <constraint firstItem="3cm-7o-U8n" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="orf-pJ-dQn"/>
@@ -117,6 +118,9 @@
         <image name="background" width="1024" height="1366"/>
         <namedColor name="fourth">
             <color red="0.67400002479553223" green="0.67000001668930054" blue="0.73100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="second">
+            <color red="0.23899999260902405" green="0.18799999356269836" blue="0.32199999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="third">
             <color red="0.31000000238418579" green="0.22699999809265137" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
