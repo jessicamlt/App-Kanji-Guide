@@ -25,11 +25,11 @@ class PlaceholderTableViewCell: UITableViewCell {
     func fillCell() {
         switch placeholderCellType {
         case .generalList:
-            principalImageView.image = UIImage(named: "Lupa")
+            principalImageView.image = UIImage(systemName: "magnifyingglass")
             titleLabel.text = "We're sorry"
             messageLabel.text = "We can't find the word that you're looking for..."
         case .favoriteList:
-            principalImageView.image = UIImage(named: "lista")
+            principalImageView.image = UIImage(systemName: "star")
             titleLabel.text = "Favorites List"
             messageLabel.text = "Save you favorite kanji, you will find them collect here!"
         }

@@ -44,15 +44,18 @@ class KanjiTableViewCell: UITableViewCell {
     func cellSetUp() {
         favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
         favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .selected)
+        
         cellViewUnder.layer.masksToBounds = false
         cellViewUnder.layer.shadowColor = UIColor.black.cgColor
         cellViewUnder.layer.shadowOpacity = 0.4
         cellViewUnder.layer.shadowOffset = .zero
         cellViewUnder.layer.shadowRadius = 5.0
         cellViewUnder.layer.shouldRasterize = true
+        
         cellViewAbove.layer.cornerRadius = 8.0
         cellViewAbove.layer.borderWidth = 1.0
         cellViewAbove.layer.borderColor = UIColor(named: "main")?.cgColor
+        
         kanjiView.layer.cornerRadius = 33.0
         kanjiView.layer.masksToBounds = true
     }
