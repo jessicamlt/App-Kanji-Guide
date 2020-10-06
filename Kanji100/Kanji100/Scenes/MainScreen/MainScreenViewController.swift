@@ -10,8 +10,6 @@ final class MainScreenViewController: UIViewController {
     @IBOutlet var searchTextField: UITextField!
     @IBOutlet var topContraint: NSLayoutConstraint!
     
-    
-    //private let searchController = UISearchController(searchResultsController: nil)
     private var kanjis = Kanjis(kanjiList: [])
     private let favoriteManager: FavoriteManager
     private var tableHandler: TableHandler!
@@ -30,30 +28,18 @@ final class MainScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.contentInset = UIEdgeInsets(top: 8.0, left: 0.0, bottom: 8.0, right: 0.0)
+        
         tableHandler = TableHandler(tableView: tableView, scene: .mainScreen)
         tableHandler.delegate = self
         tableHandler.kanjis = []
-        //setupSearchController()
-        searchWord(nil)
-        setupNavigationBar()
-        searchButton.layer.cornerRadius = 8.0
-        searchButton.layer.masksToBounds = true
-        cancelButton.layer.cornerRadius = 8.0
-        cancelButton.layer.masksToBounds = true
-        searchView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-        searchView.layer.cornerRadius = 16.0
-        
-        tableView.contentInset = UIEdgeInsets(top: 8.0, left: 0.0, bottom: 8.0, right: 0.0)
-        
-        hideSearchBar(animated: true)
         
         searchTextField.delegate = self
         
-        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
-          AnalyticsParameterItemID: "id-\(title!)",
-          AnalyticsParameterItemName: title!,
-          AnalyticsParameterContentType: "cont"
-          ])
+        searchWord(nil)
+        setupNavigationBar()
+        setupSearchBar()
+        hideSearchBar(animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,8 +56,16 @@ final class MainScreenViewController: UIViewController {
         hideSearchBar(animated: true)
     }
     
+    private func setupSearchBar() {
+        searchButton.layer.cornerRadius = 8.0
+        searchButton.layer.masksToBounds = true
+        cancelButton.layer.cornerRadius = 8.0
+        cancelButton.layer.masksToBounds = true
+        searchView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        searchView.layer.cornerRadius = 16.0
+    }
     
-    func hideSearchBar(animated: Bool) {
+    private func hideSearchBar(animated: Bool) {
         if !animated {
             topContraint.constant = -searchView.bounds.height
             searchTextField.resignFirstResponder()
@@ -85,7 +79,7 @@ final class MainScreenViewController: UIViewController {
         }
     }
     
-    func showSearchBar(animated: Bool) {
+    private func showSearchBar(animated: Bool) {
         if !animated {
             topContraint.constant = 0
             searchTextField.becomeFirstResponder()
@@ -99,7 +93,7 @@ final class MainScreenViewController: UIViewController {
         }
     }
     
-    @objc func toggleSearchBar() {
+    @objc private func toggleSearchBar() {
         if topContraint.constant == 0 {
             hideSearchBar(animated: true)
             return
@@ -116,20 +110,10 @@ final class MainScreenViewController: UIViewController {
         navigationItem.rightBarButtonItem = favoriteNavigationItem
     }
     
-    @objc func goToFavoriteScreen() {
+    @objc private func goToFavoriteScreen() {
         let vc = FavoriteScreenViewController.create(favoriteManager: favoriteManager)
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-//    private func setupSearchController() {
-//        searchController.searchResultsUpdater = self
-//        searchController.searchBar.delegate = self
-//        searchController.delegate = self
-//        searchController.searchBar.enablesReturnKeyAutomatically = false
-//        searchController.searchBar.resignFirstResponder()
-//        searchController.obscuresBackgroundDuringPresentation = false
-//        navigationItem.searchController = searchController
-//    }
     
     private func searchWord(_ word: String?) {
         tableHandler.kanjis = model.getKanjis(searchedWord: word ?? "")
@@ -141,8 +125,7 @@ final class MainScreenViewController: UIViewController {
     }
 }
 
-//MARK: - TextField Delegate
-
+//MARK: - UITextFieldDelegate
 extension MainScreenViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchWord(searchTextField.text)
@@ -152,7 +135,6 @@ extension MainScreenViewController: UITextFieldDelegate {
 }
 
 //MARK: - Create MainScreen
-
 extension MainScreenViewController {
     static func create(favoriteManager: FavoriteManager) -> MainScreenViewController {
         let model = MainScreenModel(favoriteManager: favoriteManager)
@@ -161,32 +143,7 @@ extension MainScreenViewController {
     }
 }
 
-//MARK: - SearchBarDelegate
-extension MainScreenViewController: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchTerm = searchBar.text ?? ""
-        searchWord(searchTerm)
-        //searchController.dismiss(animated: true, completion: nil)
-    }
-}
-
-//MARK: - SearchControllerDelegate
-extension MainScreenViewController: UISearchControllerDelegate {
-    func didDismissSearchController(_ searchController: UISearchController) {
-        searchController.searchBar.text = searchTerm
-    }
-    
-    func willPresentSearchController(_ searchController: UISearchController) {
-        searchController.searchBar.text = searchTerm
-    }
-}
-
-//MARK: - SearchResultsUpdating
-extension MainScreenViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-    }
-}
-
+//MARK: - TableHandlerDelegate
 extension MainScreenViewController: TableHandlerDelegate {
     func cellDidSelect(kanji: KanjiData) {
         model.saveFavorite(id: kanji.id)

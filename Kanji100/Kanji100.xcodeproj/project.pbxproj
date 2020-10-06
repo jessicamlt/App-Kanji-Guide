@@ -58,9 +58,6 @@
 		76428B732513FBD000651F35 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		76428B7B2513FC3F00651F35 /* KanjiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiData.swift; sourceTree = "<group>"; };
 		76428B802513FCBD00651F35 /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
-		7669F049252A9C3400BA6990 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
-		7669F04A252A9C3400BA6990 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
-		7669F04B252A9C3400BA6990 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
 		767EAF90250FDD4E005CF533 /* Kanji100.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanji100.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767EAF93250FDD4E005CF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		767EAF9C250FDD4F005CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -253,9 +250,6 @@
 		767EAFCA25101F1E005CF533 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7669F04A252A9C3400BA6990 /* SFProText-Bold.ttf */,
-				7669F049252A9C3400BA6990 /* SFProText-Regular.ttf */,
-				7669F04B252A9C3400BA6990 /* SFProText-Semibold.ttf */,
 				767EAFA9250FE1FA005CF533 /* jlptn5Kanjis.json */,
 				767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */,
 			);
