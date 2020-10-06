@@ -45,6 +45,8 @@ final class MainScreenViewController: UIViewController {
         
         hideSearchBar(animated: true)
         
+        searchTextField.delegate = self
+        
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
           AnalyticsParameterItemID: "id-\(title!)",
           AnalyticsParameterItemName: title!,
@@ -57,7 +59,12 @@ final class MainScreenViewController: UIViewController {
         searchWord(searchTerm)
     }
     
-    @IBAction func cancelSearch(_ sender: Any) {
+    @IBAction func search(_ sender: UIButton) {
+        searchWord(searchTextField.text)
+        searchTextField.resignFirstResponder()
+    }
+    
+    @IBAction func cancelSearch(_ sender: UIButton) {
         hideSearchBar(animated: true)
     }
     
@@ -129,6 +136,16 @@ final class MainScreenViewController: UIViewController {
             return
         }
         title = searchText
+    }
+}
+
+//MARK: - TextField Delegate
+
+extension MainScreenViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchWord(searchTextField.text)
+        searchTextField.resignFirstResponder()
+        return true
     }
 }
 
