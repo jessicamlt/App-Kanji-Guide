@@ -4,6 +4,12 @@ import FirebaseAnalytics
 final class MainScreenViewController: UIViewController {
     
     @IBOutlet private var tableView: UITableView!
+    @IBOutlet var searchButton: UIButton!
+    @IBOutlet var cancelButton: UIButton!
+    @IBOutlet var searchView: UIView!
+    @IBOutlet var searchTextField: UITextField!
+    @IBOutlet var topContraint: NSLayoutConstraint!
+    
     
     //private let searchController = UISearchController(searchResultsController: nil)
     private var kanjis = Kanjis(kanjiList: [])
@@ -30,7 +36,14 @@ final class MainScreenViewController: UIViewController {
         //setupSearchController()
         searchWord(nil)
         setupNavigationBar()
+        searchButton.layer.cornerRadius = 8.0
+        searchButton.layer.masksToBounds = true
+        cancelButton.layer.cornerRadius = 8.0
+        cancelButton.layer.masksToBounds = true
+        searchView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        searchView.layer.cornerRadius = 16.0
         
+        hideSearchBar(animated: true)
         
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
           AnalyticsParameterItemID: "id-\(title!)",
@@ -44,9 +57,50 @@ final class MainScreenViewController: UIViewController {
         searchWord(searchTerm)
     }
     
+    @IBAction func cancelSearch(_ sender: Any) {
+        hideSearchBar(animated: true)
+    }
+    
+    
+    func hideSearchBar(animated: Bool) {
+        if !animated {
+            topContraint.constant = -searchView.bounds.height
+            searchTextField.resignFirstResponder()
+            return
+        }
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            self?.topContraint.constant = -(self?.searchView.bounds.height ?? 0)
+            self?.view.layoutIfNeeded()
+        } completion: { _ in
+            self.searchTextField.resignFirstResponder()
+        }
+    }
+    
+    func showSearchBar(animated: Bool) {
+        if !animated {
+            topContraint.constant = 0
+            searchTextField.becomeFirstResponder()
+            return
+        }
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            self?.topContraint.constant = 0
+            self?.view.layoutIfNeeded()
+        } completion: { _ in
+            self.searchTextField.becomeFirstResponder()
+        }
+    }
+    
+    @objc func toggleSearchBar() {
+        if topContraint.constant == 0 {
+            hideSearchBar(animated: true)
+            return
+        }
+        showSearchBar(animated: true)
+    }
+    
     private func setupNavigationBar() {
-        let searchNavigationItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
-        let favoriteNavigationItem = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(goToFavoriteScreen))
+        let searchNavigationItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(toggleSearchBar))
+        let favoriteNavigationItem = UIBarButtonItem(image: UIImage(systemName: "star.fill"), style: .plain, target: self, action: #selector(goToFavoriteScreen))
         searchNavigationItem.tintColor = .white
         favoriteNavigationItem.tintColor = .white
         navigationItem.leftBarButtonItem = searchNavigationItem

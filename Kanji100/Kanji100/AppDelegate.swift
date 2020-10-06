@@ -11,6 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: screenFrame)
         
         window?.overrideUserInterfaceStyle = .light
+        window?.tintColor = .white
         window?.rootViewController = createScreen()
         window?.makeKeyAndVisible()
         

@@ -137,6 +137,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="kFi-HS-zI4" firstAttribute="bottom" secondItem="1bo-D3-ZP1" secondAttribute="bottom" constant="2" id="4fn-Ct-zoZ"/>
                     <constraint firstItem="kFi-HS-zI4" firstAttribute="leading" secondItem="1bo-D3-ZP1" secondAttribute="leading" constant="-2" id="6UU-eN-Kna"/>

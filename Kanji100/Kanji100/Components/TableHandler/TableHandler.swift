@@ -74,6 +74,7 @@ class TableHandler: NSObject, UITableViewDataSource {
         let kanji = kanjis[indexPath.row]
         cell.fillCell(kanji: kanji)
         cell.delegate = self
+        cell.selectionStyle = .none
         return cell
     }
     
