@@ -29,6 +29,7 @@
 		767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767EAFCD25104326005CF533 /* KanjisRepository.swift */; };
 		767EAFD02511327F005CF533 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767EAFCF2511327F005CF533 /* MainScreenViewController.xib */; };
 		7686B65F252272FB0088A304 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7686B65E252272FB0088A304 /* GoogleService-Info.plist */; };
+		769ED717252D086700A4D605 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769ED716252D086700A4D605 /* Events.swift */; };
 		76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */; };
 		76A53E3A2515618A008DCAC6 /* PlaceholderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */; };
 		76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3CF02251D649B00A1B579 /* MainScreenModel.swift */; };
@@ -77,6 +78,7 @@
 		767EAFCD25104326005CF533 /* KanjisRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjisRepository.swift; sourceTree = "<group>"; };
 		767EAFCF2511327F005CF533 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 		7686B65E252272FB0088A304 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		769ED716252D086700A4D605 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		76A53E372515618A008DCAC6 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
 		76A53E382515618A008DCAC6 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
 		76C3CF02251D649B00A1B579 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		767EAF92250FDD4E005CF533 /* Kanji100 */ = {
 			isa = PBXGroup;
 			children = (
+				769ED715252D083F00A4D605 /* Analytics */,
 				767EAF93250FDD4E005CF533 /* AppDelegate.swift */,
 				7624D998251C0F8C002D0FE2 /* Components */,
 				7624D997251C0F64002D0FE2 /* Scenes */,
@@ -254,6 +257,14 @@
 				767EAFCB25101F48005CF533 /* AiharaHudemojiKaisho3.00.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		769ED715252D083F00A4D605 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				769ED716252D086700A4D605 /* Events.swift */,
+			);
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		76C3CF0C251D6FFB00A1B579 /* Domain */ = {
@@ -496,6 +507,7 @@
 				76C3CF03251D649B00A1B579 /* MainScreenModel.swift in Sources */,
 				767EAFC825100FE0005CF533 /* KanjiTableViewCell.swift in Sources */,
 				76C3CF09251D67BB00A1B579 /* FavoriteScreenModel.swift in Sources */,
+				769ED717252D086700A4D605 /* Events.swift in Sources */,
 				76A53E392515618A008DCAC6 /* PlaceholderTableViewCell.swift in Sources */,
 				767EAFCE25104326005CF533 /* KanjisRepository.swift in Sources */,
 				7624D99B251C0FCE002D0FE2 /* TableHandler.swift in Sources */,
