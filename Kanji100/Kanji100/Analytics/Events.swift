@@ -10,11 +10,11 @@ import Foundation
 import FirebaseAnalytics
 
 struct Events {
-    static func favoritedKanjisReport (id: Int) {
-        Analytics.logEvent("favoritedKanjis", parameters: ["id": id])
+    static func favoritedKanjisReport (kanji: KanjiData) {
+        Analytics.logEvent("favoritedKanjis", parameters: ["id": kanji.id, "kanji": kanji.kanji])
     }
     
-    static func unfavoritedKanjiReport(id: Int) {
-        Analytics.logEvent("unfavoritedKanjis", parameters: ["id": id])
+    static func unfavoritedKanjiReport(kanji: KanjiData) {
+        Analytics.logEvent("unfavoritedKanjis", parameters: ["id": kanji.id, "kanji": kanji.kanji])
     }
 }

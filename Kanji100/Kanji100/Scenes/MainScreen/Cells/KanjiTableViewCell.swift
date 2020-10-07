@@ -36,11 +36,11 @@ class KanjiTableViewCell: UITableViewCell {
         }
         if kanji.isFavorite {
             delegate?.kanjiRemovedFromFavorite(kanji: kanji)
-            Events.unfavoritedKanjiReport(id: kanji.id)
+            Events.unfavoritedKanjiReport(kanji: kanji)
             return
         }
         delegate?.kanjiAddedToFavorite(kanji: kanji)
-        Events.favoritedKanjisReport(id: kanji.id)
+        Events.favoritedKanjisReport(kanji: kanji)
     }
     
     func cellSetUp() {
